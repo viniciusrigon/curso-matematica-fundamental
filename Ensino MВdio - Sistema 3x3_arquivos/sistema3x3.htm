@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0067)http://pessoal.sercomtel.com.br/matematica/medio/206/sistema3x3.htm -->
+<HTML><HEAD><TITLE>Matematica Essencial: Resolucao de um sistema linear 3x3 pela Regra de Cramer</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><!-- ZoneLabs Privacy Insertion -->
+<SCRIPT language=javascript src="sistema3x3_arquivos/js"></SCRIPT>
+<LINK href="sistema3x3_arquivos/206.css" type=text/css rel=stylesheet>
+<SCRIPT language=JavaScript type=text/javascript>
+function TestaEntrada(form, button) {CalcElem(form); return;}
+function CalcElem(form)
+{
+var a11 = parseFloat(form.entrada01.value);
+var a12 = parseFloat(form.entrada02.value);
+var a13 = parseFloat(form.entrada03.value);
+var b1  = parseFloat(form.entrada04.value);
+var a21 = parseFloat(form.entrada05.value);
+var a22 = parseFloat(form.entrada06.value);
+var a23 = parseFloat(form.entrada07.value);
+var b2  = parseFloat(form.entrada08.value);
+var a31 = parseFloat(form.entrada09.value);
+var a32 = parseFloat(form.entrada10.value);
+var a33 = parseFloat(form.entrada11.value);
+var b3  = parseFloat(form.entrada12.value);
+// determinante da da matriz dos coeficientes
+det = a11*a22*a33 + a13*a21*a32 + a12*a23*a31 - a13*a22*a31 - a11*a23*a32 - a12*a21*a33;
+// inversa da matriz dos coeficientes
+i11 = (a22*a33-a23*a32)/det;
+i12 = (a32*a13-a12*a33)/det;
+i13 = (a12*a23-a13*a22)/det;
+i21 = (a31*a23-a21*a33)/det;
+i22 = (a11*a33-a31*a13)/det;
+i23 = (a21*a23-a11*a23)/det;
+i31 = (a21*a32-a22*a31)/det;
+i32 = (a12*a31-a11*a32)/det;
+i33 = (a11*a22-a12*a21)/det;
+if (det == 0) {alert("Como det(M)=0, o sistema pode ser imposs&iacute;vel ou ter infinitas solu&ccedil;&otilde;es."); return;}
+form.saida01.value=(i11*b1+i12*b2+i13*b3);
+form.saida02.value=(i21*b1+i22*b2+i23*b3);
+form.saida03.value=(i31*b1+i32*b2+i33*b3);
+}
+function Ajuda()
+{
+var temp="width=700,height=330,left=50,top=50,resizable=yes,directories=no,toolbar=no,scrollbars=yes,menubar=no"
+temp=open("","detalhes",temp).document
+temp.write("<html>"
++ "<head><title>Matematica Essencial: Sistema linear 3x3<\/title><\/head>"
++ "<body bgcolor=white text=black>"
++ "<center><h2>Elementos de um sistema 3x3<\/h2><\/center>"
++ "<table align=center bgcolor=gold border=3>"
++ "<tr><th>Elementos<\/th><th>Detalhes<\/th><\/tr>"
++ "<tr><th>Diagonal principal<\/th><td>Formada pelos elementos a11, a22 e a33.<\/td><\/tr>"
++ "<th>Diagonal secund&aacute;ria<\/th><td>Formada pelos elementos a13, a22 e a31.<\/td><\/tr>"
++ "<th>Determinante<\/th><td>det=a11a22a33+a13a21a32+a12a23a31-a13a22a31-a11a23a32-a12a21a33.<\/td><\/tr>"
++ "<th>Tra&ccedil;o<\/th><td>Soma dos elementos da diagonal principal<\/td><\/tr>"
++ "<th>1.4e-7<\/th><td>1.4e-7 = 1.4x10<sup>-7<\/sup> = 0.0000014<\/td><\/tr>"
++ "<th>-1.4e-7<\/th><td>-1.4e-7 = -1.4x10<sup>-7<\/sup> = -0.0000014<\/td><\/tr>"
++ "<tr><th>NaN<\/th><td>Not a Number. Aparece se voc&ecirc; cometeu um erro ao entrar os dados.<\/td><\/tr>"
++ "<\/table>"
++ "<center><form><input type='button' value='Fechar esta ajuda' "
++ "onclick='self.close()'><\/form><\/center>"
++ "<\/body><\/html>");
+}
+</SCRIPT>
+
+<META content="MSHTML 6.00.2800.1170" name=GENERATOR></HEAD>
+<BODY><BASEFONT face=Verdana,Arial,Helvetica size=4>
+<TABLE borderColor=black cellSpacing=0 cellPadding=0 width="98%" align=center 
+bgColor=white summary=tab border=1>
+  <TBODY>
+  <TR>
+    <TH class=tab width="50%" bgColor=darkblue><FONT color=white>Matemática 
+      Essencial</FONT></TH>
+    <TH class=tab><FONT color=darkblue>Ensino Fundamental</FONT></TH></TR>
+  <TR>
+    <TH class=tab width="50%" colSpan=2><FONT color=red>Solução de um sistema 
+      linear 3x3</FONT></TH></TR></TBODY></TABLE>
+<P>Para obter a solução do sistema determinado (aquele que tem determinante 
+geral não nulo), entre com os 12 valores e pressione o botão apropriado. 
+Aproveite os dados inseridos para realizar novas simulações.</P>
+<FORM>
+<TABLE cellSpacing=0 cellPadding=0 align=center bgColor=#ccccff summary=t 
+border=1>
+  <TBODY>
+  <TR>
+    <TD class=tab>a<SUB>11</SUB><INPUT size=5 name=entrada01>X + 
+      a<SUB>12</SUB><INPUT size=5 name=entrada02>Y + a<SUB>13</SUB><INPUT size=5 
+      name=entrada03>Z = b<SUB>1</SUB><INPUT size=5 name=entrada04></TD></TR>
+  <TR>
+    <TD class=tab>a<SUB>21</SUB><INPUT size=5 name=entrada05>X + 
+      a<SUB>22</SUB><INPUT size=5 name=entrada06>Y + a<SUB>23</SUB><INPUT size=5 
+      name=entrada07>Z = b<SUB>2</SUB><INPUT size=5 name=entrada08></TD></TR>
+  <TR>
+    <TD class=tab>a<SUB>31</SUB><INPUT size=5 name=entrada09>X + 
+      a<SUB>32</SUB><INPUT size=5 name=entrada10>Y + a<SUB>33</SUB><INPUT size=5 
+      name=entrada11>Z = b<SUB>3</SUB><INPUT size=5 name=entrada12></TD></TR>
+  <TR>
+    <TH><INPUT onclick=Ajuda() type=button value=Ajuda> <INPUT type=reset value="Limpar os dados"> <INPUT onclick=TestaEntrada(this.form,this) type=button value="Resolver o sistema"></TH></TR>
+  <TR bgColor=gold>
+    <TH>Solução do sistema (determinado) linear 3x3</TH></TR>
+  <TR bgColor=gold>
+    <TH>X=<INPUT size=7 name=saida01>Y=<INPUT size=7 name=saida02>Z=<INPUT 
+      size=7 name=saida03></TH></TR></TBODY></TABLE></FORM>
+<HR color=red noShade SIZE=3>
+
+<P class=c>Construída por Ulysses Sodré<BR>
+<SCRIPT src="sistema3x3_arquivos/atualp.js" type=text/javascript>
+</SCRIPT>
+</P>
+<HR color=red noShade SIZE=3>
+<!-- ZoneLabs Popup Blocking Insertion -->
+<SCRIPT language=javascript>postamble();</SCRIPT>
+</BASEFONT></BODY></HTML>

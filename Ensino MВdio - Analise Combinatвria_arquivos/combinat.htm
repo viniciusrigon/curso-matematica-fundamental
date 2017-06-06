@@ -1,0 +1,578 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0065)http://pessoal.sercomtel.com.br/matematica/medio/205/combinat.htm -->
+<HTML><HEAD><TITLE>Matematica Essencial: Medio: Analise Combinatoria</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><!-- ZoneLabs Privacy Insertion -->
+<SCRIPT language=javascript src="combinat_arquivos/js"></SCRIPT>
+<LINK href="combinat_arquivos/205.css" type=text/css rel=stylesheet>
+<META content="MSHTML 6.00.2800.1170" name=GENERATOR></HEAD>
+<BODY><BASEFONT face=Verdana,Arial,Helvetica size=4>
+<TABLE borderColor=black cellSpacing=0 cellPadding=0 width="96%" align=center 
+bgColor=white summary=tab border=1>
+  <TBODY>
+  <TR>
+    <TH class=tab width="50%" bgColor=#000099><FONT color=white>Matemática 
+      Essencial</FONT></TH>
+    <TH class=tab><FONT color=#000099>Ensino Médio</FONT></TH></TR>
+  <TR>
+    <TH class=tab width="50%" colSpan=2><FONT color=red>Análise Combinatória e 
+      o Binômio de Newton</FONT></TH></TR>
+  <TR>
+    <TD vAlign=center width="50%" bgColor=white>
+      <UL type=square>
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/205/combinat.htm#comb01"><B>Introdução 
+        Análise Combinatória</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/205/combinat.htm#comb02"><B>Arranjos</B></A> 
+
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/205/combinat.htm#comb03"><B>Permutações</B></A> 
+
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/205/combinat.htm#comb04"><B>Combinações</B></A> 
+
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/205/combinat.htm#comb05"><B>Regras 
+        gerais Combinatória</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/205/combinat.htm#comb06"><B>Arranjos 
+        simples</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/205/combinat.htm#comb07"><B>Permutações 
+        simples</B></A> </LI></UL></TD>
+    <TD vAlign=center width="50%" bgColor=white>
+      <UL type=square>
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/205/combinat.htm#comb08"><B>Combinações 
+        simples</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/205/combinat.htm#comb09"><B>Arranjos 
+        c/ repetição</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/205/combinat.htm#comb10"><B>Permutações 
+        c/ repetição</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/205/combinat.htm#comb11"><B>Combinações 
+        c/ repetição</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/205/combinat.htm#comb12"><B>Propr. 
+        das combinações</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/205/combinat.htm#comb12"><B>Número 
+        binomial</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/205/combinat.htm#comb12"><B>Teorema 
+        binomial</B></A> </LI></UL></TD></TR></TBODY></TABLE>
+<P>Temos uma página de <A 
+href="http://pessoal.sercomtel.com.br/matematica/medio/205/combinata.htm">Exercícios 
+de Análise Combinatória</A> com os conceitos utilizados, respostas ou 
+comentários. Para constribuir com esta página, você poderá enviar exercícios 
+junto com os processos usados na obtenção das respostas.</P><A 
+name=comb01></A><BR>
+<P class=tit>Introdução à Análise Combinatória</P>
+<P>Análise Combinatória é um conjunto de procedimentos que possibilita a 
+construção de grupos diferentes formados por um número finito de elementos de um 
+conjunto sob certas circunstâncias.</P>
+<P>Na maior parte das vezes, tomaremos conjuntos Z com m elementos e os grupos 
+formados com elementos de Z terão p elementos, isto é, p será a taxa do 
+agrupamento, com p<U>&lt;</U>m.</P>
+<P>Arranjos, Permutações ou Combinações, são os três tipos principais de 
+agrupamentos, sendo que eles podem ser simples, com repetição ou circulares. 
+Apresentaremos alguns detalhes de tais agrupamentos.</P>
+<P><B class=g>Observação:</B> É muito frequente encontrarmos na literatura sobre 
+os termos: arranjar, combinar ou permutar, mas todo o cuidado é pouco com os 
+mesmos, que às vezes são utilizados em concursos em uma forma dúbia!</P><BR><A 
+name=comb02></A><BR>
+<P class=tit>Arranjos</P>
+<P>São agrupamentos formados com p elementos, (p&lt;m) de forma que os p 
+elementos sejam distintos entre sí pela ordem ou pela espécie. Os arranjos podem 
+ser simples ou com repetição.</P>
+<P><B class=b>Arranjo simples:</B> Não ocorre a repetição de qualquer elemento 
+em cada grupo de p elementos.</P>
+<P class=l><B class=g>Fórmula:</B> A<SUB>s</SUB>(m,p) = m!/(m-p)!</P>
+<P class=l><B class=g>Cálculo para o exemplo:</B> A<SUB>s</SUB>(4,2) = 
+4!/2!=24/2=12.</P>
+<P><B class=g>Exemplo:</B> Seja Z={A,B,C,D}, m=4 e p=2. Os arranjos simples 
+desses 4 elementos tomados 2 a 2 são 12 grupos que não podem ter a repetição de 
+qualquer elemento mas que podem aparecer na ordem trocada. Todos os agrupamentos 
+estão no conjunto:</P>
+<P class=eq>A<SUB>s</SUB>={AB,AC,AD,BA,BC,BD,CA,CB,CD,DA,DB,DC}</P>
+<P><B class=b>Arranjo com repetição:</B> Todos os elementos podem aparecer 
+repetidos em cada grupo de p elementos.</P>
+<P class=l><B class=g>Fórmula:</B> A<SUB>r</SUB>(m,p) = m<SUP>p</SUP>.</P>
+<P class=l><B class=g>Cálculo para o exemplo:</B> A<SUB>r</SUB>(4,2) = 
+4<SUP>2</SUP>=16.</P>
+<P><B class=g>Exemplo:</B> Seja C={A,B,C,D}, m=4 e p=2. Os arranjos com 
+repetição desses 4 elementos tomados 2 a 2 são 16 grupos que onde aparecem 
+elementos repetidos em cada grupo. Todos os agrupamentos estão no conjunto:</P>
+<P 
+class=eq>A<SUB>r</SUB>={AA,AB,AC,AD,BA,BB,BC,BD,<BR>CA,CB,CC,CD,DA,DB,DC,DD}</P>
+<P><B class=b>Arranjo condicional:</B> Todos os elementos aparecem em cada grupo 
+de p elementos, mas existe uma condição que deve ser satisfeita acerca de alguns 
+elementos.</P>
+<P class=l><B class=g>Fórmula:</B> 
+N=A(m<SUB>1</SUB>,p<SUB>1</SUB>).A(m-m<SUB>1</SUB>,p-p<SUB>1</SUB>)</P>
+<P class=l><B class=g>Cálculo para o exemplo:</B> 
+N=A(3,2).A(7-3,4-2)=A(3,2).A(4,2)=6×12=72.</P>
+<P><B class=g>Exemplo:</B> Quantos arranjos com 4 elementos do conjunto 
+{A,B,C,D,E,F,G}, começam com duas letras escolhidas no subconjunto {A,B,C}?</P>
+<P>Aqui temos um total de m=7 letras, a taxa é p=4, o subconjunto escolhido tem 
+m<SUB>1</SUB>=3 elementos e a taxa que este subconjunto será formado é 
+p<SUB>1</SUB>=2. Com as letras A,B e C, tomadas 2 a 2, temos 6 grupos que estão 
+no conjunto:</P>
+<P class=eq>P<SUB>ABC</SUB> = {AB,BA,AC,<FONT color=red>CA</FONT>,BC,CB}</P>
+<P>Com as letras D,E,F e G tomadas 2 a 2, temos 12 grupos que estão no 
+conjunto:</P>
+<P class=eq>P<SUB>DEFG</SUB> = {DE,DF,DG,ED,EF,EG,FD,FE,<FONT 
+color=red>FG</FONT>,GD,GE,GF}</P>
+<P>Usando a regra do produto, teremos 72 possibilidades obtidas pela junção de 
+um elemento do conjunto P<SUB>ABC</SUB> com um elemento do conjunto 
+P<SUB>DEFG</SUB>. Um típico arranjo para esta situação é <B 
+class=r>CAFG</B>.</P><BR><A name=comb03></A><BR>
+<P class=tit>Permutações</P>
+<P>Quando formamos agrupamentos com m elementos, de forma que os m elementos 
+sejam distintos entre sí pela ordem. As permutações podem ser simples, com 
+repetição ou circulares.</P>
+<P><B class=b>Permutação simples:</B> São agrupamentos com todos os m elementos 
+distintos.</P>
+<P class=l><B class=g>Fórmula:</B> P<SUB>s</SUB>(m) = m!.</P>
+<P class=l><B class=g>Cálculo para o exemplo:</B> P<SUB>s</SUB>(3) = 3!=6.</P>
+<P><B class=g>Exemplo:</B> Seja C={A,B,C} e m=3. As permutações simples desses 3 
+elementos são 6 agrupamentos que não podem ter a repetição de qualquer elemento 
+em cada grupo mas podem aparecer na ordem trocada. Todos os agrupamentos estão 
+no conjunto:</P>
+<P class=eq>P<SUB>s</SUB>={ABC,ACB,BAC,BCA,CAB,CBA}</P>
+<P><B class=b>Permutação com repetição:</B> Dentre os m elementos do conjunto 
+C={x<SUB>1</SUB>,x<SUB>2</SUB>,x<SUB>3</SUB>,...,x<SUB>n</SUB>}, faremos a 
+suposição que existem m<SUB>1</SUB> iguais a x<SUB>1</SUB>, m<SUB>2</SUB> iguais 
+a x<SUB>2</SUB>, m<SUB>3</SUB> iguais a x<SUB>3</SUB>, ... , m<SUB>n</SUB> 
+iguais a x<SUB>n</SUB>, de modo que 
+m<SUB>1</SUB>+m<SUB>2</SUB>+m<SUB>3</SUB>+...+m<SUB>n</SUB>=m.</P>
+<P class=l><B class=g>Fórmula:</B> Se 
+m=m<SUB>1</SUB>+m<SUB>2</SUB>+m<SUB>3</SUB>+...+m<SUB>n</SUB>, então</P>
+<P 
+class=eq>P<SUB>r</SUB>(m)=C(m,m<SUB>1</SUB>).C(m-m<SUB>1</SUB>,m<SUB>2</SUB>).C(m-m<SUB>1</SUB>-m<SUB>2</SUB>,m<SUB>3</SUB>) 
+... C(m<SUB>n</SUB>,m<SUB>n</SUB>)</P>
+<P><B class=g>Anagrama:</B> Um anagrama é uma (outra) palavra construída com as 
+mesmas letras da palavra original trocadas de posição.</P>
+<P class=l><B class=g>Cálculo para o exemplo:</B> m<SUB>1</SUB>=4, 
+m<SUB>2</SUB>=2, m<SUB>3</SUB>=1, m<SUB>4</SUB>=1 e m=6, logo: 
+P<SUB>r</SUB>(6)=C(6,4).C(6-4,2).C(6-4-1,1)=C(6,4).C(2,2).C(1,1)=15.</P>
+<P><B class=g>Exemplo:</B> Quantos anagramas podemos formar com as 6 letras da 
+palavra ARARAT. A letra A ocorre 3 vezes, a letra R ocorre 2 vezes e a letra T 
+ocorre 1 vez. As permutações com repetição desses 3 elementos do conjunto 
+C={A,R,T} em agrupamentos de 6 elementos são 15 grupos que contêm a repetição de 
+todos os elementos de C aparecendo também na ordem trocada. Todos os 
+agrupamentos estão no conjunto:</P>
+<P 
+class=eq>P<SUB>r</SUB>={AAARRT,AAATRR,AAARTR,AARRTA,AARTTA,<BR>AATRRA,AARRTA,ARAART,ARARAT,ARARTA,<BR>ARAATR,ARAART,ARAATR,ATAARA,ATARAR}</P>
+<P><B class=b>Permutação circular:</B> Situação que ocorre quando temos grupos 
+com m elementos distintos formando uma circunferência de círculo.</P>
+<P class=l><B class=g>Fórmula:</B> P<SUB>c</SUB>(m)=(m-1)!</P>
+<P class=l><B class=g>Cálculo para o exemplo:</B> P(4)=3!=6</P>
+<P><B class=g>Exemplo:</B> Seja um conjunto com 4 pessoas K={A,B,C,D}. De 
+quantos modos distintos estas pessoas poderão sentar-se junto a uma mesa 
+circular (pode ser retangular) para realizar o jantar sem que haja repetição das 
+posições?</P>
+<P>Se considerássemos todas as permutações simples possíveis com estas 4 
+pessoas, teriamos 24 grupos, apresentados no conjunto:</P>
+<P 
+class=eq>P<SUB>c</SUB>={ABCD,ABDC,ACBD,ACDB,ADBC,ADCB,BACD,BADC,<BR>BCAD,BCDA,BDAC,BDCA,CABD,CADB,CBAD,CBDA,<BR>CDAB,CDBA, 
+DABC,DACB,DBAC,DBCA,DCAB,DCBA}</P>
+<P>Acontece que junto a uma mesa "circular" temos que:</P>
+<P 
+class=eq>ABCD=BCDA=CDAB=DABC<BR>ABDC=BDCA=DCAB=CABD<BR>ACBD=CBDA=BDAC=DACB<BR>ACDB=CDBA=DBAC=BACD<BR>ADBC=DBCA=BCAD=CADB<BR>ADCB=DCBA=CBAD=BADC</P>
+<P>assim existem somente 6 grupos distintos, dados por:</P>
+<P class=eq>P<SUB>c</SUB>={ABCD,ABDC,ACBD,ACDB,ADBC,ADCB}</P><BR><A 
+name=comb04></A><BR>
+<P class=tit>Combinações</P>
+<P>Quando formamos agrupamentos com p elementos, (p&lt;m) de forma que os p 
+elementos sejam distintos entre sí apenas pela espécie.</P>
+<P><B class=b>Combinação simples:</B> Não ocorre a repetição de qualquer 
+elemento em cada grupo de p elementos.</P>
+<P class=l><B class=g>Fórmula:</B> C(m,p) = m!/[(m-p)! p!]</P>
+<P class=l><B class=g>Cálculo para o exemplo:</B> C(4,2)=4!/[2!2!]=24/4=6</P>
+<P><B class=g>Exemplo:</B> Seja C={A,B,C,D}, m=4 e p=2. As combinações simples 
+desses 4 elementos tomados 2 a 2 são 6 grupos que não podem ter a repetição de 
+qualquer elemento nem podem aparecer na ordem trocada. Todos os agrupamentos 
+estão no conjunto:</P>
+<P class=eq>C<SUB>s</SUB>={AB,AC,AD,BC,BD,CD}</P>
+<P><B class=b>Combinação com repetição:</B> Todos os elementos podem aparecer 
+repetidos em cada grupo até p vezes.</P>
+<P class=l><B class=g>Fórmula:</B> C<SUB>r</SUB>(m,p)=C(m+p-1,p)</P>
+<P class=l><B class=g>Cálculo para o exemplo:</B> 
+C<SUB>r</SUB>(4,2)=C(4+2-1,2)=C(5,2)=5!/[2!3!]=10</P>
+<P><B class=g>Exemplo:</B> Seja C={A,B,C,D}, m=4 e p=2. As combinações com 
+repetição desses 4 elementos tomados 2 a 2 são 10 grupos que têm todas as 
+repetições possíveis de elementos em grupos de 2 elementos não podendo aparecer 
+o mesmo grupo com a ordem trocada. De um modo geral neste caso, todos os 
+agrupamentos com 2 elementos formam um conjunto com 16 elementos:</P>
+<P class=eq>C<SUB>r</SUB>={AA,AB,AC,AD,BA,BB,BC,BD,CA,CB,CC,CD,DA,DB,DC,DD}</P>
+<P>mas para obter as combinações com repetição, deveremos excluir deste conjunto 
+os 6 grupos que já apareceram antes, pois AB=BA, AC=CA, AD=DA, BC=CB, BD=DB e 
+CD=DC, assim as combinações com repetição dos elementos de C tomados 2 a 2, 
+são:</P>
+<P class=eq>Cr={AA,AB,AC,AD,BB,BC,BD,CC,CD,DD}</P><BR><A name=comb05></A><BR>
+<P class=tit>Regras gerais sobre a Análise Combinatória</P>
+<P>Problemas de Análise Combinatória normalmente são muito difíceis mas eles 
+podem ser resolvidos através de duas regras básicas: a regra da soma e a regra 
+do produto.</P>
+<P><B class=b>Regra da soma:</B> A regra da soma nos diz que se um elemento pode 
+ser escolhido de m formas e um outro elemento pode ser escolhido de n formas, 
+então a escolha de um ou outro elemento se realizará de m+n formas, desde que 
+tais escolhas sejam independentes, isto é, nenhuma das escolhas de um elemento 
+pode coincidir com uma escolha do outro.</P>
+<P><B class=b>Regra do Produto:</B> A regra do produto diz que se um elemento H 
+pode ser escolhido de m formas diferentes e se depois de cada uma dessas 
+escolhas, um outro elemento M pode ser escolhido de n formas diferentes, a 
+escolha do par (H,M) nesta ordem poderá ser realizada de m.n formas.</P>
+<P><IMG alt="" hspace=5 src="combinat_arquivos/zretas.png" align=right border=1> 
+<B class=g>Exemplo:</B> Consideremos duas retas paralelas ou concorrentes sem 
+que os pontos sob análise estejam em ambas, sendo que a primeira <B>r</B> contem 
+m pontos distintos marcados por r<SUB>1</SUB>, r<SUB>2</SUB>, r<SUB>3</SUB>, 
+..., r<SUB>m</SUB> e a segunda <B>s</B> contem n outros pontos distintos 
+marcados por s<SUB>1</SUB>, s<SUB>2</SUB>, s<SUB>3</SUB>, ..., s<SUB>n</SUB>. De 
+quantas maneiras podemos traçar segmentos de retas com uma extremidade numa reta 
+e a outra extremidade na outra reta? É fácil ver isto ligando r<SUB>1</SUB> a 
+todos os pontos de s e assim teremos n segmentos, depois ligando r<SUB>2</SUB> a 
+todos os pontos de s e assim teremos n segmentos, e continuamos até o último 
+ponto para obter também n segmentos. Como existem m pontos em r e n pontos em s, 
+teremos m.n segmentos possíveis.</P><BR><A name=comb06></A><BR>
+<P class=tit>Número de Arranjos simples</P>
+<P>Seja C um conjunto com m elementos. De quantas maneiras diferentes poderemos 
+escolher p elementos (p&lt;m) deste conjunto? Cada uma dessas escolhas será 
+chamada um arranjo de m elementos tomados p a p. Construiremos uma sequência com 
+os m elementos de C.</P>
+<P class=eq>c<SUB>1</SUB>, c<SUB>2</SUB>, c<SUB>3</SUB>, c<SUB>4</SUB>, 
+c<SUB>5</SUB>, ..., c<SUB>m-2</SUB>, c<SUB>m-1</SUB>, c<SUB>m</SUB></P>
+<P>Cada vez que um elemento for retirado, indicaremos esta operação com a 
+mudança da cor do elemento para a cor vermelha.</P>
+<P>Para escolher o primeiro elemento do conjunto C que possui m elementos, temos 
+m possibilidades. Vamos supor que a escolha tenha caído sobre o m-ésimo elemento 
+de C.</P>
+<P class=eq>c<SUB>1</SUB>, c<SUB>2</SUB>, c<SUB>3</SUB>, c<SUB>4</SUB>, 
+c<SUB>5</SUB>, ..., c<SUB>m-2</SUB>, c<SUB>m-1</SUB>, <B 
+class=r>c<SUB>m</SUB></B></P>
+<P>Para escolher o segundo elemento, devemos observar o que sobrou no conjunto e 
+constatamos que agora existem apenas m-1 elementos. Suponhamos que tenha sido 
+retirado o último elemento dentre os que sobraram no conjunto C. O elemento 
+retirado na segunda fase é o (m-1)-ésimo.</P>
+<P class=eq>c<SUB>1</SUB>, c<SUB>2</SUB>, c<SUB>3</SUB>, c<SUB>4</SUB>, 
+c<SUB>5</SUB>, ..., c<SUB>m-2</SUB>, <B class=r>c<SUB>m-1</SUB></B>, <B 
+class=r>c<SUB>m</SUB></B></P>
+<P>Após a segunda retirada, sobraram m-2 possibilidades para a próxima retirada. 
+Do que sobrou, se retirarmos o terceiro elemento como sendo o de ordem (m-2), 
+teremos algo que pode ser visualizado como:</P>
+<P class=eq>c<SUB>1</SUB>, c<SUB>2</SUB>, c<SUB>3</SUB>, c<SUB>4</SUB>, 
+c<SUB>5</SUB>, ..., <B class=r>c<SUB>m-2</SUB></B>, <B 
+class=r>c<SUB>m-1</SUB></B>, <B class=r>c<SUB>m</SUB></B></P>
+<P>Se continuarmos o processo de retirada, cada vez teremos 1 elemento a menos 
+do que na fase anterior. Para retirar o p-ésimo elemento, restarão m-p+1 
+possibilidades de escolha.</P>
+<P>Para saber o número total de arranjos possíveis de m elementos tomados p a p, 
+basta multiplicar os números que aparecem na segunda coluna da tabela 
+abaixo:</P>
+<TABLE align=center bgColor=white summary=t border=1>
+  <TBODY>
+  <TR bgColor=gold>
+    <TH>Retirada</TH>
+    <TH>Número de possibilidades</TH></TR>
+  <TR>
+    <TH>1</TH>
+    <TH>m</TH></TR>
+  <TR>
+    <TH>2</TH>
+    <TH>m-1</TH></TR>
+  <TR>
+    <TH>3</TH>
+    <TH>m-2</TH></TR>
+  <TR>
+    <TH>...</TH>
+    <TH>...</TH></TR>
+  <TR>
+    <TH>p</TH>
+    <TH>m-p+1</TH></TR>
+  <TR bgColor=gold>
+    <TH>No.de arranjos</TH>
+    <TH>m(m-1)(m-2)...(m-p+1)</TH></TR></TBODY></TABLE>
+<P>Denotaremos o número de arranjos de m elementos tomados p a p, por A(m,p) e a 
+expressão para seu cálculo será dada por:</P>
+<P class=eq>A(m,p) = m(m-1)(m-2)...(m-p+1)</P><BR>
+<P><B class=g>Exemplo:</B> Consideremos as 5 vogais de nosso alfabeto. Quais e 
+quantas são as possibilidades de dispor estas 5 vogais em grupos de 2 elementos 
+diferentes? O conjunto solução é:</P>
+<P 
+class=eq>{AE,AI,AO,AU,EA,EI,EO,EU,IA,IE,<BR>IO,IU,OA,OE,OI,OU,UA,UE,UI,UO}</P>
+<P>A solução numérica é A(5,2)=5×4=20.</P><BR>
+<P><B class=g>Exemplo:</B> Consideremos as 5 vogais de nosso alfabeto. Quais e 
+quantas são as possibilidades de dispor estas 5 vogais em grupos de 2 elementos 
+(não necessariamente diferentes)?</P>
+<P><U>Sugestão:</U> Construir uma reta com as 5 vogais e outra reta paralela à 
+anterior com as 5 vogais, usar a regra do produto para concluir que há 5x5=25 
+possibilidades.</P>
+<P>O conjunto solução é:</P>
+<P 
+class=eq>{AA,AE,AI,AO,AU,EA,EE,EI,EO,EU,IA,IE,II,<BR>IO,IU,OA,OE,OI,OO,OU,UA,UE,UI,UO,UU}</P><BR>
+<P><B class=g>Exemplo:</B> Quantas placas de carros podem existir no atual 
+sistema brasileiro de trânsito que permite 3 letras iniciais e 4 algarismos no 
+final?</P>
+<P class=eq>XYZ-1234</P>
+<P><U>Sugestão:</U> Considere que existem 26 letras em nosso alfabeto que podem 
+ser dispostas 3 a 3 e 10 algarismos que podem ser dispostos 4 a 4 e em seguida 
+utilize a regra do produto.</P><BR><A name=comb07></A><BR>
+<P class=tit>Número de Permutações simples</P>
+<P>Este é um caso particular de arranjo em que p=m. Para obter o número de 
+permutações com m elementos distintos de um conjunto C, basta escolher os m 
+elementos em uma determinada ordem. A tabela de arranjos com todas as linhas até 
+a ordem p=m, permitirá obter o número de permutações de m elementos:</P>
+<TABLE align=center bgColor=white summary=t border=1>
+  <TBODY>
+  <TR bgColor=gold>
+    <TH>Retirada</TH>
+    <TH>Número de possibilidades</TH></TR>
+  <TR>
+    <TH>1</TH>
+    <TH>m</TH></TR>
+  <TR>
+    <TH>2</TH>
+    <TH>m-1</TH></TR>
+  <TR>
+    <TH>...</TH>
+    <TH>...</TH></TR>
+  <TR>
+    <TH>p</TH>
+    <TH>m-p+1</TH></TR>
+  <TR>
+    <TH>...</TH>
+    <TH>...</TH></TR>
+  <TR>
+    <TH>m-2</TH>
+    <TH>3</TH></TR>
+  <TR>
+    <TH>m-1</TH>
+    <TH>2</TH></TR>
+  <TR>
+    <TH>m</TH>
+    <TH>1</TH></TR>
+  <TR bgColor=gold>
+    <TH>No.de permutações</TH>
+    <TH>m(m-1)(m-2)...(m-p+1)...4.3.2.1</TH></TR></TBODY></TABLE>
+<P>Denotaremos o número de permutações de m elementos, por P(m) e a expressão 
+para seu cálculo será dada por:</P>
+<P class=eq>P(m) = m(m-1)(m-2) ... (m-p+1) ... 3 . 2 . 1</P>
+<P>Em função da forma como construímos o processo, podemos escrever:</P>
+<P class=eq>A(m,m) = P(m)</P>
+<P>Como o uso de permutações é muito intenso em Matemática e nas ciências em 
+geral, costuma-se simplificar a permutação de m elementos e escrever 
+simplesmente:</P>
+<P class=eq>P(m) = m!</P>
+<P>Este símbolo de exclamação posto junto ao número m é lido como: <I>fatorial 
+de m</I>, onde m é um número natural.</P>
+<P>Embora <B>zero</B> não seja um número natural no sentido que tenha tido 
+origem nas coisas da natureza, procura-se dar sentido para a definição de 
+fatorial de m de uma forma mais ampla, incluindo m=0 e para isto podemos 
+escrever:</P>
+<P class=eq>0!=1</P>
+<P>Em contextos mais avançados, existe a função gama que generaliza o conceito 
+de fatorial de um número real, excluindo os inteiros negativos e com estas 
+informações pode-se <I>demonstrar</I> que 0!=1.</P>
+<P>O fatorial de um número inteiro não negativo pode ser definido de uma forma 
+recursiva através da função P=P(m) ou com o uso do sinal de exclamação:</P>
+<P class=eq>(m+1)! = (m+1).m!, &nbsp;&nbsp;&nbsp;0! = 1</P><BR>
+<P><B class=g>Exemplo:</B> De quantos modos podemos colocar juntos 3 livros A, B 
+e C diferentes em uma estante? O número de arranjos é P(3)=6 e o conjunto 
+solução é:</P>
+<P class=eq>P={ABC,ACB,BAC,BCA,CAB,CBA}</P><BR>
+<P><B class=g>Exemplo:</B> Quantos anagramas são possíveis com as letras da 
+palavra AMOR? O número de arranjos é P(4)=24 e o conjunto solução é:</P>
+<P 
+class=eq>P={AMOR,AMRO,AROM,ARMO,AORM,AOMR,MARO,MAOR,<BR>MROA,MRAO,MORA,MOAR,OAMR,OARM,ORMA,ORAM,<BR>OMAR,OMRA,RAMO,RAOM,RMOA,RMAO,ROAM,ROMA}</P><BR><A 
+name=comb08></A><BR>
+<P class=tit>Número de Combinações simples</P>
+<P>Seja C um conjunto com m elementos distintos. No estudo de arranjos, já vimos 
+antes que é possível escolher p elementos de A, mas quando realizamos tais 
+escolhas pode acontecer que duas coleções com p elementos tenham os mesmos 
+elementos em ordens trocadas. Uma situação típica é a escolha de um casal (H,M). 
+Quando se fala casal, não tem importância a ordem da posição (H,M) ou (M,H), 
+assim não há a necessidade de escolher duas vezes as mesmas pessoas para formar 
+o referido casal. Para evitar a repetição de elementos em grupos com a mesma 
+quantidade p de elementos, introduziremos o conceito de combinação.</P>
+<P>Diremos que uma coleção de p elementos de um conjunto C com m elementos é uma 
+combinação de m elementos tomados p a p, se as coleções com p elementos não tem 
+os <B>mesmos</B> elementos que já apareceram em outras coleções com o mesmo 
+número p de elementos.</P>
+<P>Aqui temos outra situação particular de arranjo, mas não pode acontecer a 
+repetição do mesmo grupo de elementos em uma ordem diferente.</P>
+<P>Isto significa que dentre todos os A(m,p) arranjos com p elementos, existem 
+p! desses arranjos com os <B>mesmos elementos</B>, assim, para obter a 
+combinação de m elementos tomados p a p, deveremos dividir o número A(m,p) por 
+m! para obter apenas o número de arranjos que contem conjuntos distintos, ou 
+seja:</P>
+<P class=eq>C(m,p) = A(m,p) / p!</P>
+<P>Como</P>
+<P class=eq>A(m,p) = m.(m-1).(m-2)...(m-p+1)</P>
+<P>então:</P>
+<P class=eq>C(m,p) = [ m.(m-1).(m-2). ... .(m-p+1)] / p!</P>
+<P>que pode ser reescrito</P>
+<P class=eq>C(m,p)=[m.(m-1).(m-2)...(m-p+1)]/[(1.2.3.4....(p-1)p]</P>
+<P>Se multiplicarmos numerador e também o denominador desta fração por</P>
+<P class=eq><FONT color=red>(m-p)(m-p-1)(m-p-2)...3.2.1</FONT></P>
+<P>que é o mesmo que multiplicar por (m-p)!, o numerador da fração ficará:</P>
+<P class=eq>m.(m-1).(m-2).....(m-p+1)<FONT color=red>(m-p)(m-p-1)...3.2.1</FONT> 
+= m!</P>
+<P>e o denominador ficará:</P>
+<P class=eq>p! (m-p)!</P>
+<P>Assim, a expressão simplificada para a combinação de m elementos tomados p a 
+p, será uma das seguintes:</P>
+<P class=eq><IMG alt="" src="combinat_arquivos/zcomb.png"></P><BR><A 
+name=comb09></A><BR>
+<P class=tit>Número de arranjos com repetição</P>
+<P>Seja C um conjunto com m elementos distintos e considere p elementos 
+escolhidos neste conjunto em uma ordem determinada. Cada uma de tais escolhas é 
+denominada um arranjo com repetição de m elementos tomados p a p. Acontece que 
+existem m possibilidades para a colocação de cada elemento, logo, o número total 
+de arranjos com repetição de m elementos escolhidos p a p é dado por 
+m<SUP>p</SUP>. Indicamos isto por:</P>
+<P class=eq>A<SUB>rep</SUB>(m,p) = m<SUP>p</SUP></P><BR><A name=comb10></A><BR>
+<P class=tit>Número de permutações com repetição</P>
+<P>Consideremos 3 bolas vermelhas, 2 bolas azuis e 5 bolas amarelas. Coloque 
+estas bolas em uma ordem determinada. Iremos obter o número de permutações com 
+repetição dessas bolas. Tomemos 10 compartimentos numerados onde serão colocadas 
+as bolas. Primeiro coloque as 3 bolas vermelhas em 3 compartimentos, o que dá 
+C(10,3) possibilidades. Agora coloque as 2 bolas azuis nos compartimentos 
+restantes para obter C(10-3,2) possibilidades e finalmente coloque as 5 bolas 
+amarelas. As possibilidades são C(10-3-2,5).</P>
+<P>O número total de possibilidades pode ser calculado como:</P>
+<P class=eq><IMG alt="" src="combinat_arquivos/zcrep.png"></P>
+<P>Tal metodologia pode ser generalizada.</P><BR><A name=comb11></A><BR>
+<P class=tit>Número de combinações com repetição</P>
+<P>Considere m elementos distintos e ordenados. Escolha p elementos um após o 
+outro e ordene estes elementos na mesma ordem que os elementos dados. O 
+resultado é chamado uma combinação com repetição de m elementos tomados p a p. 
+Denotamos o número destas combinações por C<SUB>rep</SUB>(m,p). Aqui a taxa p 
+poderá ser maior do que o número m de elementos.</P>
+<P>Consideremos o conjunto A = (a,b,c,d,e) e p = 6. As coleções (a,a,b,d,d,d), 
+(b,b,b,c,d,e) e (c,c,c,c,c,c) são exemplos de combinações com repetição de 5 
+elementos escolhidos 6 a 6.</P>
+<P>Podemos representar tais combinações por meio de símbolos com pontos ¤ e 
+vazios Ø onde cada ponto ¤ é repetido (e colocado junto) tantas vezes quantas 
+vezes aparece uma escolha do mesmo tipo, enquanto o vazio Ø serve para separar 
+os objetos em função das suas diferenças</P><PRE>(a,a,b,d,d,d) equivale a ¤¤Ø¤ØØ¤¤¤Ø<BR>
+(b,b,b,c,d,e) equivale a Ø¤¤¤Ø¤Ø¤Ø¤<BR>
+(c,c,c,c,c,c) equivale a ØØ¤¤¤¤¤¤ØØ
+</PRE>
+<P>Cada símbolo possui 10 lugares com exatamente 6¤ e 4Ø. Para cada combinação 
+existe uma correspondência biunívoca com um símbolo e reciprocamente. Podemos 
+construir um símbolo pondo exatamente 6 pontos em 10 lugares. Após isto, os 
+espaços vazios são prenchidos com barras. Isto pode ser feito de C(10,6) modos. 
+Assim:</P>
+<P class=eq>C<SUB>rep</SUB>(5,6) = C(5+6-1,6)</P>
+<P>Generalizando isto, podemos mostrar que:</P>
+<P class=eq>C<SUB>rep</SUB>(m,p) = C(m+p-1,p)</P><BR><A name=comb12></A><A 
+name=Propriedades_das_combinacoes></A><BR>
+<P class=tit>Propriedades das combinações</P>
+<P>O segundo número, indicado logo acima por p é conhecido como a <I>taxa</I> 
+que define a quantidade de elementos de cada escolha.</P>
+<P><B class=b>Taxas complementares:</B> C(m,p)=C(m,m-p)</P>
+<P><B class=g>Exemplo:</B> C(12,10) = C(12,2)=66.</P><BR>
+<P><B class=b>Relação do triângulo de Pascal:</B>C(m,p)=C(m-1,p)+C(m-1,p-1)</P>
+<P><B class=g>Exemplo:</B> C(12,10)=C(11,10)+C(11,9)=605</P><BR><A 
+name=comb13></A><BR>
+<P class=tit>Número Binomial</P>
+<P>O número de combinações de m elementos tomados p a p, indicado antes por 
+C(m,p) é chamado Coeficiente Binomial ou número binomial, denotado na literatura 
+científica como:</P>
+<P class=eq><IMG alt="" src="combinat_arquivos/zcomb.png"></P><BR>
+<P><B class=g>Exemplo:</B> C(8,2)=28.</P><BR>
+<P><B class=g>Observação:</B> Existe uma importante extensão do conceito de 
+número binomial ao conjunto dos números reais e podemos calcular o número 
+binomial de qualquer número real r que seja diferente de um número inteiro 
+negativo, tomado a uma taxa inteira p, somente que, neste caso, não podemos mais 
+utilizar a notação de combinação C(m,p) pois esta somente tem sentido quando m e 
+p são números inteiros não negativos. Como Pi=3,1415926535..., então:</P>
+<P class=eq><IMG alt="" src="combinat_arquivos/zcpi.png"></P>
+<P>Tais cálculos são úteis em Probabilidade e Estatística.</P><BR><A 
+name=comb14></A><BR>
+<P class=tit>Teorema Binomial</P>
+<P>Se m é um número natural, para simplificar um pouco as notações, escreveremos 
+m<SUB>p</SUB> no lugar de C(m,p). Então:</P>
+<P class=eq>(a+b)<SUP>m</SUP> = 
+a<SUP>m</SUP>+m<SUB>1</SUB>a<SUP>m-1</SUP>b+m<SUB>2</SUB>a<SUP>m-2</SUP>b<SUP>2</SUP>+m<SUB>3</SUB>a<SUP>m-3</SUP>b<SUP>3</SUP>+...+m<SUB>m</SUB>b<SUP>m</SUP></P>
+<P>Alguns casos particulares com m=2, 3, 4 e 5, são:</P>
+<P class=l>(a+b)<SUP>2</SUP> = a<SUP>2</SUP> + 2ab + b<SUP>2</SUP></P>
+<P class=l>(a+b)<SUP>3</SUP> = a<SUP>3</SUP> + 3 a<SUP>2</SUP>b + 3 
+ab<SUP>2</SUP> + b<SUP>3</SUP></P>
+<P class=l>(a+b)<SUP>4</SUP> = a<SUP>4</SUP> + 4 a<SUP>3</SUP>b + 6 
+a<SUP>2</SUP>b<SUP>2</SUP> + 4 ab<SUP>3</SUP> + b<SUP>4</SUP></P>
+<P class=l>(a+b)<SUP>5</SUP> = a<SUP>5</SUP> + 5 a<SUP>4</SUP>b + 10 
+a<SUP>3</SUP>b<SUP>2</SUP> + 10 a<SUP>2</SUP>b<SUP>3</SUP> + 5 ab<SUP>4</SUP> + 
+b<SUP>5</SUP></P>
+<P>A demonstração segue pelo Princípio da Indução Matemática.</P>
+<P>Iremos considerar a Proposição P(m) de ordem m, dada por:</P>
+<P>P(m): 
+(a+b)<SUP>m</SUP>=a<SUP>m</SUP>+m<SUB>1</SUB>a<SUP>m-1</SUP>b+m<SUB>2</SUB>a<SUP>m-2</SUP>b<SUP>2</SUP>+m<SUB>3</SUB>a<SUP>m-3</SUP>b<SUP>3</SUP>+...+m<SUB>m</SUB>b<SUP>m</SUP></P>
+<P>P(1) é verdadeira pois (a+b)<SUP>1</SUP> = a + b</P>
+<P>Vamos considerar verdadeira a proposição P(k), com k&gt;1:</P>
+<P>P(k): 
+(a+b)<SUP>k</SUP>=a<SUP>k</SUP>+k<SUB>1</SUB>a<SUP>k-1</SUP>b+k<SUB>2</SUB>a<SUP>k-2</SUP>b<SUP>2</SUP>+k<SUB>3</SUB>a<SUP>k-3</SUP>b<SUP>3</SUP>+...+k<SUB>k</SUB>b<SUP>k</SUP></P>
+<P>para provar a propriedade P(k+1).</P>
+<P>Para que a proposição P(k+1) seja verdadeira, deveremos chegar à conclusão 
+que:</P>
+<P 
+class=c>(a+b)<SUP>k+1</SUP>=a<SUP>k+1</SUP>+(k+1)<SUB>1</SUB>a<SUP>k</SUP>b+(k+1)<SUB>2</SUB>a<SUP>k-1</SUP>b<SUP>2</SUP>+...+(k+1)<SUB>(k+1)</SUB>b<SUP>k+1</SUP></P>
+<TABLE align=center summary=t border=1>
+  <TBODY>
+  <TR>
+    <TD width=100><B>(a+b)<SUP>k+1</SUP>=</B></TD>
+    <TD><B>(a+b).(a+b)<SUP>k</SUP></B></TD></TR>
+  <TR>
+    <TD align=right>=</TD>
+    <TD><B>(a+b).[a<SUP>k</SUP>+k<SUB>1</SUB>a<SUP>k-1</SUP>b+k<SUB>2</SUB>a<SUP>k-2</SUP>b<SUP>2</SUP>+k<SUB>3</SUB>a<SUP>k-3</SUP>b<SUP>3</SUP>+...+k<SUB>k</SUB>b<SUP>k</SUP>]</B></TD></TR>
+  <TR>
+    <TD align=right>=</TD>
+    <TD><B>a.[a<SUP>k</SUP>+k<SUB>1</SUB>a<SUP>k-1</SUP>b+k<SUB>2</SUB>a<SUP>k-2</SUP> 
+      b<SUP>2</SUP>+k<SUB>3</SUB>a<SUP>k-3</SUP>b<SUP>3</SUP>+...+k<SUB>k</SUB>b<SUP>k</SUP>]<BR>+b.[a<SUP>k</SUP>+k<SUB>1</SUB>a<SUP>k-1</SUP>b+k<SUB>2</SUB>a<SUP>k-2</SUP>b<SUP>2</SUP>+k<SUB>3</SUB>a<SUP>k-3</SUP>b<SUP>3</SUP>+...+k<SUB>k</SUB> 
+      b<SUP>k</SUP>]</B></TD></TR>
+  <TR>
+    <TD align=right>=</TD>
+    <TD><B>a<SUP>k+1</SUP>+k<SUB>1</SUB>a<SUP>k</SUP>b+k<SUB>2</SUB>a<SUP>k-1</SUP>b<SUP>2</SUP>+k<SUB>3</SUB>a<SUP>k-2</SUP>b<SUP>3</SUP>+...+k<SUB>k</SUB>ab<SUP>k</SUP><BR>+a<SUP>k</SUP>b+k<SUB>1</SUB>a<SUP>k-1</SUP>b<SUP>2</SUP>+k<SUB>2</SUB>a<SUP>k-2</SUP> 
+      b<SUP>3</SUP>+k<SUB>3</SUB>a<SUP>k-3</SUP>b<SUP>4</SUP>+...+k<SUB>k</SUB>b<SUP>k+1</SUP></B></TD></TR>
+  <TR>
+    <TD align=right>=</TD>
+    <TD><B>a<SUP>k+1</SUP>+[k<SUB>1</SUB>+1]a<SUP>k</SUP>b+[k<SUB>2</SUB>+k<SUB>1</SUB>]a<SUP>k-1</SUP>b<SUP>2</SUP>+[k<SUB>3</SUB>+k<SUB>2</SUB>]a<SUP>k-2</SUP>b<SUP>3</SUP><BR>+[k<SUB>4</SUB>+k<SUB>3</SUB>] 
+      a<SUP>k-3</SUP>b<SUP>4</SUP>+...+[k<SUB>k-1</SUB>+k<SUB>k-2</SUB>]a<SUP>2</SUP>b<SUP>k-1</SUP>+[k<SUB>k</SUB>+k<SUB>k-1</SUB>]ab<SUP>k</SUP>+k<SUB>k</SUB>b<SUP>k+1</SUP></B></TD></TR>
+  <TR>
+    <TD align=right>=</TD>
+    <TD><B>a<SUP>k+1</SUP>+[k<SUB>1</SUB>+k<SUB>0</SUB>] 
+      a<SUP>k</SUP>b+[k<SUB>2</SUB>+k<SUB>1</SUB>]a<SUP>k-1</SUP>b<SUP>2</SUP>+[k<SUB>3</SUB>+k<SUB>2</SUB>]a<SUP>k-2</SUP>b<SUP>3</SUP><BR>+[k<SUB>4</SUB>+k<SUB>3</SUB>]a<SUP>k-3</SUP>b<SUP>4</SUP>+...+[k<SUB>k-1</SUB>+k<SUB>k-2</SUB>]a<SUP>2</SUP>b<SUP>k-1</SUP>+[k<SUB>k</SUB>+k<SUB>k-1</SUB>]ab<SUP>k</SUP>+k<SUB>k</SUB>b<SUP>k+1</SUP></B></TD></TR></TBODY></TABLE>
+<P>Pelas propriedades das combinações, temos:</P><PRE>k<SUB>1</SUB>+k<SUB>0</SUB> = C(k,1)+C(k,0) = C(k+1,1) = (k+1)<SUB>1</SUB>
+k<SUB>2</SUB>+k<SUB>1</SUB> = C(k,2)+C(k,1) = C(k+1,2) = (k+1)<SUB>2</SUB>
+k<SUB>3</SUB>+k<SUB>2</SUB> = C(k,3)+C(k,2) = C(k+1,3) = (k+1)<SUB>3</SUB>
+k<SUB>4</SUB>+k<SUB>3</SUB> = C(k,4)+C(k,3) = C(k+1,4) = (k+1)<SUB>4</SUB>
+... ... ... ...
+k<SUB>k-1</SUB>+k<SUB>k-2</SUB>=C(k,k-1)+C(k,k-2)=C(k+1,k-1)=(k+1)<SUB>k-1</SUB>
+k<SUB>k</SUB>+k<SUB>k-1</SUB>=C(k,k)+C(k,k-1)=C(k+1,k)=(k+1)<SUB>k</SUB>
+</PRE>
+<P>E assim podemos escrever:</P>
+<TABLE cellSpacing=1 cellPadding=1 align=center bgColor=white summary=t 
+border=1>
+  <TBODY>
+  <TR>
+    <TD width=100><B>(a+b)<SUP>k+1</SUP>=</B></TD>
+    <TD><B>a<SUP>k+1</SUP>+ (k+1)<SUB>1</SUB>a<SUP>k</SUP>b + 
+      (k+1)<SUB>2</SUB>a<SUP>k-1</SUP>b<SUP>2</SUP> + 
+      (k+1)<SUB>3</SUB>a<SUP>k-2</SUP>b<SUP>3</SUP><BR>+(k+1)<SUB>4</SUB>a<SUP>k-3</SUP>b<SUP>4</SUP> 
+      +...+ (k+1)<SUB>k-1</SUB>a<SUP>2</SUP>b<SUP>k-1</SUP> + 
+      (k+1)<SUB>k</SUB>ab<SUP>k</SUP> + 
+  k<SUB>k</SUB>b<SUP>k+1</SUP></B></TD></TR></TBODY></TABLE>
+<P>que é o resultado desejado.</P><BR>
+<HR color=red noShade SIZE=3>
+
+<P class=c>Construída por Ulysses Sodré<BR>
+<SCRIPT src="combinat_arquivos/atualp.js" type=text/javascript>
+</SCRIPT>
+</P>
+<HR color=red noShade SIZE=3>
+<!-- ZoneLabs Popup Blocking Insertion -->
+<SCRIPT language=javascript>postamble();</SCRIPT>
+</BASEFONT></BODY></HTML>

@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0066)http://pessoal.sercomtel.com.br/matematica/medio/206/matriz3x3.htm -->
+<HTML><HEAD><TITLE>Matematica Essencial: Medio: Elementos de uma matriz 3x3</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><!-- ZoneLabs Privacy Insertion -->
+<SCRIPT language=javascript src="matriz3x3_arquivos/js"></SCRIPT>
+<LINK href="matriz3x3_arquivos/206.css" type=text/css rel=stylesheet>
+<SCRIPT language=JavaScript type=text/javascript>
+function testa_entrada(form,button) {CalcElem(form); return;}
+function CalcElem(form)
+{
+var a11=parseFloat(form.entrada01.value);
+var a12=parseFloat(form.entrada02.value);
+var a13=parseFloat(form.entrada03.value);
+var a21=parseFloat(form.entrada04.value);
+var a22=parseFloat(form.entrada05.value);
+var a23=parseFloat(form.entrada06.value);
+var a31=parseFloat(form.entrada07.value);
+var a32=parseFloat(form.entrada08.value);
+var a33=parseFloat(form.entrada09.value);
+det = a11*a22*a33+a13*a21*a32+a12*a23*a31-a13*a22*a31-a11*a23*a32-a12*a21*a33;
+if (det == 0) {alert("Determinante nulo. A matriz deve ter determinante diferente de zero para ter inversa."); return;}
+// determinante
+form.saida01.value=det;
+// tra&ccedil;o
+form.saida02.value=a11+a22+a33;
+// transposta
+form.saida03.value=a11;
+form.saida04.value=a21;
+form.saida05.value=a31;
+form.saida06.value=a12;
+form.saida07.value=a22;
+form.saida08.value=a32;
+form.saida09.value=a13;
+form.saida10.value=a23;
+form.saida11.value=a33;
+// cofatora
+form.saida12.value=a22*a33-a23*a32;
+form.saida13.value=a21*a31-a21*a33;
+form.saida14.value=a21*a32-a22*a31;
+form.saida15.value=a13*a32-a12*a33;
+form.saida16.value=a11*a33-a13*a31;
+form.saida17.value=a12*a31-a11*a32;
+form.saida18.value=a12*a23-a13*a22;
+form.saida19.value=a13*a21-a11*a23;
+form.saida20.value=a11*a22-a12*a21;
+// adjunta
+form.saida21.value=a22*a33-a23*a32;
+form.saida22.value=a13*a32-a12*a33;
+form.saida23.value=a12*a23-a13*a22;
+form.saida24.value=a31*a23-a21*a33;
+form.saida25.value=a11*a33-a31*a13;
+form.saida26.value=a13*a21-a11*a23;
+form.saida27.value=a21*a32-a22*a31;
+form.saida28.value=a12*a31-a11*a32;
+form.saida29.value=a11*a22-a12*a21;
+// inversa
+form.saida30.value=(a22*a33-a23*a32)/det;
+form.saida31.value=(a32*a13-a12*a33)/det;
+form.saida32.value=(a12*a23-a13*a22)/det;
+form.saida33.value=(a31*a23-a21*a33)/det;
+form.saida34.value=(a11*a33-a31*a13)/det;
+form.saida35.value=(a21*a13-a11*a23)/det;
+form.saida36.value=(a21*a32-a22*a31)/det;
+form.saida37.value=(a12*a31-a11*a32)/det;
+form.saida38.value=(a11*a22-a12*a21)/det;
+}
+function Ajuda(){
+var temp="width=640,height=360,left=50,top=50,resizable=yes,directories=no,toolbar=no,scrollbars=yes,menubar=no"
+temp=open("","detalhes",temp).document
+temp.write("<html>"
++ "<head><title>Matematica Essencial: Ajuda para os elementos de uma matriz 3x3<\/title>"
++ "<style type='text/css'><!--"
++ "p{font-family:Verdana,Arial,Helvetica;font-size:14.4pt;font-weight:demibold;font-style:normal;margin-top:0.3em;margin-bottom:.3em;margin-left:0em;margin-right:.1em;text-align:justify;}"
++ "p.c{color:red;font-family:Verdana,Arial,Helvetica;font-size:16pt;font-weight:bold;font-style:normal;margin-top:0.3em;margin-bottom:.3em;margin-left:0em;margin-right:.1em;text-align:center;}"
++ "b.b{color:#00f;font-size:14.4pt;font-family:Arial,Helvetica;font-weight:demibold;}"
++ "sub,sup{font-size:11pt;font-family:Verdana,Arial,Helvetica;font-weight:bold;}"
++ "--><\/style>"
++ "<\/head>"
++ "<body bgcolor=beige text=black>"
++ "<p class=c>Ajuda sobre os elementos de uma matriz 3x3<\/p>"
++ "<p><b class=b>Diagonal principal:<\/b> Formada pelos elementos a11, a22 e a33.<\/p>"
++ "<p><b class=b>Diagonal secund&aacute;ria:<\/b> Formada pelos elementos a13, a22 e a31.<\/p>"
++ "<p><b class=b>Tra&ccedil;o:<\/b> Soma dos elementos da diagonal principal.<\/p>"
++ "<p><b class=b>Nota&ccedil;&atilde;o=1.4E-7:<\/b> = 1.4x10<sup>-7<\/sup> = 0.0000014.<\/p>"
++ "<p><b class=b>NaN:<\/b> Not a Number. Aparece quando tentamos inverter uma matriz cujo determinante &eacute; igual a zero.<\/p>"
++ "<center><form><input type='button' value='Fechar esta ajuda' onclick='self.close()'><\/form><\/center>"
++ "<\/body><\/html>");
+}
+</SCRIPT>
+
+<META content="MSHTML 6.00.2800.1170" name=GENERATOR></HEAD>
+<BODY><BASEFONT face=Verdana,Arial,Helvetica size=4>
+<TABLE borderColor=black cellSpacing=0 cellPadding=0 width="96%" align=center 
+bgColor=white summary=tab border=1>
+  <TBODY>
+  <TR>
+    <TH class=tab width="50%" bgColor=darkblue><FONT color=white>Matemática 
+      Essencial</FONT></TH>
+    <TH><FONT color=darkblue>Ensino Médio</FONT></TH></TR>
+  <TR>
+    <TH width="50%" colSpan=2><FONT color=red>Elementos de uma matriz 
+      3x3</FONT></TH></TR></TBODY></TABLE>
+<FORM>
+<P>Para obter elementos da matriz 3x3 (verde), entre com os 9 valores e 
+pressione o botão apropriado. Aproveite os dados inseridos para novas 
+simulações.</P>
+<TABLE cellSpacing=0 cellPadding=0 align=center bgColor=lightgreen summary=t 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>a<SUB>11</SUB> <INPUT size=7 name=entrada01></TH>
+    <TH>a<SUB>12</SUB> <INPUT size=7 name=entrada02></TH>
+    <TH>a<SUB>13</SUB> <INPUT size=7 name=entrada03></TH></TR>
+  <TR>
+    <TH>a<SUB>21</SUB> <INPUT size=7 name=entrada04></TH>
+    <TH>a<SUB>22</SUB> <INPUT size=7 name=entrada05></TH>
+    <TH>a<SUB>23</SUB> <INPUT size=7 name=entrada06></TH></TR>
+  <TR>
+    <TH>a<SUB>31</SUB> <INPUT size=7 name=entrada07></TH>
+    <TH>a<SUB>32</SUB> <INPUT size=7 name=entrada08></TH>
+    <TH>a<SUB>33</SUB> <INPUT size=7 name=entrada09></TH></TR>
+  <TR>
+    <TH colSpan=3><INPUT onclick=testa_entrada(this.form,this) type=button value="Elementos da matriz"><INPUT onclick=Ajuda() type=button value=Ajuda><INPUT type=reset value="Limpar os dados"></TH></TR></TBODY></TABLE><BR>
+<TABLE cellSpacing=0 cellPadding=0 align=center bgColor=gold summary=t 
+  border=1><TBODY>
+  <TR>
+    <TH colSpan=4>Elementos calculados da matriz 3x3</TH></TR>
+  <TR>
+    <TH>Determinante</TH>
+    <TH><INPUT size=7 name=saida01></TH>
+    <TH>Traço</TH>
+    <TH><INPUT size=7 name=saida02></TH></TR>
+  <TR>
+    <TH rowSpan=3>Transposta</TH>
+    <TH><INPUT size=7 name=saida03></TH>
+    <TH><INPUT size=7 name=saida04></TH>
+    <TH><INPUT size=7 name=saida05></TH></TR>
+  <TR>
+    <TH><INPUT size=7 name=saida06></TH>
+    <TH><INPUT size=7 name=saida07></TH>
+    <TH><INPUT size=7 name=saida08></TH></TR>
+  <TR>
+    <TH><INPUT size=7 name=saida09></TH>
+    <TH><INPUT size=7 name=saida10></TH>
+    <TH><INPUT size=7 name=saida11></TH></TR>
+  <TR>
+    <TH rowSpan=3>Cofatora</TH>
+    <TH><INPUT size=7 name=saida12></TH>
+    <TH><INPUT size=7 name=saida13></TH>
+    <TH><INPUT size=7 name=saida14></TH></TR>
+  <TR>
+    <TH><INPUT size=7 name=saida15></TH>
+    <TH><INPUT size=7 name=saida16></TH>
+    <TH><INPUT size=7 name=saida17></TH></TR>
+  <TR>
+    <TH><INPUT size=7 name=saida18></TH>
+    <TH><INPUT size=7 name=saida19></TH>
+    <TH><INPUT size=7 name=saida20></TH></TR>
+  <TR>
+    <TH rowSpan=3>Adjunta</TH>
+    <TH><INPUT size=7 name=saida21></TH>
+    <TH><INPUT size=7 name=saida22></TH>
+    <TH><INPUT size=7 name=saida23></TH></TR>
+  <TR>
+    <TH><INPUT size=7 name=saida24></TH>
+    <TH><INPUT size=7 name=saida25></TH>
+    <TH><INPUT size=7 name=saida26></TH></TR>
+  <TR>
+    <TH><INPUT size=7 name=saida27></TH>
+    <TH><INPUT size=7 name=saida28></TH>
+    <TH><INPUT size=7 name=saida29></TH></TR>
+  <TR>
+    <TH rowSpan=3>Inversa</TH>
+    <TH><INPUT size=7 name=saida30></TH>
+    <TH><INPUT size=7 name=saida31></TH>
+    <TH><INPUT size=7 name=saida32></TH></TR>
+  <TR>
+    <TH><INPUT size=7 name=saida33></TH>
+    <TH><INPUT size=7 name=saida34></TH>
+    <TH><INPUT size=7 name=saida35></TH></TR>
+  <TR>
+    <TH><INPUT size=7 name=saida36></TH>
+    <TH><INPUT size=7 name=saida37></TH>
+    <TH><INPUT size=7 name=saida38></TH></TR></TBODY></TABLE></FORM>
+<HR color=red noShade SIZE=3>
+
+<P class=c>Construída por Ulysses Sodré<BR>
+<SCRIPT src="matriz3x3_arquivos/atualp.js" type=text/javascript>
+</SCRIPT>
+</P>
+<HR color=red noShade SIZE=3>
+<!-- ZoneLabs Popup Blocking Insertion -->
+<SCRIPT language=javascript>postamble();</SCRIPT>
+</BASEFONT></BODY></HTML>

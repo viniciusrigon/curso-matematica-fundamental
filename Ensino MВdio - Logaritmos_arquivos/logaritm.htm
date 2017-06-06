@@ -1,0 +1,431 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0065)http://pessoal.sercomtel.com.br/matematica/medio/203/logaritm.htm -->
+<HTML><HEAD><TITLE>Matematica Essencial: Medio: Logaritmos</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><!-- ZoneLabs Privacy Insertion -->
+<SCRIPT language=javascript src="logaritm_arquivos/js"></SCRIPT>
+<LINK href="logaritm_arquivos/203.css" type=text/css rel=stylesheet>
+<SCRIPT language=JavaScript type=text/javascript>
+function testa_entrada(form, button)
+   {calcula_logaritmo(form); return;}
+function calcula_logaritmo(form)
+   {
+   if(form.entrada1.value=="" || form.entrada1.value==" " || form.entrada1.value=="0")
+      { alert("Entre com um numero real positivo!"); return; }
+   var c=Math.LOG10E * Math.log(parseFloat(form.entrada1.value));
+   { form.saida1.value=c; }
+   return;
+   }
+</SCRIPT>
+
+<META content="MSHTML 6.00.2800.1170" name=GENERATOR></HEAD>
+<BODY><BASEFONT face=Verdana,Arial,Helvetica size=4>
+<TABLE borderColor=black cellSpacing=0 cellPadding=0 width="98%" align=center 
+bgColor=white summary="Matematica Essencial, Exercicios de Relacoes e Funcoes" 
+border=1>
+  <TBODY>
+  <TR>
+    <TH class=tab width="50%" bgColor=darkblue><FONT color=white>Matemática 
+      Essencial</FONT></TH>
+    <TH class=tab width="50%"><FONT color=darkblue>Ensino Médio</FONT></TH></TR>
+  <TR>
+    <TH class=tab colSpan=2><FONT color=red>Logaritmos</FONT></TH></TR>
+  <TR>
+    <TD vAlign=center width="50%" bgColor=white>
+      <UL type=square>
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/203/logaritm.htm#log01"><B>A 
+        hipérbole equilátera</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/203/logaritm.htm#log02"><B>Definição 
+        de Logaritmo</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/203/logaritm.htm#log03"><B>Propriedades 
+        gerais</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/203/logaritm.htm#log04"><B>Simplificações 
+        matemáticas</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/203/logaritm.htm#log05"><B>Base 
+        para um logaritmo</B></A></LI></UL></TD>
+    <TD vAlign=center width="50%" bgColor=white>
+      <UL type=square>
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/203/logaritm.htm#log06"><B>Logaritmo 
+        decimal</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/203/logaritm.htm#log07"><B>Definição 
+        estranha de logaritmo</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/203/logaritm.htm#log08"><B>Cálculo 
+        de logaritmos</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/203/logaritm.htm#log09"><B>Característica 
+        e mantissa</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/203/logaritm.htm#log10"><B>Tábua 
+        logaritmos on-line</B></A> </LI></UL></TD></TR></TBODY></TABLE><BR><A 
+name=log01></A><BR>
+<P class=tit>A hipérbole equilátera</P>
+<P><IMG alt="" hspace=5 src="logaritm_arquivos/zlog01.png" align=right vspace=5 
+border=1> Seja a função real f(x)=1/x definida para todo x diferente de zero. O 
+gráfico desta função é a curva plana denominada hipérbole equilátera, sendo que 
+um ramo da hipérbole está no primeiro quadrante e o outro está localizado no 
+terceiro quadrante. Esta curva tem importantes aplicações em Ótica e construções 
+de óculos, lentes, telescópios, estudos de química, estudos em economia, 
+etc.</P><BR clear=all><A name=log02></A><BR>
+<P class=tit>Definição de Logaritmo</P>
+<P><IMG alt="" hspace=5 src="logaritm_arquivos/zlog02.png" align=right vspace=5 
+border=1> O logaritmo natural (ou neperiano) de u, muitas vezes, denotado por 
+Ln(u), pode ser definido do ponto de vista geométrico, como a área da região 
+plana localizada sob o gráfico da curva y=1/x, acima do eixo y=0, entre as retas 
+x=1 e x=u, que está no desenho colorido de vermelho. A área em vermelho 
+representa o logaritmo natural de u, denotado por Ln(u).</P>
+<P>Em função do gráfico, em anexo, usaremos a definição:</P>
+<P class=eq>Ln(u) = área(1,u)</P>
+<P>Se u&gt;1, a região possuirá uma área bem definida, mas tomando u=1, a região 
+se reduzirá a uma linha vertical (que não posssui área ou seja, possui área 
+nula) e neste caso tomaremos Ln(1)=área(1,1). Assim:</P>
+<P class=eq>Ln(1) = 0</P>
+<P>Quando aumentamos os valores de u, esta função também aumenta os seus 
+valores, o que significa que esta função é crescente para valores de u&gt;0.</P>
+<P>O conceito de Integral de uma função real, normalmente estudado na disciplina 
+Cálculo Diferencial e Integral, justifica a forma como apresentamos o Logaritmo 
+natural de um número real.</P><BR><A name=log03></A><BR>
+<P class=tit>Propriedades gerais dos logaritmos</P>
+<P>Com o uso deste conceito fundamental da Matemática, é possível demonstrar 
+várias propriedades dos Logaritmos naturais (o que não será feito aqui), para 
+números reais positivos x e y e para qualquer número real k, desde que tenham 
+sentido as expressões matemáticas:</P>
+<P><B class=b>Propriedades dos logaritmos naturais</B></P>
+<OL>
+  <LI>
+  <P>Ln(1) = 0</P>
+  <LI>
+  <P>Ln(x·y) = Ln(x) + Ln(y)</P>
+  <LI>
+  <P>Ln(x<SUP>k</SUP>) = k Ln(x)</P>
+  <LI>
+  <P>Ln(x/y ) = Ln(x) - Ln(y)</P></LI></OL><BR><A name=log04></A><BR>
+<P class=tit>Algumas simplificações matemáticas</P>
+<P>As propriedades dos Logaritmos podem ser usadas para simplificar expressões 
+matemáticas.</P>
+<P><B class=g>Exemplos:</B></P>
+<OL>
+  <LI>
+  <P 
+class=l>Ln(5)+4.Ln(3)=Ln(5)+Ln(3<SUP>4</SUP>=Ln(5.3<SUP>4</SUP>)=Ln(405)</P>
+  <LI>
+  <P 
+  class=l>(1/2)Ln(4t<SUP>2</SUP>)-Ln(t)=Ln[(4t<SUP>2</SUP>)<SUP>½</SUP>]-Ln(t)=Ln(2), 
+  se t&gt;0</P>
+  <LI>
+  <P class=l>Ln(a)+L(b)-Ln(c)+Ln(10)=Ln(10a.b/c)</P></LI></OL>
+<P><B class=g>Exercício:</B> Qual dos números é o menor: 2 Ln(3) ou 3 Ln(2)? 
+Observa-se que:</P>
+<P class=eq>2 Ln(3) = Ln(3<SUP>2</SUP>) = Ln(9)<BR>3 Ln(2) = Ln(2<SUP>3</SUP>) = 
+Ln(8)</P>
+<P>e como a função Ln é crescente, então:</P>
+<P class=eq>3 Ln(2) = Ln(8) &lt; Ln(9) = 2 Ln(3)</P><BR><A name=log05></A><BR>
+<P class=tit>Base para um logaritmo</P>
+<P>Existe um importante número real e=2,71828... (atribuído a Euler) tal que</P>
+<P class=eq>Ln(e) = 1</P>
+<P>A partir da observação anterior, o número <B>e</B> representa a base para os 
+logaritmos naturais e poderemos escrever:</P>
+<P class=eq>Ln(u) = Log<SUB>e</SUB>(u)</P>
+<P>que lemos como "logaritmo do número real u na base e".</P>
+<P>Tendo em vista o exposto acima, temos uma propriedade que possibilita a 
+mudança logarítmica de uma base positiva para outra base positiva, sendo que 
+ambas devem ser diferentes de 1.</P>
+<P class=eq>Log<SUB>a</SUB>(b) = Ln(b) / Ln(a)</P>
+<P><B class=g>Exercício:</B> Você saberia a razão pela qual não é possível 
+definir logaritmo de um número na base 1?</P><BR><A name=log06></A><BR>
+<P class=tit>Logaritmo decimal</P>
+<P>No âmbito do Ensino Médio, usa-se bastante a base 10, uma vez que neste 
+ambiente a base decimal recebe as preferências para o trabalho com o nosso 
+sistema de numeração, mas devemos observar que em contextos mais avançados, a 
+base decimal tem pouca utilidade. Quando escrevermos <I>Log</I> a partir daqui 
+neste trabalho, entenderemos o Logaritmo na base decimal e escrevemos:</P>
+<P class=eq>y = Log(x)</P>
+<P>para entender que y é o Logaritmo de x na base 10 e nesta base 10, temos 
+algumas características interessantes com os logaritmos das potências de 10</P>
+<UL type=square>
+  <LI>
+  <P>Log(1)= 0</P>
+  <LI>
+  <P>Log(0) não existe</P>
+  <LI>
+  <P>Log(10) = Log(10<SUP>1</SUP>) = 1</P>
+  <LI>
+  <P>Log(1/10) = Log(10<SUP>-1</SUP>) = -1</P>
+  <LI>
+  <P>Log(100) = Log(10<SUP>2</SUP>) = 2</P>
+  <LI>
+  <P>Log(1/100) = Log(10<SUP>-2</SUP>) = -2</P>
+  <LI>
+  <P>Log(1000) = Log(10<SUP>3</SUP>) = 3</P>
+  <LI>
+  <P>Log(1/1000) = Log(10<SUP>-3</SUP>) = -3</P>
+  <LI>
+  <P>Log(10<SUP>n</SUP>) = n</P>
+  <LI>
+  <P>Log(10<SUP>-n</SUP>)= -n</P></LI></UL>
+<P>A partir da propriedade</P>
+<P class=eq>Log 10<SUP>n</SUP> = n</P>
+<P>temos que o Logaritmo de 10<SUP>n</SUP> na base 10 é o expoente n, o que nos 
+faz pensar que para todo x real positivo vale a relação:</P>
+<P class=eq>Log(10<SUP>x</SUP>) = x</P><BR><A name=log07></A><BR>
+<P class=tit>Definição estranha de logaritmo</P>
+<P>A última expressão mostrada acima é correta e existe uma outra relação muito 
+mais geral do que esta, pois o Logaritmo de um número real positivo x na base b 
+é igual ao número e se, e somente se, x pode ser escrito como a potência b 
+elevada ao expoente e, isto é:</P>
+<P class=eq>Log<SUB>b</SUB>(x) = e&nbsp;&nbsp; se, e somente se,&nbsp;&nbsp; x = 
+b<SUP>e</SUP></P>
+<P>Em livros elementares, esta é tomada como a definição de Logaritmo de um 
+número em uma certa base, o que é estranho pois tal definição é cíclica:</P>
+<UL type=square>
+  <LI>
+  <P class=l>Define-se o logarítmo em função da exponencial;</P>
+  <LI>
+  <P class=l>Define-se a exponencial em função do logaritmo.</P></LI></UL><BR><A 
+name=log08></A><BR>
+<P class=tit>Cálculos de logaritmos de alguns números</P>
+<P>Com a definição estranha é possível obter o um valor aproximado para o 
+Log(2). Consideremos que y=Log(2) e 10<SUP>y</SUP>=2. Inicialmente, temos que 
+Log(2) é positivo e menor do que 1, pois 1&lt;2&lt;10 assim</P>
+<P class=eq>0 &lt; Log(2) &lt; 1</P>
+<P>É interessante obter dois números que sejam potências de 2 e que estejam 
+muito próximos de potências de 10.</P>
+<P>Por exemplo:</P>
+<P class=eq>1000&lt;1024=2<SUP>10</SUP><BR>8192=2<SUP>13</SUP>&lt;10000,</P>
+<P>logo:</P>
+<P class=eq>1000 &lt; 1024 &lt; 8192 &lt;10000</P>
+<P>assim, aplicando o logaritmo de base 10, teremos:</P>
+<P class=eq>3 &lt; 10 Log(2) &lt; 13 Log(2) &lt; 4</P>
+<P>então</P>
+<P class=eq>0,300=3/10 &lt; Log(2) &lt; 4/13=0,308</P>
+<P>e a média aritmética entre 0,300 e 0,308 é 0,304, que é uma boa estimativa 
+para Log(2), isto é:</P>
+<P class=eq>Log(2) = 0,304</P>
+<P>O ideal é encontrar outras potências de 10 que estejam próximas de potências 
+de 2, o que não é fácil para alguém que não tenha uma calculadora que opere com 
+muitos decimais, o que pode ser visualizado através da tabela mostrando algumas 
+de tais potências:</P>
+<TABLE height=1 cellSpacing=1 cellPadding=1 align=center bgColor=white summary=t 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>Intervalo</TH>
+    <TH>Valores</TH>
+    <TH>Média</TH></TR>
+  <TR>
+    <TH>1 &lt; 2 &lt;10</TH>
+    <TH>0 &lt; Log(2) &lt; 1</TH>
+    <TH>0,500</TH></TR>
+  <TR>
+    <TH>1&lt;2<SUP>2</SUP>&lt;10</TH>
+    <TH>0 &lt; Log(2) &lt; 1/2</TH>
+    <TH>0,250</TH></TR>
+  <TR>
+    <TH>10&lt;2<SUP>4</SUP>&lt;10<SUP>2</SUP></TH>
+    <TH>1/4 &lt; Log(2) &lt; 2/4</TH>
+    <TH>0,375</TH></TR>
+  <TR>
+    <TH>10&lt;2<SUP>5</SUP>&lt;10<SUP>2</SUP></TH>
+    <TH>1/5 &lt; Log(2) &lt; 2/5</TH>
+    <TH>0,300</TH></TR>
+  <TR>
+    <TH>10&lt;2<SUP>6</SUP>&lt;10<SUP>2</SUP></TH>
+    <TH>1/6 &lt; Log(2) &lt; 2/6</TH>
+    <TH>0,250</TH></TR>
+  <TR>
+    <TH>10<SUP>2</SUP>&lt;2<SUP>8</SUP>&lt;10<SUP>3</SUP></TH>
+    <TH>2/8 &lt; Log(2) &lt; 3/8</TH>
+    <TH>0,313</TH></TR>
+  <TR>
+    <TH>10<SUP>3</SUP>&lt;2<SUP>10</SUP>&lt;10<SUP>4</SUP></TH>
+    <TH>3/10 &lt; Log(2) &lt; 4/10</TH>
+    <TH>0,350</TH></TR>
+  <TR>
+    <TH>10<SUP>3</SUP>&lt;2<SUP>11</SUP>&lt;10<SUP>4</SUP></TH>
+    <TH>3/11 &lt; Log(2) &lt; 4/11</TH>
+    <TH>0,318</TH></TR>
+  <TR>
+    <TH>10<SUP>3</SUP>&lt;2<SUP>12</SUP>&lt;10<SUP>4</SUP></TH>
+    <TH>3/12 &lt; Log(2) &lt; 4/12</TH>
+    <TH>0,292</TH></TR>
+  <TR>
+    <TH>10<SUP>3</SUP>&lt;2<SUP>13</SUP>&lt;10<SUP>4</SUP></TH>
+    <TH>3/13 &lt; Log(2) &lt; 4/13</TH>
+    <TH>0,269</TH></TR>
+  <TR>
+    <TH>10<SUP>4</SUP>&lt;2<SUP>14</SUP>&lt;10<SUP>5</SUP></TH>
+    <TH>4/14 &lt; Log(2) &lt; 5/14</TH>
+    <TH>0,321</TH></TR>
+  <TR>
+    <TH>10<SUP>4</SUP>&lt;2<SUP>15</SUP>&lt;10<SUP>5</SUP></TH>
+    <TH>4/15 &lt; Log(2) &lt; 5/15</TH>
+    <TH>0,300</TH></TR>
+  <TR>
+    <TH>10<SUP>4</SUP>&lt;2<SUP>16</SUP>&lt;10<SUP>5</SUP></TH>
+    <TH>4/16 &lt; Log(2) &lt; 5/16</TH>
+    <TH>0,282</TH></TR>
+  <TR>
+    <TH>10<SUP>5</SUP>&lt;2<SUP>17</SUP>&lt;10<SUP>6</SUP></TH>
+    <TH>5/17 &lt; Log(2) &lt; 6/17</TH>
+    <TH>0,393</TH></TR>
+  <TR>
+    <TH>10<SUP>5</SUP>&lt;2<SUP>18</SUP>&lt;10<SUP>6</SUP></TH>
+    <TH>5/18 &lt; Log(2) &lt; 6/18</TH>
+    <TH>0,306</TH></TR>
+  <TR>
+    <TH>10<SUP>5</SUP>&lt;2<SUP>19</SUP>&lt;10<SUP>6</SUP></TH>
+    <TH>5/19 &lt; Log(2) &lt; 6/19</TH>
+    <TH>0,289</TH></TR>
+  <TR>
+    <TH>10<SUP>6</SUP>&lt;2<SUP>20</SUP>&lt;10<SUP>7</SUP></TH>
+    <TH>6/20 &lt; Log(2) &lt; 7/20</TH>
+    <TH>0,325</TH></TR></TBODY></TABLE><BR>
+<P>Em Cálculo Diferencial e Integral, podemos desenvolver a função Ln através de 
+uma série de potências de x para calcular logaritmos de números reais positivos 
+com -1&lt;x&lt;1.</P>
+<P class=eq>Ln(1+x) = x - (1/2) x<SUP>2</SUP> + (1/3) x<SUP>3</SUP> - (1/4) 
+x<SUP>4</SUP> + (1/5) x<SUP>5</SUP> + ...</P>
+<P>Uma outra série mais eficiente, permite obter o valor de Ln(y) para qualquer 
+y real desde que se saiba o valor de x para o qual y=(1+x)/(1-x).</P>
+<P class=eq>Ln(y) = 2 [ x + (1/3) x<SUP>3</SUP> + (1/5) x<SUP>5</SUP> + (1/7) 
+x<SUP>7</SUP> + ... ]</P>
+<P>Por exemplo, para obter Ln(3), tomamos y=3 e deveremos ter x=1/2 para 
+satisfazer à relação y=(1+x)/(1-x).</P>
+<P>Voltando ao estudo básico, Log(2)=0,3010299956639812... e com este valor, 
+podemos obter os logaritmos das potências de 2, como por exemplo:</P>
+<UL type=square>
+  <LI>
+  <P class=l>Log(4)=Log(2<SUP>2</SUP>)=2Log(2)=0,60206</P>
+  <LI>
+  <P class=l>Log(8)=Log(2<SUP>3</SUP>)=3Log(2)=0,90309</P>
+  <LI>
+  <P class=l>Log(16)=Log(2<SUP>4</SUP>)=4Log(2)=1,20412</P>
+  <LI>
+  <P class=l>Log(32)=Log(2<SUP>5</SUP>)=5Log(2)=1,50515</P>
+  <LI>
+  <P class=l>Log(2<SUP>n</SUP>) = n Log(2)</P>
+  <LI>
+  <P class=l>Log(1/2)=Log(2<SUP>-1</SUP>)=(-1) Log(2)=-0,30103</P>
+  <LI>
+  <P class=l>Log(1/4)=Log(2<SUP>-2</SUP>)=(-2) Log(2)=-0,60206</P>
+  <LI>
+  <P class=l>Log(1/8)=Log(2<SUP>-3</SUP>)=(-3) Log(2)=-0,90309</P>
+  <LI>
+  <P class=l>Log(1/16)=Log(2<SUP>-4</SUP>)=(-4) Log(2)=-1,20412</P>
+  <LI>
+  <P class=l>Log(1/32)=Log(2<SUP>-5</SUP>)=(-5) Log(2)=-1,50515</P>
+  <LI>
+  <P class=l>Log(2<SUP>-n</SUP>) = (-n) Log(2)</P></LI></UL>
+<P>Temos também que Log(3)=0,47712, o que nos permite realizar uma grande 
+quantidade de cálculos com logaritmos.</P>
+<P>Com Log(2) e Log3, não é possível calcular os logaritmos dos números primos 
+maiores do que 5, mas é possível obter uma grande quantidade de logaritmos de 
+números naturais.</P>
+<P><B class=g>Exemplo:</B> Usaremos Log(2)=0,301 e Log(3)=0,477, para calcular 
+alguns logaritmos.</P>
+<OL>
+  <LI>
+  <P class=l>Log(5)=Log(10/2)=Log(10)-Log(2)=1-0,301=0,699</P>
+  <LI>
+  <P class=l>Log(6)=Log(2.3)=Log(2)+Log(3)=0,301+0,477=0,778</P>
+  <LI>
+  <P class=l>Log(8)=Log(2<SUP>3</SUP>)=3 Log(2)=0,903</P>
+  <LI>
+  <P class=l>Log(9)=Log(3<SUP>2</SUP>)=2 Log(3)=0,954</P></LI></OL>
+<P>Uma estimativa razoável para Log(7)=0,8451 pode ser obtida com a média 
+aritmética entre Log(6) e Log(8), isto é:</P>
+<P class=eq>Log(7) = 0,840</P><BR><A name=log09></A><BR>
+<P class=tit>Característica e mantissa de um logaritmo</P>
+<P>Se um número está entre duas potências consecutivas de 10, o expoente da 
+menor delas é a <I>característica</I> do logaritmo deste número e a diferença 
+entre o logaritmo do número e a característica é a <I>mantissa</I> que é a parte 
+decimal do logaritmo.</P>
+<P class=c><IMG alt="" hspace=5 src="logaritm_arquivos/zlog03.png" border=1></P>
+<P><B class=g>Observação:</B> Na tabela abaixo aparece o sinal negativo para o 
+logaritmo apenas para o número que está antes da vírgula.</P>
+<TABLE cellSpacing=0 cellPadding=0 align=center bgColor=white summary=t 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>Número</TH>
+    <TH>Logaritmo</TH>
+    <TH>Característica</TH>
+    <TH>Mantissa</TH></TR>
+  <TR>
+    <TH>0,002</TH>
+    <TH>¯3,30103</TH>
+    <TH>-3</TH>
+    <TH>0,30103</TH></TR>
+  <TR>
+    <TH>0,02</TH>
+    <TH>¯2,30103</TH>
+    <TH>-2</TH>
+    <TH>0,30103</TH></TR>
+  <TR>
+    <TH>0,2</TH>
+    <TH>¯1,30103</TH>
+    <TH>-1</TH>
+    <TH>0,30103</TH></TR>
+  <TR>
+    <TH>2</TH>
+    <TH>&nbsp;0,30103</TH>
+    <TH>0</TH>
+    <TH>0,30103</TH></TR>
+  <TR>
+    <TH>20</TH>
+    <TH>&nbsp;1,30103</TH>
+    <TH>1</TH>
+    <TH>0,30103</TH></TR>
+  <TR>
+    <TH>200</TH>
+    <TH>&nbsp;2,30103</TH>
+    <TH>2</TH>
+    <TH>0,30103</TH></TR>
+  <TR>
+    <TH vAlign=top>2000</TH>
+    <TH>&nbsp;3,30103</TH>
+    <TH>3</TH>
+    <TH>0,30103</TH></TR></TBODY></TABLE>
+<P>Esta notação simplifica operações com logaritmos, visando mostrar que, se a 
+divisão de dois números é um múltiplo de 10, basta mudar a característica e 
+preservar a mantissa do logaritmo. Isto poderá ser observado na <I>Tábua moderna 
+de logaritmos</I> que aparece no final desta Página.</P>
+<P>¯3,30103 significa que apenas a característica é negativa, valendo -3 e ela 
+deve ser somada à mantissa que é um número positivo 0,30103 e isto significa que 
+o resultado deve ser um número com um sinal negativo, isto é, 
+-2,69897.</P><BR><A name=log10></A><BR>
+<P class=tit>Tábua moderna de logaritmos</P>
+<P>Para obter o logaritmo de um número positivo, não se esqueça de colocar o 
+ponto decimal no lugar da vírgula.</P>
+<FORM>
+<TABLE cellSpacing=0 cellPadding=1 width="65%" align=center bgColor=gold 
+summary=t border=1>
+  <TBODY>
+  <TR>
+    <TH>Entrar com o número</TH>
+    <TH><INPUT size=12 name=entrada1></TH></TR>
+  <TR>
+    <TH><INPUT onclick=testa_entrada(this.form,this) type=button value="Calcular o Logaritmo" name=teste></TH>
+    <TH><INPUT type=reset value="Limpar os dados"></TH></TR>
+  <TR>
+    <TH>Logaritmo do número</TH>
+    <TH><INPUT size=12 name=saida1></TH></TR></TBODY></TABLE></FORM>
+<P><B class=g>Exercício:</B> Calcular Log(2), Log(20), Log(200) e Log(2000). 
+Observou algo interessante sobre as características e mantissas desses 
+logaritmos?</P><BR>
+<HR color=red noShade SIZE=3>
+
+<P class=c>Página construída por Ulysses Sodré<BR>
+<SCRIPT src="logaritm_arquivos/atualp.js" type=text/javascript>
+</SCRIPT>
+</P>
+<HR color=red noShade SIZE=3>
+<!-- ZoneLabs Popup Blocking Insertion -->
+<SCRIPT language=javascript>postamble();</SCRIPT>
+</BASEFONT></BODY></HTML>

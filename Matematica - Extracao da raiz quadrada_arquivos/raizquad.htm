@@ -1,0 +1,468 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0072)http://pessoal.sercomtel.com.br/matematica/alegria/raizquad/raizquad.htm -->
+<HTML><HEAD><TITLE>Matematica Essencial: Extraindo a raiz quadrada</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<STYLE type=text/css>A {
+	TEXT-DECORATION: none
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2800.1170" name=GENERATOR></HEAD>
+<BODY text=black vLink=blue aLink=blue link=blue bgColor=#ffffcc>
+<CENTER>
+<TABLE borderColor=black cellSpacing=0 cellPadding=0 width="100%" bgColor=white 
+border=3>
+  <TBODY>
+  <TR>
+    <TH width="25%" bgColor=blue rowSpan=2><FONT color=white 
+      size=5><TT>Matemática<BR>Essencial</TT></FONT></TH>
+    <TH colSpan=3><FONT color=darkblue size=6><TT>Alegria 
+      Matemática</TT></FONT></TH></TR>
+  <TR>
+    <TH colSpan=3><FONT color=red size=5><TT>Extração da raiz 
+      quadrada</TT></FONT></TH></TR></TBODY></TABLE></CENTER><FONT 
+face="Arial, Georgia, Arial, Helvetica, Verdana" color=black size=3>
+<P><B>A extração da raiz quadrada de um número A visa obter um número real r tal 
+que r<SUP>2</SUP> = A. Se a igualdade não for possível, pelo menos esperamos que 
+r<SUP>2</SUP> seja um número bem próximo de A. No exemplo, usaremos o número 
+A=127599 para implementar o processo geral. Para que você aprenda de fato, tome 
+uma folha de papel e realize neste papel as operações indicadas passo-a-passo. 
+</B>
+<P>
+<CENTER>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=white border=1>
+  <TBODY>
+  <TR>
+    <TH colSpan=2><FONT size=5>Regra geral e exemplo</FONT><BR>As ocorrências 
+      citadas à esquerda ficam piscando em cor vermelha.</TH></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Construímos uma tabela com 4 
+      quadrantes, tendo o número A no canto superior esquerdo. </FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" color=red 
+            size=3><B><BLINK>127599</BLINK></B></FONT></TD>
+          <TH><TT>Canto Sup.<BR>Direito</TT></TH></TR>
+        <TR>
+          <TH><TT>Canto Inf.<BR>Esquerdo</TT></TD> 
+          <TH><TT>Canto Inf.<BR>Direito</TT></TD> </TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>Linha com dados úteis</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Realizamos a decomposição do número A 
+      em classes de dois algarismos da direita para a esquerda 
+    (&lt;--).</FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>12<FONT 
+            color=red><BLINK>•</BLINK></FONT>75<FONT 
+            color=red><BLINK>•</BLINK></FONT>99</FONT></TD>
+          <TD><FONT face="Courier New" size=3>...</FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" size=3>...</FONT></TD>
+          <TD><FONT face="Courier New" size=3>...</FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>A=127599</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Ordenamos as classes da esquerda para 
+      a direita (--&gt;) com os valores das classes indicados por C1, C2, C3, 
+      ...</FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>C<FONT 
+            color=red><B><BLINK>1</BLINK></B></FONT>•C<FONT 
+            color=red><B><BLINK>2</BLINK></B></FONT>•C<FONT 
+            color=red><B><BLINK>3</BLINK></B></FONT></FONT></TD>
+          <TD><FONT face="Courier New" size=3>...</FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" size=3>...</FONT></TD>
+          <TD><FONT face="Courier New" size=3>...</FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>A=127599</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>C1 poderá ter um ou dois algarismos e 
+      os valores de todas as classes será sempre menor que 100.</FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3><FONT 
+            color=red><B><BLINK>12</BLINK></B></FONT>•75•99</FONT></TD>
+          <TD><FONT face="Courier New" size=3>...</FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" size=3>...</FONT></TD>
+          <TD><FONT face="Courier New" size=3>...</FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>A=127599, C1=12</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Qual é o maior inteiro B tal que 
+      B<SUP>2</SUP> é menor ou igual que C1?</FONT></TD>
+    <TH><FONT face="Courier New" size=3>B possíveis:0,1,2,<FONT 
+      color=red><B><BLINK>3</BLINK></B></FONT></FONT></TH></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Colocamos o número B no canto superior 
+      direito.</FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>12•75•99</FONT></TD>
+          <TD><FONT face="Courier New" size=3><FONT 
+            color=red><B><BLINK>3</BLINK></B></FONT></FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" size=3>...</FONT></TD>
+          <TD><FONT face="Courier New" size=3>...</FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>A=127599, B=3</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Colocamos B<SUP>2</SUP> em baixo de 
+      C1.</FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>12•75•99</FONT></TD>
+          <TD><FONT face="Courier New" size=3>3</FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" color=red 
+            size=3>&nbsp;<B><BLINK>9</BLINK></B></FONT></TD>
+          <TD><FONT face="Courier New" size=3>...</FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>A=127599, B=3</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Obtemos a diferença 
+      D=C1-B<SUP>2</SUP>.</FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>12•75•99</FONT></TD>
+          <TD><FONT face="Courier New" size=3>3</FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" size=3><U>-9</U><BR>&nbsp;<FONT 
+            color=red><B><BLINK>3</BLINK></B></FONT></FONT> </TD>
+          <TD><FONT face="Courier New" size=3>...</FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>A=127599, B=3, D=3</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Baixamos a classe C2 até a linha onde 
+      está a diferença D. </FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>12•75•99</FONT></TD>
+          <TD><FONT face="Courier New" size=3>3</FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" size=3><U>-9</U><BR>&nbsp;3&nbsp;<FONT 
+            color=red><B><BLINK>75</BLINK></B> </FONT></FONT></TD>
+          <TD><FONT face="Courier New" size=3>...</FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>A=127599, B=3,D=3</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Reunimos D com C2 para formar o número 
+      E. </FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>12•75•99</FONT></TD>
+          <TD><FONT face="Courier New" size=3>3</FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" size=3><U>-9</U><BR>&nbsp;&nbsp;<FONT 
+            color=red><B><BLINK>375</BLINK></B> </FONT></FONT></TD>
+          <TD vAlign=top><FONT face="Courier New" size=3>...</FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>A=127599, B=3,D=3, 
+  E=375</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Colocamos 2B (dobro de B) no canto 
+      inferior direito. </FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>12•75•99</FONT></TD>
+          <TD><FONT face="Courier New" size=3>3</FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" 
+            size=3><U>-9</U><BR>&nbsp;&nbsp;375</FONT></TD>
+          <TD vAlign=top align=left><FONT face="Courier New" color=red 
+            size=3><B><BLINK>6</BLINK></B></FONT> </TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>A=127599, B=3,D=3, 
+  E=375</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>A divisão inteira de E por 2B por 10 
+      nos dá F. O 10 indica que este é o dígito das dezenas para a raiz.</FONT> 
+    </TD>
+    <TH><FONT face="Courier New" size=3>F=E÷(20B)=375÷60= <FONT 
+      color=red><B><BLINK>6</BLINK></B></FONT></FONT></TH></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>F ficará à direita de B no canto 
+      superior direito, à direita de 2B no canto inferior direito e em baixo 
+      deste último número no canto inferior direito com um sinal de 
+      multiplicação.</FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>12•75•99</FONT></TD>
+          <TD><FONT face="Courier New" size=3>3<FONT 
+            color=red><B><BLINK>6</BLINK></B></FONT></FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" 
+            size=3><U>-9</U><BR>&nbsp;&nbsp;375</FONT></TD>
+          <TD vAlign=top><FONT face="Courier New" size=3>6<FONT 
+            color=red><B><BLINK>6</BLINK></B></FONT><BR><FONT 
+            color=red>×<B><BLINK>6</BLINK></B></FONT> </FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>B=3,D=3, E=375, 
+F=6(?)</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Multiplicamos os números do canto 
+      inferior direito. Se o produto for maior que o número no canto inferior 
+      esquerdo, repetimos este passo com F-1 no lugar de F.</FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>12•75•99</FONT></TD>
+          <TD><FONT face="Courier New" size=3>&nbsp;36</FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" size=3><U>-9</U><BR>&nbsp;&nbsp;<FONT 
+            color=red><B><BLINK>375</BLINK></B></FONT></FONT></TD>
+          <TD vAlign=top><FONT face="Courier New" 
+            size=3>&nbsp;66<BR><U>&nbsp;×6</U><BR><FONT 
+            color=red><B><BLINK>376</BLINK></B></FONT></FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>B=3,D=3, E=375, 
+F=6(?)</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Usamos agora F-1 e repetimos o passo 
+      anterior para ver se o novo produto G é menor ou igual que E. Devemos 
+      diminuir de 1 em 1 o número F até que G seja menor ou igual que 
+    E.</FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>12•75•99</FONT></TD>
+          <TD><FONT face="Courier New" size=3>&nbsp;3<FONT 
+            color=red><B><BLINK>5</BLINK></B></FONT></FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" size=3><U>-9</U><BR>&nbsp;&nbsp;<FONT 
+            color=red><B><BLINK>375</BLINK></B></FONT></FONT></TD>
+          <TD vAlign=top><FONT face="Courier New" size=3>&nbsp;6<FONT 
+            color=red><B><BLINK>5</BLINK></B></FONT><BR><U>&nbsp;×<FONT 
+            color=red><B><BLINK>5</BLINK></B></FONT></U><BR><FONT 
+            color=red><B><BLINK>325</BLINK></B></FONT></FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>B=3,D=3, E=375, F=5, 
+    G=325</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Após achar o F adequado, pomos o 
+      número BF no canto superior direito e o número G em baixo de E, realizando 
+      a diferença H=E-G.</FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>12•75•99</FONT></TD>
+          <TD><FONT face="Courier New" size=3>35</FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" 
+            size=3><U>-9</U><BR>&nbsp;&nbsp;375<BR><U>-&nbsp;325</U><BR>&nbsp;&nbsp;&nbsp;<FONT 
+            color=red><B><BLINK>50</BLINK></B> </FONT></FONT></TD>
+          <TD vAlign=top><FONT face="Courier New" 
+            size=3>65<BR><U>×5</U><BR>325</FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>BF=35, E=375, F=5, G=325, 
+      H=50</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Baixamos a classe C3 até a linha que 
+      contém a diferença H, formando um novo número I.</FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>12•75•99</FONT></TD>
+          <TD><FONT face="Courier New" size=3>35</FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" 
+            size=3><U>-9</U><BR>&nbsp;&nbsp;375<BR><U>-&nbsp;325</U><BR>&nbsp;&nbsp;&nbsp;50<FONT 
+            color=red><B><BLINK>99</BLINK></B> </FONT></FONT></TD>
+          <TD vAlign=top><FONT face="Courier New" 
+            size=3>65<BR><U>×5</U><BR>325</FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>BF=35, F=5, G=325, H=49, 
+      I=5099</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>A divisão inteira de I por 20BF nos dá 
+      J.</FONT></TD>
+    <TH><FONT face="Courier New" size=3>J=I÷(20BF)=5099÷700=<FONT 
+      color=red><BLINK>7</BLINK></FONT></FONT></TH></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Faremos outra multiplicação. No canto 
+      inferior direito colocamos o dobro de BF.</FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>12•75•99</FONT></TD>
+          <TD><FONT face="Courier New" size=3>35</FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" 
+            size=3><U>-9</U><BR>&nbsp;&nbsp;375<BR><U>-&nbsp;325</U><BR>&nbsp;&nbsp;&nbsp;5099</FONT></TD>
+          <TD vAlign=top align=left><FONT face="Courier New" 
+            size=3>65&nbsp;&nbsp;<FONT color=red><B><BLINK>70</BLINK></B></FONT> 
+            <BR><U>×5</U>&nbsp;&nbsp;<BR>325</FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>BF=35, I=5099, J=7</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>O número J será posto à direita de BF, 
+      à direita do dobro de BF e em baixo deste último número, no canto inferior 
+      direito.</FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>12•75•99</FONT></TD>
+          <TD><FONT face="Courier New" size=3>35<FONT 
+            color=red><B><BLINK>7</BLINK></B></FONT></FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" 
+            size=3><U>-9</U><BR>&nbsp;&nbsp;375<BR><U>-&nbsp;325</U><BR>&nbsp;&nbsp;&nbsp;5099</FONT></TD>
+          <TD vAlign=top align=left><FONT face="Courier New" 
+            size=3>65&nbsp;&nbsp;&nbsp;70<FONT 
+            color=red><B><BLINK>7</BLINK></B></FONT><BR><U>×5</U>&nbsp;&nbsp;<U>&nbsp;&nbsp;×<FONT 
+            color=red><B><BLINK>7</BLINK></B></FONT></U><BR>325</FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>BF=35, I=5099, J=7</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Multiplicamos J pelo número K formado 
+      por 2BF e J e verificamos se este produto L é menor do que I. Se não for 
+      menor, trocamos J por J-1 e repetimos este passo.</FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>12•75•99</FONT></TD>
+          <TD><FONT face="Courier New" size=3>357</FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" 
+            size=3><U>-9</U><BR>&nbsp;&nbsp;375<BR><U>-&nbsp;325</U><BR>&nbsp;&nbsp;<FONT 
+            color=red> <B><BLINK>5099</BLINK></B></FONT></FONT></TD>
+          <TD vAlign=top align=left><FONT face="Courier New" 
+            size=3>65&nbsp;&nbsp;&nbsp;707<BR><U>×5</U>&nbsp;&nbsp;&nbsp;&nbsp;<U>×7</U> 
+            <BR>325&nbsp;<FONT 
+          color=red><B><BLINK>4949</BLINK></B></FONT></FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>BF=35, I=5099, J=7, K=707, 
+      L=4949</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Obtemos a diferença M=I-L. Nesse 
+      momento, você deve estar com o número BFJ no canto superior direito. Este 
+      é o número representa a raiz que você está procurando!</FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>12•75•99</FONT></TD>
+          <TD><FONT face="Courier New" size=3>357</FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" 
+            size=3><U>-9</U><BR>&nbsp;&nbsp;375<BR><U>-&nbsp;325</U><BR>&nbsp;&nbsp;&nbsp;5099<BR><U>-&nbsp;&nbsp;4949</U><BR>&nbsp;&nbsp;&nbsp;&nbsp;<FONT 
+            color=red><B><BLINK>150</BLINK></B></FONT></FONT></TD>
+          <TD vAlign=top align=left><FONT face="Courier New" 
+            size=3>&nbsp;65&nbsp;&nbsp;707<BR>&nbsp;<U>×5</U>&nbsp;&nbsp;<U>&nbsp;×7</U><BR>325&nbsp;4949</FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>BFJ=357, I=5099, L=4949, 
+      M=150</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Para melhorar a precisão do cálculo 
+      para a raiz, devemos obter o próximo número decimal após BFJ, 
+      acrescentamos uma "nova" classe C4=00 após a classe C3, tomando o cuidado 
+      de inserir uma vírgula no lugar do ponto separador e uma outra vírgula 
+      após o número BFJ. </FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>12•75•99<FONT 
+            color=red><B><BLINK>,00</BLINK></B></FONT></FONT></TD>
+          <TD><FONT face="Courier New" size=3>357<FONT 
+            color=red><B><BLINK>,</BLINK></B></FONT></FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" 
+            size=3><U>-9</U><BR>&nbsp;&nbsp;375<BR><U>-&nbsp;325</U><BR>&nbsp;&nbsp;&nbsp;5099<BR><U>-&nbsp;&nbsp;4949</U><BR>&nbsp;&nbsp;&nbsp;&nbsp;150</FONT></TD>
+          <TD vAlign=top align=left><FONT face="Courier New" 
+            size=3>&nbsp;65&nbsp;&nbsp;707<BR>&nbsp;<U>×5</U>&nbsp;&nbsp;&nbsp;<U>×7</U><BR>325&nbsp;4949</FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>BFJ=357 é a raiz inteira mais 
+      próxima</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Baixamos a classe 00 até a linha 
+      contendo a diferença. Colocamos o dobro de BFJ no canto inferior direito, 
+      esquecendo da vírgula e considerando este número como um número 
+      inteiro.</FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>12•75•99,00</FONT></TD>
+          <TD><FONT face="Courier New" size=3>357,</FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" 
+            size=3><U>-9</U><BR>&nbsp;&nbsp;375<BR><U>-&nbsp;325</U><BR>&nbsp;&nbsp;&nbsp;5099<BR><U>-&nbsp;&nbsp;4949</U><BR>&nbsp;&nbsp;&nbsp;&nbsp;15000</FONT></TD>
+          <TD vAlign=top align=left><FONT face="Courier New" 
+            size=3>&nbsp;65&nbsp;&nbsp;707&nbsp;<FONT color=red> 
+            <B><BLINK>714</BLINK></B></FONT> 
+            <BR>&nbsp;<U>×5</U>&nbsp;<U>×&nbsp;&nbsp;7</U><BR>325&nbsp;4949</FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>BFJ=357 é a raiz inteira mais 
+      próxima</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>No canto inferior direito, na frente 
+      de BFJ pomos um algarismo adequado N, na frente de 2(BFJ) pomos o mesmo 
+      algarismo N e em baixo deste último número pomos o algarismo N e 
+      realizamos a multiplicação destes dois últimos números.</FONT></TD>
+    <TD><FONT face="Courier New" size=3>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" bgColor=yellow border=1>
+        <TBODY>
+        <TR>
+          <TD><FONT face="Courier New" size=3>12•75•99,00</FONT></TD>
+          <TD><FONT face="Courier New" size=3>357,<FONT 
+            color=red><B><BLINK>2</BLINK></B></FONT> </FONT></TD></TR>
+        <TR>
+          <TD><FONT face="Courier New" 
+            size=3><U>-9</U><BR>&nbsp;&nbsp;375<BR><U>-&nbsp;325</U><BR>&nbsp;&nbsp;&nbsp;5099<BR><U>-&nbsp;&nbsp;4949</U><BR>&nbsp;&nbsp;&nbsp;&nbsp;15000<BR><U>&nbsp;&nbsp;&nbsp;&nbsp;<FONT 
+            color=red><B><BLINK>14284</BLINK></B></FONT></U><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT 
+            color=red><B><BLINK>716</BLINK></B></FONT> </FONT></TD>
+          <TD vAlign=top align=left><FONT face="Courier New" 
+            size=3>&nbsp;65&nbsp;&nbsp;707&nbsp;&nbsp;714<FONT 
+            color=red><B><BLINK>2</BLINK></B></FONT><BR>&nbsp;<U>×5</U>&nbsp;&nbsp;<U>×7</U> 
+            &nbsp;<U>&nbsp;&nbsp;&nbsp;<FONT 
+            color=red><B><BLINK>×2</BLINK></B></FONT></U><BR>325&nbsp;4949&nbsp;<FONT 
+            color=red><B><BLINK>14284</BLINK></B></FONT> </FONT></TD></TR>
+        <TR bgColor=beige>
+          <TH colSpan=2>BFJ=357,2 é uma raiz real mais 
+      próxima</TH></TR></TBODY></TABLE></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New" size=3>Podemos continuar este processo 
+      inserindo uma nova classe 00 para obter um resultado mais preciso!</FONT> 
+    </TD>
+    <TH><FONT face="Courier New" size=3>(357,21)<SUP>2</SUP> = 
+      127.598,9841</FONT> </TH></TR></TBODY></TABLE></CENTER>
+<HR noShade>
+
+<CENTER><B>Material construído por Ulysses Sodré<BR>Última atualização:Friday, 
+April 14, 2001. </B></CENTER>
+<HR noShade>
+</FONT></BODY></HTML>

@@ -1,0 +1,754 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0065)http://pessoal.sercomtel.com.br/matematica/medio/206/sistemas.htm -->
+<HTML><HEAD><TITLE>Matematica Essencial: Medio: Sistemas Lineares</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><!-- ZoneLabs Privacy Insertion -->
+<SCRIPT language=javascript src="sistemas_arquivos/js"></SCRIPT>
+<LINK href="sistemas_arquivos/206.css" type=text/css rel=stylesheet>
+<META content="MSHTML 6.00.2800.1170" name=GENERATOR></HEAD>
+<BODY><BASEFONT face=Verdana,Arial,Helvetica size=4>
+<TABLE borderColor=black cellSpacing=0 cellPadding=0 width="96%" align=center 
+bgColor=white summary=tab border=1>
+  <TBODY>
+  <TR>
+    <TH class=tab width="50%" bgColor=#000099><FONT color=white>Matemática 
+      Essencial</FONT></TH>
+    <TH class=tab><FONT color=#000099>Ensino Médio</FONT></TH></TR>
+  <TR>
+    <TH class=tab width="50%" colSpan=2><FONT color=red>Sistemas 
+      Lineares</FONT></TH></TR>
+  <TR>
+    <TD vAlign=center width="50%" bgColor=white>
+      <UL type=square>
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/sistemas.htm#sist01"><B>Introdução 
+        aos sistemas lineares</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/sistemas.htm#sist02"><B>Equação 
+        linear</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/sistemas.htm#sist03"><B>Solução 
+        de uma equação linear</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/sistemas.htm#sist04"><B>Sistemas 
+        de equações lineares</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/sistemas.htm#sist05"><B>Solução 
+        de sistema de eq. lineares</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/sistemas.htm#sist06"><B>Consistência 
+        de sistemas lineares</B></A> </LI></UL></TD>
+    <TD vAlign=center width="50%" bgColor=white>
+      <UL type=square>
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/sistemas.htm#sist07"><B>Exemplos 
+        de sistemas</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/sistemas.htm#sist08"><B>Sistemas 
+        equivalentes</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/sistemas.htm#sist09"><B>Operações 
+        elementares (sistemas)</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/sistemas.htm#sist10"><B>Solução 
+        por escalonamento</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/sistemas.htm#sist11"><B>Sistemas 
+        lineares homogêneos</B></A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/sistemas.htm#sist12"><B>Regra 
+        de Cramer</B></A> </LI></UL></TD></TR></TBODY></TABLE><BR><A 
+name=sist01></A><BR>
+<P class=tit>Introdução aos sistemas lineares</P>
+<P>Esta página trata sobre equações lineares e inicia mostrando uma aplicação de 
+matrizes e sistemas lineares. As equações lineares assim como os sistemas de 
+equações são muito utilizados no cotidiano das pessoas.</P><BR>
+<P><B class=g>Exemplo:</B> Uma companhia de navegação tem três tipos de 
+recipientes A, B e C, que carrega cargas em containers de três tipos I, II e 
+III. As capacidades dos recipientes são dadas pela matriz:</P>
+<TABLE align=center bgColor=white summary=t border=1>
+  <TBODY>
+  <TR bgColor=gold>
+    <TH>Tipo do Recipiente</TH>
+    <TH>&nbsp;I&nbsp;</TH>
+    <TH>II</TH>
+    <TH>III</TH></TR>
+  <TR>
+    <TH>A</TH>
+    <TH>4</TH>
+    <TH>3</TH>
+    <TH>2</TH></TR>
+  <TR>
+    <TH>B</TH>
+    <TH>5</TH>
+    <TH>2</TH>
+    <TH>3</TH></TR>
+  <TR>
+    <TH>C</TH>
+    <TH>2</TH>
+    <TH>2</TH>
+    <TH>3</TH></TR></TBODY></TABLE>
+<P>Quais são os números de recipientes x<SUB>1</SUB>, x<SUB>2</SUB> e 
+x<SUB>3</SUB> de cada categoria A, B e C, se a companhia deve transportar 42 
+containers do tipo I, 27 do tipo II e 33 do tipo III?</P><BR>
+<P><B class=g>Montagem do sistema linear</B></P>
+<TABLE cellSpacing=0 cellPadding=5 align=center bgColor=white summary=eq 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>4 x<SUB>1</SUB> + 5 x<SUB>2</SUB> + 2 x<SUB>3</SUB> = 42<BR>3 
+      x<SUB>1</SUB> + 3 x<SUB>2</SUB> + 2 x<SUB>3</SUB> = 27<BR>2 x<SUB>1</SUB> 
+      + 2 x<SUB>2</SUB> + 2 x<SUB>3</SUB> = 33<BR></TH></TR></TBODY></TABLE><BR>
+<P><B class=b>Arthur Cayley (1821-1895):</B> Matemático inglês nascido em 
+Richmond, diplomou-se no Trinity College de Cambridge. Na sua vida, Cayley 
+encontrou rivais em Euler e Cauchy sendo eles os três maiores produtores de 
+materiais no campo da Matemática. Em 1858, Cayley apresentou representações por 
+matrizes. Segundo ele, as matrizes são desenvolvidas a partir da noção de 
+determinante, isto é, a partir do exame de sistemas de equações, que ele 
+denominou: <I>o sistema</I>. Cayley desenvolveu uma Álgebra das matrizes 
+quadradas em termos de transformações lineares homogêneas.</P><BR><A 
+name=sist02></A><BR>
+<P class=tit>Equação linear</P>
+<P>É uma equação da forma</P>
+<TABLE cellSpacing=0 cellPadding=5 align=center bgColor=white summary=eq 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>a<SUB>11</SUB> x<SUB>1</SUB> + a<SUB>12</SUB> x<SUB>2</SUB> + 
+      a<SUB>13</SUB> x<SUB>3</SUB> + ... + a<SUB>1n</SUB> x<SUB>n</SUB> = 
+      b<SUB>1</SUB> </TH></TR></TBODY></TABLE>
+<P>onde</P>
+<UL type=square>
+  <LI>
+  <P>x<SUB>1</SUB>, x<SUB>2</SUB>, ..., x<SUB>n</SUB> são as incógnitas;</P>
+  <LI>
+  <P>a<SUB>11</SUB>, a<SUB>12</SUB>, ...,a<SUB>1n</SUB> são os coeficientes 
+  (números reais ou complexos);</P>
+  <LI>
+  <P>b<SUB>1</SUB> é o termo independente (número real ou complexo).</P></LI></UL>
+<P><B class=g>Exemplos de equações lineares</B></P>
+<OL>
+  <LI>
+  <P>4 x + 3 y - 2 z = 0</P>
+  <LI>
+  <P>2 x - 3 y + 0 z - w = -3</P>
+  <LI>
+  <P>x<SUB>1</SUB> - 2 x<SUB>2</SUB> + 5 x<SUB>3</SUB> = 1</P>
+  <LI>
+  <P>4i x + 3 y - 2 z = 2-5i</P></LI></OL>
+<P><B class=g>Exemplos de equações não-lineares</B></P>
+<OL>
+  <LI>
+  <P>3 x + 3y R[x] = -4</P>
+  <LI>
+  <P>x<SUP>2</SUP> + y<SUP>2</SUP> = 9</P>
+  <LI>
+  <P>x + 2 y - 3 z w = 0</P>
+  <LI>
+  <P>x<SUP>2</SUP> + y<SUP>2</SUP> = -9</P></LI></OL>
+<P><B class=g>Notação:</B> Usamos R[x] para a raiz quadrada de 
+x<U>&gt;</U>0.</P><BR><A name=sist03></A><BR>
+<P class=tit>Solução de uma equação linear</P>
+<P>Uma sequência de números reais (<B class=b>r<SUB>1</SUB></B>,<B 
+class=b>r<SUB>2</SUB></B>,<B class=b>r<SUB>3</SUB></B>,<B 
+class=b>r<SUB>4</SUB></B>) é solução da equação linear</P>
+<TABLE cellSpacing=0 cellPadding=5 align=center bgColor=white summary=eq 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>a<SUB>11</SUB> x<SUB>1</SUB> + a<SUB>12</SUB> x<SUB>2</SUB> + 
+      a<SUB>13</SUB> x<SUB>3</SUB> + a<SUB>14</SUB> x<SUB>4</SUB> = 
+      b<SUB>1</SUB> </TH></TR></TBODY></TABLE>
+<P>se trocarmos cada x<SUB>i</SUB> por <B class=b>r<SUB>i</SUB></B> na equação e 
+este fato implicar que o membro da esquerda é identicamente igual ao membro da 
+direita, isto é:</P>
+<TABLE cellSpacing=0 cellPadding=5 align=center bgColor=white summary=eq 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>a<SUB>11</SUB> <B class=b>r<SUB>1</SUB></B> + a<SUB>12</SUB> <B 
+      class=b>r<SUB>2</SUB></B> + a<SUB>13</SUB> <B class=b>r<SUB>3</SUB></B> + 
+      a<SUB>14</SUB> <B class=b>r<SUB>4</SUB></B> = b<SUB>1</SUB> 
+</TH></TR></TBODY></TABLE><BR>
+<P><B class=g>Exemplo:</B> A sequência (5,6,7) é uma solução da equação 
+2x+3y-2z=14 pois, tomando x=5, y=6 e z=7 na equação dada, teremos:</P>
+<TABLE cellSpacing=0 cellPadding=5 align=center bgColor=white summary=eq 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>2×5 + 3×6 - 2×7 = 14 </TH></TR></TBODY></TABLE><BR><A name=sist04></A><BR>
+<P class=tit>Sistemas de equações lineares</P>
+<P>Um sistema de equações lineares ou sistema linear é um conjunto formado por 
+duas ou mais equações lineares. Um sistema linear pode ser representado na 
+forma:</P>
+<TABLE cellSpacing=0 cellPadding=5 align=center bgColor=white summary=eq 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>a<SUB>11</SUB> x<SUB>1</SUB> + a<SUB>12</SUB> x<SUB>2</SUB> +...+ 
+      a<SUB>1n</SUB> x<SUB>n</SUB> = b<SUB>1</SUB><BR>a<SUB>21</SUB> 
+      x<SUB>1</SUB> + a<SUB>22</SUB> x<SUB>2</SUB> +...+ a<SUB>2n</SUB> 
+      x<SUB>n</SUB> = b<SUB>2</SUB><BR>... ... ... ...<BR>a<SUB>m1</SUB> 
+      x<SUB>1</SUB> + a<SUB>m2</SUB> x<SUB>2</SUB> +...+ a<SUB>mn</SUB> 
+      x<SUB>n</SUB> = b<SUB>n</SUB> </TH></TR></TBODY></TABLE>
+<P>onde</P>
+<UL type=square>
+  <LI>
+  <P>x<SUB>1</SUB>, x<SUB>2</SUB>, ..., x<SUB>n</SUB> são as incógnitas;</P>
+  <LI>
+  <P>a<SUB>11</SUB>, a<SUB>12</SUB>, ..., a<SUB>mn</SUB> são os 
+coeficientes;</P>
+  <LI>
+  <P>b<SUB>1</SUB>, b<SUB>2</SUB>, ..., b<SUB>m</SUB> são os termos 
+  independentes.</P></LI></UL><BR><A name=sist05></A><BR>
+<P class=tit>Solução de um sistema de equações lineares</P>
+<P>Uma sequência (r<SUB>1</SUB>, r<SUB>2</SUB>, ...,r<SUB>n</SUB>) é solução do 
+sistema linear:</P>
+<TABLE cellSpacing=0 cellPadding=5 align=center bgColor=white summary=eq 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>a<SUB>11</SUB> x<SUB>1</SUB> + a<SUB>12</SUB> x<SUB>2</SUB> +...+ 
+      a<SUB>1n</SUB> x<SUB>n</SUB> = b<SUB>1</SUB><BR>a<SUB>21</SUB> 
+      x<SUB>1</SUB> + a<SUB>22</SUB> x<SUB>2</SUB> +...+ a<SUB>2n</SUB> 
+      x<SUB>n</SUB> = b<SUB>2</SUB><BR>... ... ... ...<BR>a<SUB>m1</SUB> 
+      x<SUB>1</SUB> + a<SUB>m2</SUB> x<SUB>2</SUB> +...+ a<SUB>mn</SUB> 
+      x<SUB>n</SUB> = b<SUB>n</SUB> </TH></TR></TBODY></TABLE>
+<P>se satisfaz identicamente a <I>todas</I> as equações desse sistema 
+linear.</P><BR>
+<P><B class=g>Exemplo:</B> O par ordenado (2,0) é uma solução do sistema 
+linear:</P>
+<TABLE cellSpacing=0 cellPadding=5 align=center bgColor=white summary=eq 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>2x + y = 4<BR>x + 3y = 2<BR>x + 5y = 2 </TH></TR></TBODY></TABLE>
+<P>pois satisfaz identicamente a todas as equações do mesmo, isto é, se 
+substituirmos x=2 e y=0, os dois membros de cada igualdade serão iguais em todas 
+as equações.</P><BR><A name=sist06></A><BR>
+<P class=tit>Consistência de Sistemas Lineares</P>
+<P>O número de soluções de um sistema linear determina a sua classificação de 
+duas maneiras com relação à sua consistência:</P>
+<UL type=square>
+  <LI>
+  <P><B class=b>Sistema possível ou consistente:</B> Quando tem pelo menos uma 
+  solução.</P>
+  <P>(a) Se tem uma única solução, o sistema é determinado.</P>
+  <P>(b) Se tem mais que uma solução, o sistema é indeterminado.</P>
+  <LI>
+  <P><B class=b>Sistema impossível ou inconsistente:</B> Se não admite qualquer 
+  solução.</P></LI></UL><BR><A name=sist07></A><BR>
+<P class=tit>Exemplos de sistemas com respeito às suas soluções</P>
+<OL>
+  <LI>
+  <P><B class=b>Sistema com uma única solução:</B> As equações lineares abaixo 
+  representam duas retas no plano cartesiano que têm o ponto (3,-2) como 
+  interseção.</P>
+  <TABLE cellSpacing=0 cellPadding=5 align=center bgColor=white summary=eq 
+  border=1>
+    <TBODY>
+    <TR>
+      <TH>x + 2y = -1<BR>2x - y = 8 </TH></TR></TBODY></TABLE>
+  <LI>
+  <P><B class=b>Sistema com infinitas soluções:</B> As equações lineares 
+  representam retas paralelas sobrepostas no plano cartesiano, logo existem 
+  infinitos pontos que satisfazem a ambas as equações (pertencem a ambas as 
+  retas).</P>
+  <TABLE cellSpacing=0 cellPadding=5 align=center bgColor=white summary=eq 
+  border=1>
+    <TBODY>
+    <TR>
+      <TH>4x + 2y = 100<BR>8x + 4y = 200 </TH></TR></TBODY></TABLE>
+  <LI>
+  <P><B class=b>Sistema que não tem solução:</B> As equações lineares 
+  representam retas paralelas no plano cartesiano, logo, não existem pontos que 
+  pertençam às duas retas.</P>
+  <TABLE cellSpacing=0 cellPadding=5 align=center bgColor=white summary=eq 
+  border=1>
+    <TBODY>
+    <TR>
+      <TH>x + 3y = 4<BR>x + 3y = 5 </TH></TR></TBODY></TABLE></LI></OL><BR><A 
+name=sist08></A><BR>
+<P class=tit>Sistemas equivalentes</P>
+<P>Dois sistemas são equivalentes se admitem a mesma solução.</P><BR>
+<P><B class=g>Exemplo:</B> São equivalentes os sistemas S1 e S2 indicados 
+abaixo:</P>
+<TABLE cellPadding=5 align=center summary=t>
+  <TBODY>
+  <TR>
+    <TH>
+      <TABLE summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH bgColor=gold>S1</TH>
+          <TH bgColor=white>3x + 6y = 42<BR>2x - 4y = 
+12</TH></TR></TBODY></TABLE></TH>
+    <TH>
+      <TABLE summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH bgColor=gold>S2</TH>
+          <TH bgColor=white>1x + 2y = 14<BR>1x - 2y 
+        =&nbsp;&nbsp;6</TH></TR></TBODY></TABLE></TH></TR></TBODY></TABLE>
+<P>pois eles admitem a mesma solução x=10 e y=2.</P><BR>
+<P><B class=g>Notação:</B> Quando dois sistemas S1 e S2 são equivalentes, usamos 
+a notação S1~S2.</P><BR><A name=sist09></A><BR>
+<P class=tit>Operações elementares sobre sistemas lineares</P>
+<P>Existem três tipos de operações elementares que podem ser realizadas sobre um 
+sistema linear de equações de forma a transformá-lo em um outro sistema 
+equivalente mais simples que o anterior. Na sequência trabalharemos com um 
+exemplo para mostrar como funcionam essas operações elementares sobre linhas. O 
+segundo sistema (o que aparece à direita) já mostra o resultado da ação da 
+operação elementar. Nas linhas iniciais de cada tabela, você encontra a operação 
+que foi realizada.</P>
+<OL>
+  <LI>
+  <P>Troca de posição de duas equações do sistema</P>
+  <TABLE cellSpacing=0 width=400 align=center bgColor=white summary=t 
+    border=1><TBODY>
+    <TR bgColor=gold>
+      <TH colSpan=3>Troca a Linha 1 com a Linha 3</TH></TR>
+    <TR>
+      <TH><B class=b>x + 2y - z = 2</B><BR>2x-3y+2z=0<BR><B class=b>4x + y - 
+        5z = 9</B></TH>
+      <TH>~</TH>
+      <TH><B class=b>4x + y - 5z = 9</B><BR>2x-3y+2z=0<BR><B class=b>x + 2y - 
+        z = 2</B></TH></TR></TBODY></TABLE>
+  <LI>
+  <P>Multiplicação de uma equação por um número não nulo</P>
+  <TABLE cellSpacing=0 width=400 align=center bgColor=white summary=t 
+    border=1><TBODY>
+    <TR bgColor=gold>
+      <TH colSpan=3>Multiplica a Linha 1 pelo número 3</TH></TR>
+    <TR>
+      <TH><B class=b>x + 2y - z = 2</B><BR>2x-3y+2z=0<BR>4x+y-5z=9</TH>
+      <TH>~</TH>
+      <TH><B class=b>3x + 6y - 3z = 6</B><BR>2x-3y+2z=0<BR>4x+y-5z=9</TH></TR>
+    <TR>
+      <TH bgColor=lavender colSpan=3>A equação resultante fica na linha 
+    1</TH></TR></TBODY></TABLE>
+  <LI>
+  <P>Adição de duas equações do sistema</P>
+  <TABLE cellSpacing=0 width=400 align=center bgColor=white summary=t 
+    border=1><TBODY>
+    <TR bgColor=gold>
+      <TH colSpan=3>Adição da Linha 2 com a Linha 3</TH></TR>
+    <TR>
+      <TH>x+2y-z=2<BR><B class=b>2x -3y + 2z = 0</B><BR><B class=b>4x + y - 5z 
+        = 9</B></TH>
+      <TH>~</TH>
+      <TH>3x+6y-3z=6<BR>2x-3y+2z=0<BR><B class=b>6x - 2y - 3z = 9</B></TH></TR>
+    <TR>
+      <TH bgColor=lavender colSpan=3>A equação resultante fica na linha 
+    3</TH></TR></TBODY></TABLE></LI></OL><BR><A name=sist10></A><BR>
+<P class=tit>Resolução de sistemas lineares por escalonamento</P>
+<P>Com o auxílio das três Operações Elementares sobre linhas, podemos resolver 
+sistemas lineares. Vamos mostrar como funciona este processo através de um 
+exemplo.</P>
+<P><B class=g>Exemplo:</B> Consideremos o sistema com 3 equações e 3 
+incógnitas.</P>
+<TABLE cellSpacing=0 cellPadding=5 align=center bgColor=white summary=eq 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>3x + y + z = 20<BR>2x - y - z = -15<BR>-4x + y -5z = -41 
+</TH></TR></TBODY></TABLE>
+<P><B class=g>Observação:</B> Usamos Li+Lj-&gt;Lj para indicar a soma da linha i 
+com a linha j com o resultado na linha j. Usamos k Li-&gt;Li, para indicar que 
+multiplicamos a linha i pela constante k e o resultado ficou na linha i.</P><BR>
+<TABLE cellSpacing=0 width=400 align=center bgColor=white summary=t border=1>
+  <TBODY>
+  <TR bgColor=gold>
+    <TH colSpan=3>Passo 1: L1-L2-&gt;L1</TH></TR>
+  <TR>
+    <TH><B class=b>3x + 1y + 1z = 20</B><BR><B class=b>2x - 1y - 1z = 
+      -15</B><BR>-4x+1y-5z=-41</TH>
+    <TH>~</TH>
+    <TH><B class=b>1x + 2y + 2z = 
+  35</B><BR>2x-1y-1z=-15<BR>-4x+1y-5z=-41</TH></TR></TBODY></TABLE><BR>
+<TABLE cellSpacing=0 width=400 align=center bgColor=white summary=t border=1>
+  <TBODY>
+  <TR bgColor=gold>
+    <TH colSpan=3>Passo 2: L2-2.L1-&gt;L2</TH></TR>
+  <TR>
+    <TH><B class=b>1x + 2y + 2z = 35</B><BR><B class=b>2x - 1y - 1z = 
+      -15</B><BR>-4x+1y-5z=-41</TH>
+    <TH>~</TH>
+    <TH>1x+2y+2z=35<BR><B class=b>0x - 5y - 5z = 
+  -85</B><BR>-4x+1y-5z=-41</TH></TR></TBODY></TABLE><BR>
+<TABLE cellSpacing=0 width=400 align=center bgColor=white summary=t border=1>
+  <TBODY>
+  <TR bgColor=gold>
+    <TH colSpan=3>Passo 3: L3+4.L1-&gt;L3</TH></TR>
+  <TR>
+    <TH><B class=b>1x + 2y + 2z = 35</B><BR>0x-5y-5z=-85<BR><B class=b>-4x + 
+      1y - 5z = -41</B></TH>
+    <TH>~</TH>
+    <TH>1x+2y+2z=35<BR>0x-5y-5z=-85<BR><B class=b>0x + 9y + 3z = 
+  99</B></TH></TR></TBODY></TABLE><BR>
+<TABLE cellSpacing=0 width=400 align=center bgColor=white summary=t border=1>
+  <TBODY>
+  <TR bgColor=gold>
+    <TH colSpan=3>Passo 4:(-1/5)L2-&gt;L2,(1/3)L3-&gt;L3</TH></TR>
+  <TR>
+    <TH>1x+2y+2z=35<BR><B class=b>0x - 5y - 5z = -85</B><BR><B class=r>0x + 9y 
+      + 3z = 99</B></TH>
+    <TH>~</TH>
+    <TH>1x+2y+2z=35<BR><B class=b>0x + 1y + 1z = 17</B><BR><B class=r>0x + 3y 
+      + 1z = 33</B></TH></TR></TBODY></TABLE><BR>
+<TABLE cellSpacing=0 width=400 align=center bgColor=white summary=t border=1>
+  <TBODY>
+  <TR bgColor=gold>
+    <TH colSpan=3>Passo 5: L3-3.L2-&gt;L3</TH></TR>
+  <TR>
+    <TH>1x+2y+2z=35<BR><B class=b>0x + 1y + 1z = 17</B><BR><B class=b>0x + 3y 
+      + 1z = 33</B></TH>
+    <TH>~</TH>
+    <TH>1x+2y+2z=35<BR>0x+1y+1z=17<BR><B class=b>0x + 0y - 2z = 
+  -18</B></TH></TR></TBODY></TABLE><BR>
+<TABLE cellSpacing=0 width=400 align=center bgColor=white summary=t border=1>
+  <TBODY>
+  <TR bgColor=gold>
+    <TH colSpan=3>Passo 6: (-1/2)L3-&gt;L3</TH></TR>
+  <TR>
+    <TH>1x+2y+2z=35<BR>0x+1y+1z=17<BR><B class=b>0x + 0y - 2z = -18</B></TH>
+    <TH>~</TH>
+    <TH>1x+2y+2z=35<BR>0x+1y+1z=17<BR><B class=b>0x + 0y + 1z = 
+  9</B></TH></TR></TBODY></TABLE><BR>
+<TABLE cellSpacing=0 width=400 align=center bgColor=white summary=t border=1>
+  <TBODY>
+  <TR bgColor=gold>
+    <TH colSpan=3>Passo 7: L2-L3-&gt;L2</TH></TR>
+  <TR>
+    <TH>1x+2y+2z=35<BR><B class=b>0x + 1y + 1z = 17</B><BR><B class=b>0x + 0y 
+      + 1z = 9</B></TH>
+    <TH>~</TH>
+    <TH>1x+2y+2z=35<BR><B class=b>0x + 1y + 0z = 
+  8</B><BR>0x+0y+1z=9</TH></TR></TBODY></TABLE><BR>
+<TABLE cellSpacing=0 width=400 align=center bgColor=white summary=t border=1>
+  <TBODY>
+  <TR bgColor=gold>
+    <TH colSpan=3>Passo 8: L1-2.L2-2.L3-&gt;L1</TH></TR>
+  <TR>
+    <TH><B class=b>1x + 2y + 2z = 35</B><BR><B class=b>0x + 1y + 0z = 
+      8</B><BR><B class=b>0x + 0y + 1z = 9</B></TH>
+    <TH>~</TH>
+    <TH><B class=b>1x + 0y + 0z = 
+  1</B><BR>0x+1y+0z=8<BR>0x+0y+1z=9</TH></TR></TBODY></TABLE><BR>
+<TABLE cellSpacing=0 width=400 align=center bgColor=white summary=t border=1>
+  <TBODY>
+  <TR bgColor=gold>
+    <TH colSpan=3>Passo 9: Simplificar coeficientes</TH></TR>
+  <TR>
+    <TH>1x + 0y + 0z = 1<BR>0x + 1y + 0z = 8<BR>0x + 0y + 1z = 9</TH>
+    <TH>~</TH>
+    <TH>x = 1<BR>y = 8<BR>z = 9</TH></TR></TBODY></TABLE><BR>
+<P>Após o escalonamento, observamos que a solução obtida é exatamente fornecida 
+pelo último sistema.</P><BR><A name=sist11></A><BR>
+<P class=tit>Sistemas lineares homogêneos</P>
+<P>Um sistema linear é homogêneo quando os termos independentes de todas as 
+equações são nulos. Todo sistema linear homogêneo admite pelo menos a solução 
+trivial, que é a solução identicamente nula. Assim, todo sistema linear 
+homogêneo é possível. Este tipo de sistema poderá ser determinado se admitir 
+somente a solução trivial ou indeterminado se admitir outras soluções além da 
+trivial.</P>
+<P><B class=g>Exemplo:</B> O sistema</P>
+<TABLE cellSpacing=0 cellPadding=5 align=center bgColor=white summary=eq 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>2x - y + 3z = 0<BR>4x + 2y - z = 0<BR>&nbsp;x - &nbsp;y + 2z = 0 
+  </TH></TR></TBODY></TABLE>
+<P>é determinado, pois possui a solução x=0, y=0 e z=0.</P><BR><A 
+name=sist12></A><BR>
+<P class=tit>Regra de Cramer</P>
+<P>Esta regra depende basicamente sobre o uso de determinantes. Para indicar o 
+determinante de uma matriz X, escreveremos det(X).</P>
+<P>Seja um sistema linear com n equações e n incógnitas:</P>
+<TABLE cellSpacing=0 cellPadding=5 align=center bgColor=white summary=eq 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>a<SUB>11</SUB> x<SUB>1</SUB> + a<SUB>12</SUB> x<SUB>2</SUB> +...+ 
+      a<SUB>1j</SUB> x<SUB>j</SUB> +...+ a<SUB>1n</SUB> x<SUB>n</SUB> = 
+      b<SUB>1</SUB><BR>a<SUB>21</SUB> x<SUB>1</SUB> + a<SUB>22</SUB> 
+      x<SUB>2</SUB> +...+ a<SUB>2j</SUB> x<SUB>j</SUB> +...+ a<SUB>2n</SUB> 
+      x<SUB>n</SUB> = b<SUB>2</SUB><BR>... ... ... ...<BR>a<SUB>n1</SUB> 
+      x<SUB>n</SUB> + a<SUB>n2</SUB> x<SUB>n</SUB> +...+ a<SUB>nj</SUB> 
+      x<SUB>j</SUB> +...+ a<SUB>nn</SUB> x<SUB>n</SUB> = b<SUB>n</SUB> 
+  </TH></TR></TBODY></TABLE>
+<P>A este sistema podemos associar algumas matrizes:</P>
+<UL type=square>
+  <LI>
+  <P><B class=g>Matriz dos coeficientes:</B> Formada pelos coeficientes das 
+  incógnitas do sistema, aqui indicada pela letra A.</P>
+  <TABLE cellSpacing=0 align=center bgColor=white summary=t border=1>
+    <TBODY>
+    <TR bgColor=gold>
+      <TH>Matriz dos coeficientes</TH></TR>
+    <TR>
+      <TH>a<SUB>11</SUB> a<SUB>12</SUB> ... a<SUB>1j</SUB> ... 
+        a<SUB>1n</SUB><BR>a<SUB>21</SUB> a<SUB>22</SUB> ... a<SUB>2j</SUB> ... 
+        a<SUB>2n</SUB><BR>... &nbsp;... &nbsp;... &nbsp;... &nbsp;... 
+        &nbsp;...<BR>a<SUB>n1</SUB> a<SUB>n2</SUB> ... a<SUB>nj</SUB> ... 
+        a<SUB>nn</SUB> </TH></TR></TBODY></TABLE><BR>
+  <LI>
+  <P><B class=g>Matriz Aumentada do sistema:</B> Formada todos os coeficientes 
+  das incógnitas do sistema e também pelos termos independentes.</P>
+  <TABLE cellSpacing=0 align=center bgColor=white summary=t border=1>
+    <TBODY>
+    <TR bgColor=gold>
+      <TH>Matriz Aumentada</TH></TR>
+    <TR>
+      <TH>a<SUB>11</SUB> a<SUB>12</SUB> ... a<SUB>1j</SUB> ... a<SUB>1n</SUB> 
+        b<SUB>1</SUB><BR>a<SUB>21</SUB> a<SUB>22</SUB> ... a<SUB>2j</SUB> ... 
+        a<SUB>2n</SUB> b<SUB>2</SUB><BR>... &nbsp;... &nbsp;... &nbsp;... 
+        &nbsp;... &nbsp;...<BR>a<SUB>n1</SUB> a<SUB>n2</SUB> ... a<SUB>nj</SUB> 
+        ... a<SUB>nn</SUB> b<SUB>n</SUB> </TH></TR></TBODY></TABLE><BR>
+  <LI>
+  <P><B class=g>Matriz da incógnita x<SUB>j</SUB>:</B> É a matriz A<SUB>j</SUB> 
+  obtida ao substituirmos a coluna j (1&lt;j&lt;n) da matriz A, pelos termos 
+  independentes das equações do sistema.</P>
+  <TABLE align=center bgColor=white summary=t border=1>
+    <TBODY>
+    <TR bgColor=gold>
+      <TH>Matriz da incógnita x<SUB>j</SUB></TH></TR>
+    <TR>
+      <TH>a<SUB>11</SUB> a<SUB>12</SUB> ... <B class=b>b<SUB>1</SUB></B> ... 
+        a<SUB>1n</SUB><BR>a<SUB>21</SUB> a<SUB>22</SUB> ... <B 
+        class=b>b<SUB>2</SUB></B> ... a<SUB>2n</SUB><BR>... &nbsp;... &nbsp;... 
+        &nbsp;<B class=b>...</B> &nbsp;... &nbsp;...<BR>a<SUB>n1</SUB> 
+        a<SUB>n2</SUB> ... <B class=b>b<SUB>n</SUB></B> ... a<SUB>nn</SUB> 
+    </TH></TR></TBODY></TABLE></LI></UL>
+<P>Quando as posições j=1,2,3 estão relacionadas com x<SUB>1</SUB>, 
+x<SUB>2</SUB> e x<SUB>3</SUB> e substituídas pelas incógnitas x, y e z, é comum 
+escrever A<SUB>x</SUB>, A<SUB>y</SUB> e A<SUB>z</SUB>.</P>
+<P>Se det(A) é diferente de zero, é possível obter cada solução x<SUB>j</SUB> 
+(j=1,...,n), dividindo det(A<SUB>j</SUB>) por det(A), isto é:</P>
+<TABLE cellSpacing=0 cellPadding=5 align=center bgColor=white summary=eq 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>x<SUB>j</SUB> = det(A<SUB>j</SUB>) / det(A)</TH></TR></TBODY></TABLE>
+<P>Se det(A)=0, o sistema ainda poderá ser consistente, se todos os 
+determinantes nxn da matriz aumentada do sistema forem iguais a zero.</P><BR>
+<P><B class=g>Um sistema impossível:</B> Seja o sistema</P>
+<TABLE cellSpacing=0 cellPadding=5 align=center bgColor=white summary=eq 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>2x + 3y + 4z = 27<BR>1x - 2y + 3z = 15<BR>3x + 1y + 7z = 40 
+  </TH></TR></TBODY></TABLE>
+<P>A matriz A e a matriz aumentada Au do sistema estão mostradas abaixo.</P>
+<TABLE cellSpacing=3 cellPadding=3 align=center summary=t border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE width=100 align=center bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>2</TH>
+          <TH>3</TH>
+          <TH>4</TH></TR>
+        <TR>
+          <TH>1</TH>
+          <TH>-2</TH>
+          <TH>3</TH></TR>
+        <TR>
+          <TH>3</TH>
+          <TH>1</TH>
+          <TH>7</TH></TR></TBODY></TABLE></TD>
+    <TD>
+      <TABLE width=120 align=center bgColor=lavender summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>2</TH>
+          <TH>3</TH>
+          <TH>4</TH>
+          <TH>27</TH></TR>
+        <TR>
+          <TH>1</TH>
+          <TH>-2</TH>
+          <TH>3</TH>
+          <TH>15</TH></TR>
+        <TR>
+          <TH>3</TH>
+          <TH>1</TH>
+          <TH>7</TH>
+          <TH>40</TH></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<P>Como det(A)=0, devemos verificar se todos os determinantes das sub-matrizes 
+3×3 da matriz aumentada são nulos. Se existir pelo menos um deles não nulo, o 
+sistema será impossível e este é o caso pois é não nulo o determinante da 
+sub-matriz 3x3 formada pelas colunas 1, 2 e 4 da matriz aumentada:</P>
+<TABLE cellSpacing=1 cellPadding=1 align=center bgColor=white summary=t 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>2</TH>
+    <TH>3</TH>
+    <TH>27</TH></TR>
+  <TR>
+    <TH>1</TH>
+    <TH>-2</TH>
+    <TH>15</TH></TR>
+  <TR>
+    <TH>3</TH>
+    <TH>1</TH>
+    <TH>40</TH></TR></TBODY></TABLE><BR>
+<P><B class=g>Um sistema indeterminado:</B> Consideremos agora o sistema (Quase 
+igual ao anterior: trocamos 40 por 42 na última linha!)</P>
+<TABLE cellSpacing=0 cellPadding=5 align=center bgColor=white summary=eq 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>2x + 3y + 4z = 27<BR>1x - 2y + 3z = 15<BR>3x + 1y + 7z = 42 
+  </TH></TR></TBODY></TABLE>
+<P>A matriz A e a matriz aumentada Au do sistema, estão abaixo:</P>
+<TABLE cellSpacing=3 cellPadding=3 align=center summary=t border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE width=100 align=center bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>2</TH>
+          <TH>3</TH>
+          <TH>4</TH></TR>
+        <TR>
+          <TH>1</TH>
+          <TH>-2</TH>
+          <TH>3</TH></TR>
+        <TR>
+          <TH>3</TH>
+          <TH>1</TH>
+          <TH>7</TH></TR></TBODY></TABLE></TD>
+    <TD>
+      <TABLE width=120 align=center bgColor=lavender summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>2</TH>
+          <TH>3</TH>
+          <TH>4</TH>
+          <TH>27</TH></TR>
+        <TR>
+          <TH>1</TH>
+          <TH>-2</TH>
+          <TH>3</TH>
+          <TH>15</TH></TR>
+        <TR>
+          <TH>3</TH>
+          <TH>1</TH>
+          <TH>7</TH>
+          <TH>42</TH></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<P>Aqui, tanto det(A)=0 como todos os determinantes das sub-matrizes 3×3 da 
+matriz aumentada são nulos, então o sistema é possível e indeterminado. Neste 
+caso, observamos que a última linha é a soma das duas primeiras e como estas 
+duas primeiras dependem de x, y e z, você poderá encontrar as soluções, por 
+exemplo, de x e y em função de z.</P><BR>
+<P><B class=g>Um sistema com solução única:</B> Seja o sistema</P>
+<TABLE cellSpacing=0 cellPadding=5 align=center bgColor=white summary=eq 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>2x + 3y + 4z = 27<BR>1x - 2y + 3z = 15<BR>3x + 1y + 6z = 40 
+  </TH></TR></TBODY></TABLE>
+<P>A matriz A e a matriz dos termos independentes do sistema estão indicados 
+abaixo.</P>
+<TABLE cellSpacing=3 cellPadding=3 align=center summary=t border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE width=100 align=center bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>2</TH>
+          <TH>3</TH>
+          <TH>4</TH></TR>
+        <TR>
+          <TH>1</TH>
+          <TH>-2</TH>
+          <TH>3</TH></TR>
+        <TR>
+          <TH>3</TH>
+          <TH>1</TH>
+          <TH>6</TH></TR></TBODY></TABLE></TD>
+    <TD>
+      <TABLE width=30 align=center bgColor=lavender summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>27</TH></TR>
+        <TR>
+          <TH>15</TH></TR>
+        <TR>
+          <TH>40</TH></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR>
+<P>Como det(A)=7, o sistema admite uma única solução que depende dos 
+determinantes das matrizes A<SUB>x</SUB>, A<SUB>y</SUB> e A<SUB>z</SUB>, e tais 
+matrizes são obtidas pela substituição 1a., 2a. e 3a. colunas da matriz A pelos 
+termos independentes das três equações, temos:</P>
+<TABLE cellPadding=5 align=center summary=t>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE width=150 align=center bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH bgColor=white rowSpan=3>Ax=</TH>
+          <TH bgColor=lavender>27</TH>
+          <TH>3</TH>
+          <TH>4</TH></TR>
+        <TR>
+          <TH bgColor=lavender>15</TH>
+          <TH>-2</TH>
+          <TH>3</TH></TR>
+        <TR>
+          <TH bgColor=lavender>40</TH>
+          <TH>1</TH>
+          <TH>6</TH></TR></TBODY></TABLE></TD>
+    <TD>
+      <TABLE width=150 align=center bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH bgColor=white rowSpan=3>Ay=</TH>
+          <TH>2</TH>
+          <TH bgColor=lavender>27</TH>
+          <TH>4</TH></TR>
+        <TR>
+          <TH>1</TH>
+          <TH bgColor=lavender>15</TH>
+          <TH>3</TH></TR>
+        <TR>
+          <TH>3</TH>
+          <TH bgColor=lavender>40</TH>
+          <TH>6</TH></TR></TBODY></TABLE></TD>
+    <TD>
+      <TABLE width=150 align=center bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH bgColor=white rowSpan=3>Az=</TH>
+          <TH>2</TH>
+          <TH>3</TH>
+          <TH bgColor=lavender>27</TH></TR>
+        <TR>
+          <TH>1</TH>
+          <TH>-2</TH>
+          <TH bgColor=lavender>15</TH></TR>
+        <TR>
+          <TH>3</TH>
+          <TH>1</TH>
+          <TH bgColor=lavender>40</TH></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<P>Como det(A<SUB>x</SUB>)=65, det(A<SUB>y</SUB>)=1 e det(A<SUB>z</SUB>)=14, a 
+solução do sistema é dada por:</P>
+<TABLE cellSpacing=0 cellPadding=5 align=center bgColor=white summary=eq 
+border=1>
+  <TBODY>
+  <TR>
+    <TH>x = det(Ax)/det(A) = 65/7<BR>y = det(Ay)/det(A) = &nbsp;1/7<BR>z = 
+      det(Az)/det(A) = 14/7 </TH></TR></TBODY></TABLE><BR>
+<HR color=red noShade SIZE=3>
+
+<P class=c>Construída por Emanuelle L. Vicente e Ulysses Sodré<BR>
+<SCRIPT src="sistemas_arquivos/atualp.js" type=text/javascript></SCRIPT>
+</P>
+<HR color=red noShade SIZE=3>
+<!-- ZoneLabs Popup Blocking Insertion -->
+<SCRIPT language=javascript>postamble();</SCRIPT>
+</BASEFONT></BODY></HTML>

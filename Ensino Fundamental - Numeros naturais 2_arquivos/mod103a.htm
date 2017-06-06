@@ -1,0 +1,947 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0065)http://pessoal.sercomtel.com.br/matematica/fundam/103/mod103a.htm -->
+<HTML><HEAD><TITLE>Projeto MatWeb(103a): Numeros Naturais - 2a.parte</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<STYLE type=text/css>A {
+	TEXT-DECORATION: none
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2800.1170" name=GENERATOR></HEAD>
+<BODY text=black vLink=blue aLink=blue link=blue bgColor=#ffffcc>
+<TABLE borderColor=black cellSpacing=0 cellPadding=0 width="100%" align=center 
+bgColor=white border=3>
+  <TBODY>
+  <TR>
+    <TH width="18%" bgColor=blue rowSpan=2><FONT color=white 
+      size=5><TT>Projeto<BR>MatWeb</TT></FONT></TH>
+    <TH colSpan=3><FONT color=darkblue size=4><TT>Ensino Fundamental 
+      (103a)</TT></FONT></TH></TR>
+  <TR>
+    <TH width="81%" colSpan=3><FONT color=red size=4><TT>Números Naturais: 2a. 
+      parte</TT></FONT></TH></TR>
+  <TR>
+    <TD vAlign=center width="50%" bgColor=white colSpan=2>
+      <UL type=square>
+        <LI><B><A 
+        href="http://pessoal.sercomtel.com.br/matematica/fundam/103/mod103a.htm#m103a01">Múltiplos 
+        de Nos. naturais</A></B> 
+        <LI><B><A 
+        href="http://pessoal.sercomtel.com.br/matematica/fundam/103/mod103a.htm#m103a02">Divisores 
+        de Nos. naturais</A></B> 
+        <LI><B><A 
+        href="http://pessoal.sercomtel.com.br/matematica/fundam/103/mod103a.htm#m103a03">Números 
+        primos</A></B> 
+        <LI><B><A 
+        href="http://pessoal.sercomtel.com.br/matematica/fundam/103/mod103a.htm#m103a04">Crivo 
+        de Eratóstenes</A></B> 
+        <LI><B><A 
+        href="http://pessoal.sercomtel.com.br/matematica/fundam/103/mod103a.htm#m103a05">Mínimo 
+        Múltiplo Comum</A></B> </LI></UL></TD>
+    <TD vAlign=center width="50%" bgColor=white colSpan=2>
+      <UL type=square>
+        <LI><B><A 
+        href="http://pessoal.sercomtel.com.br/matematica/fundam/103/mod103a.htm#m103a06">Máximo 
+        Divisor Comum</A></B> 
+        <LI><B><A 
+        href="http://pessoal.sercomtel.com.br/matematica/fundam/103/mod103a.htm#m103a07">Relação 
+        entre o MMC e MDC</A></B> 
+        <LI><B><A 
+        href="http://pessoal.sercomtel.com.br/matematica/fundam/103/mod103a.htm#m103a08">Primos 
+        entre si</A></B> 
+        <LI><B><A 
+        href="http://pessoal.sercomtel.com.br/matematica/fundam/103/mod103a.htm#m103a09">Radiciação 
+        de Nos. naturais</A></B> 
+        <LI><B><A 
+        href="http://pessoal.sercomtel.com.br/matematica/fundam/103/mod103a.htm#m103a10">Raízes 
+        com o browser</A></B> </LI></UL></TD></TR></TBODY></TABLE><FONT 
+face=Arial,Helvetica color=black size=4><A name=m103a01></A>
+<HR noShade>
+<FONT color=#ff0000><B>Múltiplos de números Naturais</B></FONT> 
+<P>Diz-se que um número natural a é <B>múltiplo</B> de outro natural b, se 
+existe um número natural k tal que: 
+<P>
+<CENTER><B><FONT color=blue size=+2>a = k × b</FONT></B> </CENTER>
+<P><FONT color=#006600><B>Exemplos</B></FONT>: 
+<UL type=square>
+  <LI>15 é múltiplo de 5, pois 15 = 3 × 5 
+  <LI>24 é múltiplo de 4, pois 24 = 6 × 4 
+  <LI>24 é múltiplo de 6, pois 24 = 4 × 6 
+  <LI>27 é múltiplo de 9, pois 27 = 3 × 9 </LI></UL>
+<P>Quando a=k×b, segue que a é múltiplo de b, mas também, a é múltiplo de k, 
+como é o caso do número 35 que é múltiplo de 5 e de 7, pois: 
+<P>
+<CENTER><B><FONT color=blue size=5>35 = 7 × 5 </FONT></B></CENTER>
+<P>Quando a=k×b, então <B>a</B> é múltiplo de <B>b</B> e se conhecemos <B>b</B> 
+e queremos obter todos os seus múltiplos, basta fazer <B>k</B> assumir todos os 
+números naturais possíveis. Para obter os múltiplos de 2, isto é, os números da 
+forma a=k×2 onde k é substituído por todos os números naturais possíveis. A 
+tabela abaixo nos auxiliará: 
+<P>
+<TABLE cellSpacing=1 cellPadding=1 align=center bgColor=white border=1>
+  <TBODY>
+  <TR>
+    <TH><FONT size=4>a = k × 2</FONT></TH></TR>
+  <TR>
+    <TH><FONT size=4>0 = 0 × 2</FONT></TH></TR>
+  <TR>
+    <TH><FONT size=4>2 = 1 × 2</FONT></TH></TR>
+  <TR>
+    <TH><FONT size=4>4 = 2 × 2</FONT></TH></TR>
+  <TR>
+    <TH><FONT size=4>6 = 3 × 2</FONT></TH></TR>
+  <TR>
+    <TH><FONT size=4>8 = 4 × 2</FONT></TH></TR>
+  <TR>
+    <TH><FONT size=4>10= 5 × 2</FONT></TH></TR>
+  <TR>
+    <TH><FONT size=4>12= 6 × 2</FONT></TH></TR></TBODY></TABLE>
+<P>O conjunto dos números naturais é infinito, assim existem infinitos múltiplos 
+de 2, ou de qualquer outro número natural. 
+<P>O conjunto dos múltiplos de um número natural y é infinito e vamos nos 
+referir a este conjunto com a notação <B>M(y)</B>. 
+<P><FONT color=#006600><B>Exemplo</B></FONT>: Múltiplos de 7: <B>M(7) = 
+{0,7,14,21,28,35,42,...}</B> 
+<P>
+<CENTER>
+<TABLE cellSpacing=1 cellPadding=1 bgColor=white border=1>
+  <TBODY>
+  <TR>
+    <TH bgColor=#ffff00 rowSpan=2><FONT size=4>M(7)</FONT></TH>
+    <TH><FONT size=4>0</FONT></TH>
+    <TH><FONT size=4>7</FONT></TH>
+    <TH><FONT size=4>14</FONT></TH>
+    <TH><FONT size=4>21</FONT></TH>
+    <TH><FONT size=4>28</FONT></TH>
+    <TH><FONT size=4>35</FONT></TH>
+    <TH><FONT size=4>42</FONT></TH></TR>
+  <TR>
+    <TH><FONT size=4>0×7</FONT></TH>
+    <TH><FONT size=4>1×7</FONT></TH>
+    <TH><FONT size=4>2×7</FONT></TH>
+    <TH><FONT size=4>3×7</FONT></TH>
+    <TH><FONT size=4>4×7</FONT></TH>
+    <TH><FONT size=4>5×7</FONT></TH>
+    <TH><FONT size=4>6×7</FONT></TH></TR></TBODY></TABLE></CENTER>
+<P><FONT color=#006600><B>Exemplo</B></FONT>: Múltiplos de 11: <B>M(11) = 
+{0,11,22,33,44,55,66,77,...}</B> 
+<P>
+<CENTER>
+<TABLE cellSpacing=1 cellPadding=1 bgColor=white border=1>
+  <TBODY>
+  <TR>
+    <TH bgColor=#ffff00 rowSpan=2><FONT size=4>M(11)</FONT></TH>
+    <TH><FONT size=4>0</FONT></TH>
+    <TH><FONT size=4>11</FONT></TH>
+    <TH><FONT size=4>22</FONT></TH>
+    <TH><FONT size=4>33</FONT></TH>
+    <TH><FONT size=4>44</FONT></TH>
+    <TH><FONT size=4>55</FONT></TH>
+    <TH><FONT size=4>66</FONT></TH></TR>
+  <TR>
+    <TH><FONT size=4>0×11</FONT></TH>
+    <TH><FONT size=4>1×11</FONT></TH>
+    <TH><FONT size=4>2×11</FONT></TH>
+    <TH><FONT size=4>3×11</FONT></TH>
+    <TH><FONT size=4>4×11</FONT></TH>
+    <TH><FONT size=4>5×11</FONT></TH>
+    <TH><FONT size=4>6×11</FONT></TH></TR></TBODY></TABLE></CENTER>
+<P><FONT color=#006600><B>Observação</B></FONT>: Como estamos considerando 0 
+como um número natural, então o número 0 (zero) será múltiplo de todo número 
+natural. Tomando k=0 em a=k.b obtemos a=0 para todo b natural. 
+<P><FONT color=#006600><B>Exemplo</B></FONT>: Alguns múltiplos de zero. 
+<UL type=square>
+  <LI>0 = 0 × 2 
+  <LI>0 = 0 × 5 
+  <LI>0 = 0 × 12 
+  <LI>0 = 0 × 15 </LI></UL>
+<P><FONT color=#006600><B>Observação</B></FONT>: Um número b é sempre múltiplo 
+dele mesmo. 
+<P>
+<CENTER><FONT color=blue size=5><B>a = 1 × b &lt;=&gt; a = b</B></FONT> 
+</CENTER>
+<P><FONT color=#006600><B>Exemplos</B></FONT>: Basta tomar o mesmo número 
+muiltiplicado por 1 para obter um múltiplo dele próprio. 
+<UL type=square>
+  <LI>3 = 1 x 3 
+  <LI>5 = 1 x 5 
+  <LI>15 = 1 x 15 </LI></UL>
+<P><A name=m103a02></A>
+<HR noShade>
+<FONT color=#ff0000><B>Divisores de números Naturais</B></FONT> 
+<P>A definição de divisor está relacionada com a de múltiplo. Um número natural 
+b é <B>divisor</B> do número natural a, se a é múltiplo de b. 
+<P><FONT color=#006600><B>Exemplo</B></FONT>: 3 é divisor de 15, pois 15=3×5, 
+logo 15 é múltiplo de 3 e também é múltiplo de 5. 
+<P>Um número natural tem uma quantidade finita de divisores. Por exemplo, o 
+número 6 poderá ter no máximo 6 divisores, pois trabalhando no conjunto dos 
+números naturais não podemos dividir 6 por um número maior do que ele. 
+<P>Os divisores naturais de 6 são os números 1, 2, 3, 6, o que significa que o 
+número 6 tem 4 divisores. 
+<P>Os divisores de um número y também formam um conjunto finito, aqui denotado 
+por <B>D(y)</B>. 
+<P><FONT color=#006600><B>Exemplos</B></FONT>: 
+<UL type=square>
+  <LI>Divisores de 18: <B>D(18) = { 1, 2, 3, 6, 9, 18 }</B> 
+  <LI>Divisores de 15: <B>D(15) = { 1, 3, 5, 15 }</B> </LI></UL>
+<P><FONT color=#006600><B>Observação</B></FONT>: 
+<UL type=square>
+  <LI>O número 0(zero) é múltiplo de todo número natural. 
+  <LI>Zero(0) não é divisor de nenhum número natural, exceto dele próprio. 
+</LI></UL>
+<P>Se pudéssemos considerar que 6÷0=b, então teríamos que admitir que: 
+<P>
+<CENTER><B>6 = 0 x b</B></CENTER>
+<P>mas não existe um número b que multiplicado por 0 (zero) seja igual a 6, 
+portanto a divisão de 6 por 0 é <B>impossível</B>. 
+<P>A divisão de <I>zero</I> por <I>zero</I> é indeterminada, o que significa que 
+pode existir uma situação que ela passe a ter significado, no sentido seguinte: 
+<P>Se aceitarmos que 
+<P>
+<CENTER><B>0 ÷ 0 = X ÷ 1 = X</B></CENTER>
+<P>então também poderemos aceitar que o produto dos meios é igual ao produto dos 
+extremos nesta proporção e assim: 
+<P>
+<CENTER><B>0 × 1 = 0 × X = 0</B></CENTER>
+<P>que não é contraditório e isto pode ser realizado para todo X real, razão 
+pela qual a expressão da forma 0 ÷ 0 é dita indeterminada. 
+<P><A name=m103a03></A>
+<HR noShade>
+<FONT color=#ff0000><B>Números primos</B></FONT> 
+<P>Um número primo é um número natural com <B>exatamente dois divisores</B> 
+naturais distintos. 
+<P><B><FONT color=#006600>Exemplos</FONT>:</B> 
+<UL type=square>
+  <LI>2 é primo pois D(2) = {1,2} 
+  <LI>3 é primo pois D(3) = {1,3} 
+  <LI>5 é primo pois D(5) = {1,5} 
+  <LI>7 é primo pois D(7) = {1,7} 
+  <LI>14 não é primo pois D(14) = {1,2,7,14} </LI></UL>
+<P><A name=m103a04></A>
+<HR noShade>
+<FONT color=red><B>Crivo de Eratóstenes</B></FONT> 
+<P>É um processo para a obtenção de números primos menores do que um determinado 
+número natural k. Normalmente construímos uma tabela contendo todos os primeiros 
+k números naturais. 
+<P>Para determinar os números primos nesta tabela, basta seguir os seguintes 
+passos. 
+<OL>
+  <LI>Determinamos o primeiro número primo que é 2, lembrando que 1 não é primo. 
+
+  <LI>Eliminamos todos os múltiplos de 2 que encontrarmos na tabela. 
+  <LI>Determinamos o próximo número primo que será 3, que coincidirá com o 
+  próximo número não marcado da tabela. 
+  <LI>Eliminamos todos os múltiplos de 3. 
+  <LI>Voltamos ao passo 3, com o próximo número primo. 
+  <LI>Continuamos o processo. </LI></OL>
+<P>
+<CENTER>
+<TABLE cellSpacing=1 cellPadding=1 border=1>
+  <TBODY>
+  <TR>
+    <TH bgColor=beige><FONT size=4>1</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>2</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>3</FONT></TH>
+    <TH bgColor=beige><FONT size=4>4</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>5</FONT></TH>
+    <TH bgColor=beige><FONT size=4>6</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>7</FONT></TH>
+    <TH bgColor=beige><FONT size=4>8</FONT></TH>
+    <TH bgColor=beige><FONT size=4>9</FONT></TH>
+    <TH bgColor=beige><FONT size=4>10</FONT></TH></TR>
+  <TR>
+    <TH bgColor=#ffff00><FONT size=4>11</FONT></TH>
+    <TH bgColor=beige><FONT size=4>12</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>13</FONT></TH>
+    <TH bgColor=beige><FONT size=4>14</FONT></TH>
+    <TH bgColor=beige><FONT size=4>15</FONT></TH>
+    <TH bgColor=beige><FONT size=4>16</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>17</FONT></TH>
+    <TH bgColor=beige><FONT size=4>18</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>19</FONT></TH>
+    <TH bgColor=beige><FONT size=4>20</FONT></TH></TR>
+  <TR>
+    <TH bgColor=beige><FONT size=4>21</FONT></TH>
+    <TH bgColor=beige><FONT size=4>22</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>23</FONT></TH>
+    <TH bgColor=beige><FONT size=4>24</FONT></TH>
+    <TH bgColor=beige><FONT size=4>25</FONT></TH>
+    <TH bgColor=beige><FONT size=4>26</FONT></TH>
+    <TH bgColor=beige><FONT size=4>27</FONT></TH>
+    <TH bgColor=beige><FONT size=4>28</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>29</FONT></TH>
+    <TH bgColor=beige><FONT size=4>30</FONT></TH></TR>
+  <TR>
+    <TH bgColor=#ffff00><FONT size=4>31</FONT></TH>
+    <TH bgColor=beige><FONT size=4>32</FONT></TH>
+    <TH bgColor=beige><FONT size=4>33</FONT></TH>
+    <TH bgColor=beige><FONT size=4>34</FONT></TH>
+    <TH bgColor=beige><FONT size=4>35</FONT></TH>
+    <TH bgColor=beige><FONT size=4>36</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>37</FONT></TH>
+    <TH bgColor=beige><FONT size=4>38</FONT></TH>
+    <TH bgColor=beige><FONT size=4>39</FONT></TH>
+    <TH bgColor=beige><FONT size=4>40</FONT></TH></TR>
+  <TR>
+    <TH bgColor=#ffff00><FONT size=4>41</FONT></TH>
+    <TH bgColor=beige><FONT size=4>42</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>43</FONT></TH>
+    <TH bgColor=beige><FONT size=4>44</FONT></TH>
+    <TH bgColor=beige><FONT size=4>45</FONT></TH>
+    <TH bgColor=beige><FONT size=4>46</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>47</FONT></TH>
+    <TH bgColor=beige><FONT size=4>48</FONT></TH>
+    <TH bgColor=beige><FONT size=4>49</FONT></TH>
+    <TH bgColor=beige><FONT size=4>50</FONT></TH></TR>
+  <TR>
+    <TH bgColor=beige><FONT size=4>51</FONT></TH>
+    <TH bgColor=beige><FONT size=4>52</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>53</FONT></TH>
+    <TH bgColor=beige><FONT size=4>54</FONT></TH>
+    <TH bgColor=beige><FONT size=4>55</FONT></TH>
+    <TH bgColor=beige><FONT size=4>56</FONT></TH>
+    <TH bgColor=beige><FONT size=4>57</FONT></TH>
+    <TH bgColor=beige><FONT size=4>58</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>59</FONT></TH>
+    <TH bgColor=beige><FONT size=4>60</FONT></TH></TR>
+  <TR>
+    <TH bgColor=#ffff00><FONT size=4>61</FONT></TH>
+    <TH bgColor=beige><FONT size=4>62</FONT></TH>
+    <TH bgColor=beige><FONT size=4>63</FONT></TH>
+    <TH bgColor=beige><FONT size=4>64</FONT></TH>
+    <TH bgColor=beige><FONT size=4>65</FONT></TH>
+    <TH bgColor=beige><FONT size=4>66</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>67</FONT></TH>
+    <TH bgColor=beige><FONT size=4>68</FONT></TH>
+    <TH bgColor=beige><FONT size=4>69</FONT></TH>
+    <TH bgColor=beige><FONT size=4>70</FONT></TH></TR>
+  <TR>
+    <TH bgColor=#ffff00><FONT size=4>71</FONT></TH>
+    <TH bgColor=beige><FONT size=4>72</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>73</FONT></TH>
+    <TH bgColor=beige><FONT size=4>74</FONT></TH>
+    <TH bgColor=beige><FONT size=4>75</FONT></TH>
+    <TH bgColor=beige><FONT size=4>76</FONT></TH>
+    <TH bgColor=beige><FONT size=4>77</FONT></TH>
+    <TH bgColor=beige><FONT size=4>78</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>79</FONT></TH>
+    <TH bgColor=beige><FONT size=4>80</FONT></TH></TR>
+  <TR>
+    <TH bgColor=beige><FONT size=4>81</FONT></TH>
+    <TH bgColor=beige><FONT size=4>82</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>83</FONT></TH>
+    <TH bgColor=beige><FONT size=4>84</FONT></TH>
+    <TH bgColor=beige><FONT size=4>85</FONT></TH>
+    <TH bgColor=beige><FONT size=4>86</FONT></TH>
+    <TH bgColor=beige><FONT size=4>87</FONT></TH>
+    <TH bgColor=beige><FONT size=4>88</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>89</FONT></TH>
+    <TH bgColor=beige><FONT size=4>90</FONT></TH></TR>
+  <TR>
+    <TH bgColor=beige><FONT size=4>91</FONT></TH>
+    <TH bgColor=beige><FONT size=4>92</FONT></TH>
+    <TH bgColor=beige><FONT size=4>93</FONT></TH>
+    <TH bgColor=beige><FONT size=4>94</FONT></TH>
+    <TH bgColor=beige><FONT size=4>95</FONT></TH>
+    <TH bgColor=beige><FONT size=4>96</FONT></TH>
+    <TH bgColor=#ffff00><FONT size=4>97</FONT></TH>
+    <TH bgColor=beige><FONT size=4>98</FONT></TH>
+    <TH bgColor=beige><FONT size=4>99</FONT></TH>
+    <TH bgColor=beige><FONT size=4>100</FONT></TH></TR></TBODY></TABLE></CENTER>
+<P>Na tabela, listamos os 100 primeiros números naturais, indicando com a cor de 
+fundo "amarela" os números primos e com a cor de fundo "bege" os números que não 
+são primos. Como exemplo, 2 é primo, enquanto 25 não é primo, pois é múltiplo de 
+5. 
+<P>Assim encontramos os seguintes números primos na tabela. 
+<P>
+<CENTER><B>P={2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 
+61, 67, 71, 73, 79, 83, 89, 97}</B> </CENTER>
+<P><FONT color=#006600><B>Observações</B></FONT>: 
+<UL type=square>
+  <LI>1 não é primo pois tem apenas 1 divisor. 
+  <LI>Todo número natural pode ser escrito como o produto de números primos, de 
+  forma única. </LI></UL>
+<P><A name=m103a05></A>
+<HR noShade>
+<FONT color=#ff0000><B>Mínimo Múltiplo Comum</B></FONT> 
+<P>Diz-se que um número m é múltiplo comum dos número a e b se m é múltiplo de a 
+e também é múltiplo de b, ou seja. 
+<P>
+<CENTER><B>m = k × a</B></CENTER>e 
+<CENTER><B>m = w × b</B></CENTER>
+<P>onde k e w números naturais. 
+<P><FONT color=#006600><B>Exemplos</B></FONT>: Múltiplos comuns 
+<UL type=square>
+  <LI>24 é múltiplo comum de 6 e 8. 
+  <LI>15 é múltiplo comum de 3 e 5. </LI></UL>
+<P>Determinaremos agora todos os números que tem 18 como múltiplo comum, o que é 
+o mesmo que obter todos os divisores naturais de 18. 
+<P>
+<CENTER><B>18 é múltiplo comum de 1 e 18 pois 18=1x18.<BR>18 é múltiplo comum de 
+2 e 9 pois 18=2x9.<BR>18 é múltiplo comum de 3 e 6 pois 18=3x6. </B></CENTER>
+<P>Observe que 18 é múltiplo comum de todos os seus divisores, logo: 
+<P>
+<CENTER><B>D(18) = {1,2,3,6,9,18}</B></CENTER>
+<P>Agora determinaremos os múltiplos comuns dos números a e b. Para isso 
+denotaremos por M(a) o conjunto dos múltiplos de a, por M(b) o conjunto dos 
+múltiplos de b e tomar a interseção entre os conjuntos M(a) e M(b). 
+<P><FONT color=#006600><B>Exemplo</B></FONT>: Múltiplos comuns de 3 e 5. 
+<BLOCKQUOTE><FONT 
+  size=+1><B>M(3)={0,3,6,9,12,15,18,21,24,27,30,33,36,39,42,45,...}<BR>M(5)={0,5,10,15,20,25,30,35,40,45,50,55,...} 
+  </B></FONT></BLOCKQUOTE>
+<P>Desse modo, a interseção entre os conjuntos M(3) e M(5) forma um conjunto 
+infinito com os múltiplos comuns de 3 e de 5. 
+<CENTER><B>M(3)<IMG height=22 alt=interseção src="mod103a_arquivos/mod10301.gif" 
+width=17 align=top>M(5) = {0,15,30,45,...} </B></CENTER>
+<P>Como estamos considerando 0 (zero) como número natural, ele irá fazer parte 
+dos conjuntos de todos os múltiplos de números naturais e será sempre o menor 
+múltiplo comum. 
+<P>Por definição, o Mínimo Múltiplo Comum (MMC) de dois ou mais números naturais 
+é o menor múltiplo comum a esses números que é diferente de zero. Logo, no 
+conjunto: 
+<P>
+<CENTER><B>M(3)<IMG height=22 alt=interseção src="mod103a_arquivos/mod10301.gif" 
+width=17 align=top>M(5) = {0, 15, 30, 45, ...} </B></CENTER>
+<P>o Mínimo Múltiplo Comum entre 3 e 5 é igual a 15. 
+<P>Quando trabalharmos com dois números a e b, utilizaremos a notação MMC(a,b) 
+para representar o Mínimo Múltiplo Comum entre os números naturais a e b, 
+<B>lembrando sempre que o menor múltiplo comum deve ser diferente de zero</B>. 
+<P><FONT color=#006600><B>Exemplo</B></FONT>: Como: 
+<P>
+<CENTER><B>M(4) = {0,4,8,12,16,20,24,...}<BR>M(6) = { 0, 6, 12, 18, 24, ...} 
+</B></CENTER>então: 
+<P>
+<CENTER><B>MMC(4,6) = min {12,24,36,...} = 12</B></CENTER>
+<P>É interessante notar que o conjunto dos múltiplos do MMC(a,b) é igual ao 
+conjunto dos múltiplos comuns de a e b. 
+<P>Realmente: MMC(3,5)=15 
+<P>
+<BLOCKQUOTE>M(15) = {0,15,30,45,60,...}<BR>M(3) = 
+  {0,3,6,9,12,15,18,21,24,27,30,...}<BR>M(5) = 
+  {0,5,10,15,20,25,30,35,40,45,...}<BR>M(3)<IMG height=22 alt=interseção 
+  src="mod103a_arquivos/mod10301.gif" width=17 align=top>M(5) = {0,15,30,45,...} 
+</BLOCKQUOTE>
+<P>Observe que M(15) = M(3)<IMG height=22 alt=interseção 
+src="mod103a_arquivos/mod10301.gif" width=17 align=top>M(5) 
+<P><FONT color=green><B>Método para determinar o MMC</B></FONT>: Do ponto de 
+vista pedagógico, o processo acima é excelente para mostrar o significado do MMC 
+mas existe um método prático para realizar tal tarefa sem trabalhar com 
+conjuntos. 
+<OL>
+  <LI>Em um papel faça um traço vertical, de forma que sobre espaço livre tanto 
+  à direita como à esquerda do traço. 
+  <P></P>
+  <LI>Do lado esquerdo do traço escreva os números naturais a, b, c, ... como 
+  uma lista, separados por vírgulas, para obter o MMC(a,b,c,...). Por exemplo, 
+  tomaremos 12, 22 e 28 do lado esquerdo do traço vertical e do lado direito do 
+  traço colocamos o menor número primo que divide algum dos números da lista que 
+  está à esquerda. 
+  <P>
+  <CENTER>
+  <TABLE cellSpacing=3 cellPadding=1 bgColor=yellow border=0>
+    <TBODY>
+    <TR>
+      <TD><FONT face=arial,helvetica size=5><B>12</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>22</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>28</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>2</B></FONT></TD></TR>
+    <TR>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD>&nbsp;&nbsp;&nbsp;</TD></TR>
+    <TR>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD>&nbsp;&nbsp;&nbsp;</TD></TR>
+    <TR>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD>&nbsp;&nbsp;&nbsp;</TD></TR></TBODY></TABLE></CENTER>
+  <P></P>
+  <LI>Dividimos todos os números da lista da esquerda, que são múltiplos do 
+  número primo que está à direita do traço, criando uma nova lista debaixo da 
+  lista anterior com os valores resultantes das divisões (possíveis) e com os 
+  números que não foram divididos. 
+  <P>
+  <CENTER>
+  <TABLE cellSpacing=3 cellPadding=1 bgColor=yellow border=0>
+    <TBODY>
+    <TR>
+      <TD><FONT face=arial,helvetica size=5><B>12</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>22</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>28</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>2</B></FONT></TD></TR>
+    <TR>
+      <TD align=right><FONT face=arial,helvetica size=5><B>6</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>11</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>14</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD>&nbsp;&nbsp;&nbsp;</TD></TR>
+    <TR>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD>&nbsp;&nbsp;&nbsp;</TD></TR>
+    <TR>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD>&nbsp;&nbsp;&nbsp;</TD></TR></TBODY></TABLE></CENTER>
+  <P></P>
+  <LI>Repetimos a partir do passo 3 até que os valores da lista que está do lado 
+  esquerdo do traço se tornem todos iguais a um. 
+  <P>
+  <CENTER>
+  <TABLE cellSpacing=3 cellPadding=1 bgColor=yellow border=0>
+    <TBODY>
+    <TR>
+      <TD><FONT face=arial,helvetica size=5><B>12</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>22</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>28</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD align=right><FONT face=arial,helvetica size=5><B>2</B></FONT></TD></TR>
+    <TR>
+      <TD align=right><FONT face=arial,helvetica size=5><B>6</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>11</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>14</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD align=right><FONT face=arial,helvetica size=5><B>2</B></FONT></TD></TR>
+    <TR>
+      <TD align=right><FONT face=arial,helvetica size=5><B>3</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>11</B></FONT></TD>
+      <TD align=right><FONT face=arial,helvetica size=5><B>7</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD align=right><FONT face=arial,helvetica size=5><B>3</B></FONT></TD></TR>
+    <TR>
+      <TD align=right><FONT face=arial,helvetica size=5><B>1</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>11</B></FONT></TD>
+      <TD align=right><FONT face=arial,helvetica size=5><B>7</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD align=right><FONT face=arial,helvetica size=5><B>7</B></FONT></TD></TR>
+    <TR>
+      <TD align=right><FONT face=arial,helvetica size=5><B>1</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>11</B></FONT></TD>
+      <TD align=right><FONT face=arial,helvetica size=5><B>1</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD align=right><FONT face=arial,helvetica size=5><B>11</B></FONT></TD></TR>
+    <TR>
+      <TD align=right><FONT face=arial,helvetica size=5><B>1</B></FONT></TD>
+      <TD align=right><FONT face=arial,helvetica size=5><B>1</B></FONT></TD>
+      <TD align=right><FONT face=arial,helvetica size=5><B>1</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD><FONT face=arial,helvetica color=red 
+    size=5><B>924</B></FONT></TD></TR></TBODY></TABLE></CENTER>
+  <P></P>
+  <LI>O MMC é o produto de todos os números primos que colocamos do lado direito 
+  do traço <BR>Neste caso: MMC(12,22,28)=924. </LI></OL>
+<P><FONT color=#006600><B>Exemplo</B></FONT>: Determinaremos os MMC dos números 
+12 e 15. 
+<OL>
+  <LI>Montagem da tabela: 
+  <P>
+  <CENTER>
+  <TABLE cellSpacing=3 cellPadding=1 bgColor=yellow border=0>
+    <TBODY>
+    <TR>
+      <TD align=right><FONT face=arial,helvetica size=5><B>12</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>15</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD align=right><FONT face=arial,helvetica size=5><B>2</B></FONT></TD></TR>
+    <TR>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD>&nbsp;&nbsp;&nbsp;</TD></TR>
+    <TR>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD>&nbsp;&nbsp;&nbsp;</TD></TR>
+    <TR>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD>&nbsp;&nbsp;&nbsp;</TD></TR></TBODY></TABLE></CENTER>
+  <P></P>
+  <LI>Dividimos todos os números da lista da esquerda pelos números primos 
+  (quando a divisão for possível), criando novas listas sob as listas 
+  anteriores. 
+  <P>
+  <CENTER>
+  <TABLE cellSpacing=3 cellPadding=1 bgColor=yellow border=0>
+    <TBODY>
+    <TR>
+      <TD><FONT face=arial,helvetica size=5><B>12</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>15</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD align=right><FONT face=arial,helvetica size=5><B>2</B></FONT></TD></TR>
+    <TR>
+      <TD align=right><FONT face=arial,helvetica size=5><B>6</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>15</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD align=right><FONT face=arial,helvetica size=5><B>2</B></FONT></TD></TR>
+    <TR>
+      <TD align=right><FONT face=arial,helvetica size=5><B>3</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>15</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD align=right><FONT face=arial,helvetica size=5><B>3</B></FONT></TD></TR>
+    <TR>
+      <TD align=right><FONT face=arial,helvetica size=5><B>1</B></FONT></TD>
+      <TD align=right><FONT face=arial,helvetica size=5><B>5</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD align=right><FONT face=arial,helvetica size=5><B>5</B></FONT></TD></TR>
+    <TR>
+      <TD align=right><FONT face=arial,helvetica size=5><B>1</B></FONT></TD>
+      <TD align=right><FONT face=arial,helvetica size=5><B>1</B></FONT></TD>
+      <TD><FONT face=arial,helvetica size=5><B>|</B></FONT></TD>
+      <TD><FONT face=arial,helvetica color=red 
+    size=5><B>60</B></FONT></TD></TR></TBODY></TABLE></CENTER>
+  <P></P>
+  <LI>O MMC(12,15)=60 é o produto de todos os números primos que colocamos do 
+  lado direito do traço. </LI></OL>
+<P><A name=m103a06></A>
+<HR noShade>
+<FONT color=#ff0000><B>Máximo Divisor Comum</B></FONT> 
+<P>Para obter o Máximo Divisor Comum devemos introduzir o conceito de divisor 
+comum a vários números naturais. Um número d é divisor comum de outros dois 
+números naturais a e b se, d divide a e d divide b simultaneamente. Assim: 
+<P>
+<CENTER><B>a = k<SUB>1</SUB> x d</B></CENTER>e 
+<CENTER><B>b = k<SUB>2</SUB> x d</B></CENTER>
+<P><FONT color=#006600><B>Exemplos</B></FONT>: Divisores comuns. 
+<UL type=square>
+  <LI>8 é divisor comum de 24 e 56, pois: 
+  <P>
+  <CENTER><B>24 = 3 x 8 e 56 = 7 x 8</B></CENTER>
+  <P></P>
+  <LI>3 é divisor comum de 15 e 36, pois: 
+  <P>
+  <CENTER><B>15 = 5 x 3 e 36 = 12 x 3</B></CENTER></LI></UL>
+<P><FONT color=#006600><B>Observação</B></FONT>: Um número d é divisor de todos 
+os seus múltiplos. O conjunto dos divisores comuns de dois números é finito, 
+pois o conjunto dos divisores de um número é finito. 
+<P>Agora determinaremos os divisores comuns aos números 16 e 24. 
+<P>
+<BLOCKQUOTE>D(16) = { 1, 2, 4, 8, 16 }<BR>D(24) = { 1, 2, 3, 4, 6, 8, 12, 24 } 
+
+  <P>D(16)<IMG height=22 alt=interseção src="mod103a_arquivos/mod10301.gif" 
+  width=17 align=top>D(24) = {1, 2, 4, 8} </P></BLOCKQUOTE>
+<P>Ocorre que o menor divisor comum entre os números 16 e 24, é 1, assim não 
+interessa o menor divisor comum mas sim o maior divisor que pertence 
+simultaneamente aos dois conjuntos de divisores. 
+<P>Denotaremos por MDC(a,b), o Máximo Divisor Comum entre os números naturais a 
+e b. 
+<P><FONT color=#006600><B>Exemplos</B></FONT>: Como: 
+<P>
+<CENTER><B>D(16) = { 1, 2, 4, 8, 16 } <BR>D(24) = {1,2,3,4,6,8,12,24} 
+</B></CENTER><BR>então: <BR>
+<CENTER><B>MDC(16,24) = max( D(16)<IMG height=22 alt=interseção 
+src="mod103a_arquivos/mod10301.gif" width=17 align=top>D(24)) = 8</B> </CENTER>
+<P><FONT color=green><B>Método prático para a determinação do MDC</B></FONT>: De 
+forma similar ao cálculo do MMC(a,b), temos também um procedimento prático para 
+determinar o MDC(a,b) entre dois números naturais, pois encontrar conjuntos de 
+divisores para cada número pode ser trabalhoso. Para introduzir este método, 
+determinaremos o MDC entre os números 30 e 72. 
+<P>
+<OL>
+  <LI>Comece construindo uma grade com 3 linhas e algumas colunas, colocando os 
+  números dados na linha do meio. Na primeira coluna coloque o maior deles e na 
+  segunda coluna o menor. 
+  <P>
+  <CENTER>
+  <TABLE cellSpacing=2 cellPadding=2 bgColor=#ffff00 border=1>
+    <TBODY>
+    <TR>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD></TR>
+    <TR>
+      <TD><FONT face=verdana size=5><B>72</B></FONT></TD>
+      <TD><FONT face=verdana size=5><B>30</B></FONT></TD>
+      <TD><FONT face=verdana size=5><B>&nbsp;&nbsp;&nbsp;</B></FONT></TD>
+      <TD><FONT face=verdana size=5><B>&nbsp;&nbsp;&nbsp;</B></FONT></TD>
+      <TD><FONT face=verdana size=5><B>&nbsp;&nbsp;&nbsp;</B></FONT></TD></TR>
+    <TR>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD></TR></TBODY></TABLE></CENTER>
+  <P></P>
+  <LI>Efetue a divisão do maior pelo menor colocando o quociente no espaço sobre 
+  o número menor na primeira linha e o resto da divisão no espaço logo abaixo do 
+  maior número na terceira linha. 
+  <P>
+  <CENTER>
+  <TABLE cellSpacing=2 cellPadding=2 bgColor=#ffff00 border=1>
+    <TBODY>
+    <TR>
+      <TD>&nbsp;</TD>
+      <TD align=right><FONT face=verdana size=5><B>2</B></FONT></TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD></TR>
+    <TR>
+      <TD><FONT face=verdana size=5><B>72</B></FONT></TD>
+      <TD><FONT face=verdana size=5><B>30</B></FONT></TD>
+      <TD><FONT face=verdana size=5><B>&nbsp;&nbsp;&nbsp;</B></FONT></TD>
+      <TD><FONT face=verdana size=5><B>&nbsp;&nbsp;&nbsp;</B></FONT></TD>
+      <TD><FONT face=verdana size=5><B>&nbsp;&nbsp;&nbsp;</B></FONT></TD></TR>
+    <TR>
+      <TD><FONT face=verdana size=5><B>12</B></FONT></TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD></TR></TBODY></TABLE></CENTER>
+  <P></P>
+  <LI>Passe o resto da divisão para o espaço localizado à direita do menor 
+  número na linha central. 
+  <P>
+  <CENTER>
+  <TABLE cellSpacing=2 cellPadding=2 bgColor=#ffff00 border=1>
+    <TBODY>
+    <TR>
+      <TD>&nbsp;</TD>
+      <TD align=right><FONT face=verdana size=5><B>2</B></FONT></TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD></TR>
+    <TR>
+      <TD><FONT face=verdana size=5><B>72</B></FONT></TD>
+      <TD><FONT face=verdana size=5><B>30</B></FONT></TD>
+      <TD><FONT face=verdana size=5><B>12</B></FONT></TD>
+      <TD><FONT face=verdana size=5><B>&nbsp;&nbsp;&nbsp;</B></FONT> </TD>
+      <TD><FONT face=verdana size=5><B>&nbsp;&nbsp;&nbsp;</B></FONT> </TD></TR>
+    <TR>
+      <TD><FONT face=verdana size=5><B>12</B></FONT></TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD></TR></TBODY></TABLE></CENTER>
+  <P></P>
+  <LI>Realizamos agora a divisão do número 30, pelo resto obtido anteriormente 
+  que é 12. Novamente, o quociente será colocado sobre o número 12 e o resto da 
+  divisão ficará localizado abaixo do número 30. 
+  <P>
+  <CENTER>
+  <TABLE cellSpacing=2 cellPadding=2 bgColor=#ffff00 border=1>
+    <TBODY>
+    <TR>
+      <TD>&nbsp;</TD>
+      <TD align=right><FONT face=verdana size=5><B>2</B></FONT></TD>
+      <TD align=right><FONT face=verdana size=5><B>2</B></FONT></TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD></TR>
+    <TR>
+      <TD><FONT face=verdana size=5><B>72</B></FONT></TD>
+      <TD><FONT face=verdana size=5><B>30</B></FONT></TD>
+      <TD><FONT face=verdana size=5><B>12</B></FONT></TD>
+      <TD align=right><FONT face=verdana size=5><B>6</B></FONT> </TD>
+      <TD><FONT face=verdana size=5><B>&nbsp;&nbsp;&nbsp;</B></FONT> </TD></TR>
+    <TR>
+      <TD><FONT face=verdana size=5><B>12</B></FONT></TD>
+      <TD align=right><FONT face=verdana size=5><B>6</B></FONT></TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD></TR></TBODY></TABLE></CENTER>
+  <P></P>
+  <LI>Realizamos agora a (última!) divisão do número 12, pelo resto obtido 
+  anteriormente que é 6. Novamente, o quociente será colocado sobre o número 6 e 
+  o resto da divisão ficará localizado abaixo do número 12. 
+  <P>
+  <CENTER>
+  <TABLE cellSpacing=2 cellPadding=2 bgColor=#ffff00 border=1>
+    <TBODY>
+    <TR>
+      <TD>&nbsp;</TD>
+      <TD align=right><FONT face=verdana size=5><B>2</B></FONT></TD>
+      <TD align=right><FONT face=verdana size=5><B>2</B></FONT></TD>
+      <TD align=right><FONT face=verdana size=5><B>2</B></FONT></TD>
+      <TD>&nbsp;</TD></TR>
+    <TR>
+      <TD><FONT face=verdana size=5><B>72</B></FONT></TD>
+      <TD><FONT face=verdana size=5><B>30</B></FONT></TD>
+      <TD><FONT face=verdana size=5><B>12</B></FONT></TD>
+      <TD align=right><FONT face=verdana color=red size=5><B>6</B></FONT></TD>
+      <TD><FONT face=verdana size=5><B>&nbsp;&nbsp;&nbsp;</B></FONT> </TD></TR>
+    <TR>
+      <TD><FONT face=verdana size=5><B>12</B></FONT></TD>
+      <TD align=right><FONT face=verdana size=5><B>6</B></FONT></TD>
+      <TD align=right><FONT face=verdana size=5><B>0</B></FONT></TD>
+      <TD>&nbsp;</TD>
+      <TD>&nbsp;</TD></TR></TBODY></TABLE></CENTER>
+  <P></P>
+  <LI>Como o resto da última divisão é 0 (zero), o último quociente encontrado 
+  representa o MDC entre 30 e 72, logo denotamos tal fato por: 
+  <P>
+  <CENTER><B>MDC(30,72)=6</B></CENTER></LI></OL>
+<P><FONT color=#006600><B>Exercício</B></FONT>: Se a diferença entre dois 
+números naturais é 126 e o máximo divisor comum entre eles é 18, quais são esses 
+números? <BR><B>Solução</B>: Sejam X e Y os tais números procurados. Assim, X e 
+Y devem ser múltiplos de 18, logo podem ser escritos na forma X = 18a e Y = 18b 
+onde a e b devem ser determinados. Assim: 
+<BLOCKQUOTE>18a - 18b = 126<BR>18 (a - b) = 18 × 7<BR>a - b = 7<BR>Tomando a=8 
+  e b=1 teremos X = 144 e Y = 18 </BLOCKQUOTE>
+<P><FONT color=#006600><B>Exercício</B></FONT>: Se a soma de dois números 
+naturais é 420 e o máximo divisor comum entre eles é 60, quais são esses 
+números? <BR><B>Solução</B>: Sejam X e Y os tais números procurados. Se 
+MDC(X,Y)=60, os números X e Y devem ser múltiplos de 60, logo podem ser escritos 
+na forma X = 60a e Y = 60b onde a e b são números inteiros positivos. Assim 
+<BLOCKQUOTE>X + Y = 60a + 60b = 420<BR>o que garante que<BR>a + b = 
+  7<BR>Devemos escolher números naturais tal que a+b=7, logo<BR>se tomarmos a = 
+  6 e b = 1 teremos X = 360 e Y = 60.<BR>se tomarmos a = 5 e b = 2 teremos X = 
+  300 e Y = 120.<BR>se tomarmos a = 4 e b = 3 teremos X = 240 e Y = 180.<BR>se 
+  tomarmos a = 3 e b = 4 teremos X = 180 e Y = 240.<BR>se tomarmos a = 2 e b = 5 
+  teremos X = 120 e Y = 300.<BR>se tomarmos a = 1 e b = 6 teremos X = 60 e Y = 
+  360. </BLOCKQUOTE>
+<P><FONT color=#006600><B>Exercício</B></FONT>: Se a divisão entre dois números 
+naturais é igual a 6/5 e o máximo divisor comum entre eles é 15, quais são esses 
+números? <BR><B>Solução</B>: Sejam X e Y os tais números procurados. Se 
+MDC(X,Y)=15, então X e Y devem ser múltiplos de 15, logo podem ser escritos na 
+forma X = 15a e Y = 15b. Assim: 
+<BLOCKQUOTE>15a ÷ 15b = 1,2<BR>a ÷ b = 1,2 = 12 ÷ 10 = 6 ÷ 5<BR>Temos muitas 
+  soluções para o problema, mas escolhendo os números a=6 e b=5, teremos X=90 e 
+  Y=75<BR>Outras escolhas possíveis são:<BR>Se a=12 e b=10 então X=180 e 
+  Y=150<BR>Se a=18 e b=15 então X=270 e Y=225, ... </BLOCKQUOTE>
+<P><A name=m103a07></A>
+<HR noShade>
+<FONT color=#ff0000><B>Relação entre o MMC e MDC</B> </FONT>
+<P>Uma relação importante e bastante útil entre o MMC e o MDC é o fato que o 
+MDC(a,b) multiplicado pelo MMC(a,b) é igual ao produto de <B>a</B> por <B>b</B>, 
+isto é: 
+<P>
+<CENTER><B>MDC(a,b).MMC(a,b) = a.b<BR>MDC(12,15).MMC(12,15) = 12.15=180 
+</B></CENTER>
+<P><FONT color=#006600><B>Exemplo</B></FONT>: 
+<P>
+<BLOCKQUOTE><B>MDC(12,15) = 3<BR>MMC(12,15) = 60<BR>3 x 60 = 180 = 12 x 15 
+</B></BLOCKQUOTE>
+<P>Esta relação é útil quando precisamos encontrar o MMC e o MDC de dois 
+números, basta encontrar um deles e usar a relação acima. 
+<P><FONT color=#006600><B>Exemplo</B></FONT>: Determinar o MMC e o MDC entre 15 
+e 20. 
+<P>O primeiro passo é determinar o MDC ou o MMC entre 15 e 20, obtido o 
+MDC(15,20) = 5 e sabendo que 15 x 20 = 300, basta lembrar que MDC(15,20). 
+MMC(15,20) = 15 x 20 e fazer 
+<P>
+<CENTER>
+<TABLE cellSpacing=1 cellPadding=1 bgColor=white border=1>
+  <TBODY>
+  <TR>
+    <TD><IMG height=51 src="mod103a_arquivos/mod10302.gif" width=250> 
+  </TD></TR></TBODY></TABLE></CENTER>
+<P>Donde obtem-se que o MMC(15,20) é igual a 300 dividido por 5, ou seja 
+MMC(15,20) = 60 
+<P><FONT color=#006600><B>Exercício</B></FONT>: Se a soma de dois números é 320 
+e o mínimo múltiplo comum entre eles é 600, quais são esses números? Qual é o 
+máximo divisor comum entre eles? <BR><B>Solução</B>: Sejam X e Y os números 
+procurados. Assim, X e Y devem satisfazer à relação: 
+<BLOCKQUOTE>X e Y devem dividir 600, logo devem pertencer ao conjunto<BR>D={1, 
+  2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 25, 30, 75, 100, 
+  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;120, 150, 200, 300, 600}<BR>Dois números 
+  deste conjunto que somados dão 320, são:<BR>300 e 20 ou 200 e 
+  120<BR>Descartamos o par: 300 e 20 pois mmc(300,20)=300<BR>Os números são 
+  X=200 e Y=120 cujo mmc(200,120)=600<BR>O mdc(200,120) = 40. </BLOCKQUOTE>
+<P><A name=m103a08></A>
+<HR noShade>
+<FONT color=#ff0000><B>Primos entre si</B></FONT> 
+<P>Dois números naturais são primos entre si quando o MDC entre eles é igual a 
+1. 
+<P><FONT color=#006600><B>Exemplo</B></FONT>: 16 não é um número primo, 21 
+também não é um número primo mas 16 e 21 são primos entre si pois MDC(16,21) = 1 
+
+<P><A name=m103a09></A>
+<HR noShade>
+<FONT color=#ff0000><B>Radiciação de números naturais</B></FONT> 
+<P>Radiciação de ordem <B>n</B> é o processo pelo qual dado um número natural 
+<B>a</B> devemos determinar um número natural <B>b</B> tal que: 
+<P>
+<CENTER><B>b<SUP>n</SUP> = a</B></CENTER>
+<P>onde n é um número natural. É o processo inverso da potenciação. 
+<P>Representamos a operação de radiciação por: <B>R<SUP>n</SUP>[a]</B>, 
+<B>a<SUP>(1/n)</SUP></B>, <B>pot(a,1/n)</B>, <B>pow(a,1/n)</B> ou por um símbolo 
+clássico: 
+<P>
+<CENTER><IMG height=41 alt="" src="mod103a_arquivos/mod10303.gif" width=63> 
+</CENTER>
+<P>que se lê: <B>raiz n-ésima de a</B>. Uma notação simples e muito comum no 
+meio científico é aquela que usa o acento circunflexo: <B>a^(1/n)</B>. 
+<P><FONT color=green><B>Raiz quadrada</B></FONT>: A raiz quadrada de um número 
+não negativo (não somente natural) é um outro número não negativo <B>b</B> tal 
+que: 
+<P>
+<CENTER><B>b<SUP>2</SUP> = a</B></CENTER>
+<P>A raiz quadrada de um número não negativo <B>a</B> pode ser denotada por 
+<B>a^(1/2)</B>. 
+<P><FONT color=#006600><B>Exemplo</B></FONT>: Para determinar a raiz quadrada de 
+36 deve-se obter b de forma que 
+<P>
+<CENTER><B>b<SUP>2</SUP> = b × b = 36</B></CENTER>
+<P>Por tentativa devemos dividir 36 por seus divisores até que o divisor seja 
+igual ao quociente <BR>
+<CENTER><B>36 / 2 = 18<BR>36 / 3 = 12<BR>36 / 4 = 9<BR>36 / 6 = 6 </B></CENTER>
+<P>Portanto <B>+6</B> é a raiz quadrada de <B>36</B>. 
+<P><FONT color=green><B>Raiz cúbica</B></FONT>: A raiz cúbica de um número (não 
+somente natural) <B>a</B> é um número <B>b</B> tal que: 
+<P>
+<CENTER><B>b<SUP>3</SUP> = b . b . b = a</B></CENTER>
+<P>A raiz cúbica de um número <B>a</B> pode ser denotada por <B>a^(1/3)</B>. 
+<P><FONT color=#006600><B>Exemplo</B></FONT>: Para determinar a raiz cúbica de 
+64, deve-se determinar b de forma a obter 
+<P>
+<CENTER><B>b<SUP>3</SUP> = b × b × b = 64</B></CENTER>
+<P>Por tentativa, temos : 
+<CENTER><B>1 x 1 x 1 = 1<BR>2 x 2 x 2 = 8<BR>3 x 3 x 3 = 27<BR>4 x 4 x 4 = 64 
+</B></CENTER>
+<P>Portanto <B>4</B> é raiz cúbica de <B>64</B>. 
+<P>Em estudos mais avançados, pode-se aprender a extrair a raiz quadrada ou a 
+raiz cúbica de um número não necessariamente natural, com qualquer precisão que 
+se queira. 
+<P><A name=m103a10></A>
+<HR noShade>
+<FONT color=red><B>Calculando raízes com o browser</B></FONT> 
+<P>Para calcular raízes com o browser Netscape, digite (ou copie com Control+C) 
+a linha de comando: 
+<P><FONT face="Courier New" color=blue 
+size=5><B>javascript:Math.sqrt(961)</B></FONT> <BR>ou <BR><FONT 
+face="Courier New" color=blue size=5><B>javascript:Math.pow(961,1/2)</B></FONT> 
+<P><B>exatamente</B> da forma como está escrito, dentro da caixa que aparece em 
+seu browser com o nome do arquivo que está sendo acessado neste momento 
+(location=endereço). Após isto, pressione a tecla ENTER. Você deverá ver uma 
+nova janela como o número <FONT face="Courier New" color=blue 
+size=5><B>31</B></FONT> que é a raiz quadrada (em inglês: sqrt) de 961. Para 
+sair da janela com a resposta, pressione o botão <B>Voltar</B> (Back) de seu 
+browser. 
+<P>Agora digite (ou copie com Control+C) na caixa: 
+<P><FONT face="Courier New" color=blue 
+size=5><B>javascript:Math.pow(343,1/3)</B></FONT> 
+<P>e pressione ENTER. Você obterá a raiz cúbica de 343 que é: <FONT 
+face="Courier New" color=blue size=5><B>6.999999999999999</B></FONT> que é uma 
+excelente aproximação para 7, a raiz exata. Para sair da janela com a resposta, 
+pressione o botão <B>Voltar</B> (Back) de seu browser. 
+<P>Para obter a raiz <B>n</B>-ésima de um número não negativo <B>M</B>, digite 
+na caixa: 
+<P><FONT face="Courier New" color=blue 
+size=5><B>javascript:Math.pow(M,1/n)</B></FONT> 
+<P>e pressione ENTER. Para sair da janela com a resposta, pressione o botão 
+<B>Voltar</B> (Back) de seu browser. 
+<P>
+<HR color=blue noShade SIZE=3>
+
+<CENTER>Página construída por Robson Benito e Ulysses Sodré<BR>
+<SCRIPT src="mod103a_arquivos/atual.js"></SCRIPT>
+</CENTER>
+<HR color=blue noShade SIZE=3>
+</FONT></BODY></HTML>

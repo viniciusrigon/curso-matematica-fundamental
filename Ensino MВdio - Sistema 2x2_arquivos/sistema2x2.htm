@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0067)http://pessoal.sercomtel.com.br/matematica/medio/206/sistema2x2.htm -->
+<HTML><HEAD><TITLE>Matematica Essencial: Resolver sistema linear 2x2</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><!-- ZoneLabs Privacy Insertion -->
+<SCRIPT language=javascript src="sistema2x2_arquivos/js"></SCRIPT>
+<LINK href="sistema2x2_arquivos/206.css" type=text/css rel=stylesheet>
+<SCRIPT language=JavaScript type=text/javascript>
+function TestaEntrada(form, button) {CalcularElementos(form); return;}
+function CalcularElementos(form)
+{
+var a=parseFloat(form.entrada1.value);
+var b=parseFloat(form.entrada2.value);
+var c=parseFloat(form.entrada3.value);
+var d=parseFloat(form.entrada4.value);
+var e=parseFloat(form.entrada5.value);
+var f=parseFloat(form.entrada6.value);
+var det = a*e-b*d;
+if (det == 0 && (a*f-c*d==0 || b*f-c*e==0))
+   {alert("Como det(M)=0 e a*f-c*d=0, o sistema e\' indeterminado"); return;}
+if (det == 0 && c!=f)
+   {alert("det(M)=0 e c diferente de f, o sistema e\' impossivel"); return;}
+form.saida01.value=det;
+form.saida02.value=(e/det)*c-(b/det)*f;
+form.saida03.value=-(d/det)*c+(a/det)*f;
+}
+
+function Ajuda()
+{
+var temp="width=600,height=280,left=50,top=50,resizable=yes,directories=no,toolbar=no,scrollbars=yes,menubar=no"
+temp=open("","detalhes",temp).document
+temp.write("<html>"
++ "<head><title>Resolu&ccedil;&atilde;o de um sistema 2x2<\/title><\/head>"
++ "<body bgcolor=white text=black>"
++ "<center><h2>Solu&ccedil;&otilde;es de um sistema 2x2<\/h2><\/center>"
++ "<center><table bgcolor=gold border=3>"
++ "<tr align=left><td><b><font color=000080><tt><center>Dados<\/center><\/tt><\/font><\/b><\/td>"
++ "<td><font color=000080> <tt><b><center>Detalhes<\/center><\/b><\/tt><\/font><\/td><\/tr><tr align=left>"
++ "<td><b>Matriz M dos coeficientes<\/b><\/td>"
++ "<td>Formada pelos coeficientes a, b, d e e.<\/td><\/tr>"
++ "<td><b>Determinante de M<\/b><\/td>"
++ "<td>Indicada por det(M) e poder&aacute; ser nula ou diferente de zero<\/td><\/tr>"
++ "<td><b>det(M)=0<\/b><\/td>"
++ "<td>O sistema &eacute; indeterminado e possui infinitas solu&ccedil;&otilde;es ou o sistema &eacute; imposs&iacute;vel.<\/td><\/tr>"
++ "<td><b>det(M) n&atilde;o nulo<\/b><\/td>"
++ "<td>O sistema &eacute; determinado e possui uma &uacute;nica solu&ccedil;&atilde;o<\/td><\/tr>"
++ "<tr align=left><td><b>NaN<\/b><\/td>"
++ "<td>Not a Number. Aparece se voc&ecirc; erra na entrada dos dados.<\/td><\/tr>"
++ "<\/table>"
++ "<center><form>"
++ "<input type='button' value='Fechar esta ajuda' onclick='self.close()'>"
++ "<\/form><\/center>"
++ "<\/body><\/html>");
+}
+</SCRIPT>
+
+<META content="MSHTML 6.00.2800.1170" name=GENERATOR></HEAD>
+<BODY><BASEFONT face=Verdana,Arial,Helvetica size=4>
+<TABLE borderColor=black cellSpacing=0 cellPadding=0 width="98%" align=center 
+bgColor=white summary=tab border=1>
+  <TBODY>
+  <TR>
+    <TH class=tab width="50%" bgColor=darkblue><FONT color=white>Matemática 
+      Essencial</FONT></TH>
+    <TH><FONT color=darkblue>Ensino Fundamental</FONT></TH></TR>
+  <TR>
+    <TH width="50%" colSpan=2><FONT color=red>Resolução de um sistema linear 
+      2x2</FONT></TH></TR></TBODY></TABLE>
+<P>Para obter a solução do sistema, entre com os 6 valores e pressione o botão 
+apropriado. Aproveite os dados inseridos para realizar novas simulações.</P>
+<FORM>
+<TABLE align=center bgColor=lavender summary=t border=1>
+  <TBODY>
+  <TR>
+    <TH>a<INPUT size=7 name=entrada1>X + b<INPUT size=7 name=entrada2>Y = 
+      c<INPUT size=7 name=entrada3></TH></TR>
+  <TR>
+    <TH>d<INPUT size=7 name=entrada4>X + e<INPUT size=7 name=entrada5>Y = 
+      f<INPUT size=7 name=entrada6></TH></TR>
+  <TR>
+    <TH><INPUT onclick=Ajuda() type=button value=Ajuda> <INPUT type=reset value="Limpar os dados"> <INPUT onclick=TestaEntrada(this.form,this) type=button value="Resolver o sistema"> 
+    </TH></TR></TBODY></TABLE><BR>
+<TABLE align=center bgColor=gold summary=t border=1>
+  <TBODY>
+  <TR>
+    <TH>Dados sobre a solução do sistema linear 2x2</TH></TR>
+  <TR>
+    <TH>det(M)=<INPUT size=6 name=saida01>&nbsp;X=<INPUT size=7 
+      name=saida02>&nbsp;Y=<INPUT size=7 
+name=saida03></TH></TR></TBODY></TABLE></FORM>
+<HR color=red noShade SIZE=3>
+
+<P class=c>Construída por Ulysses Sodré<BR>
+<SCRIPT src="sistema2x2_arquivos/atualp.js" type=text/javascript>
+</SCRIPT>
+</P>
+<HR color=red noShade SIZE=3>
+<!-- ZoneLabs Popup Blocking Insertion -->
+<SCRIPT language=javascript>postamble();</SCRIPT>
+</BASEFONT></BODY></HTML>

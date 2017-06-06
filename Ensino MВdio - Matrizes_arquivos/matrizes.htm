@@ -1,0 +1,776 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0065)http://pessoal.sercomtel.com.br/matematica/medio/206/matrizes.htm -->
+<HTML><HEAD><TITLE>Matematica Essencial: Medio: Matrizes</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><!-- ZoneLabs Privacy Insertion -->
+<SCRIPT language=javascript src="matrizes_arquivos/js"></SCRIPT>
+<LINK href="matrizes_arquivos/206.css" type=text/css rel=stylesheet>
+<META content="MSHTML 6.00.2800.1170" name=GENERATOR></HEAD>
+<BODY><BASEFONT face=Verdana,Arial,Helvetica size=4>
+<TABLE borderColor=black cellSpacing=0 cellPadding=0 width="96%" align=center 
+bgColor=white summary=tab border=1>
+  <TBODY>
+  <TR>
+    <TH class=tab width="50%" bgColor=#000099><FONT color=white>Matemática 
+      Essencial</FONT></TH>
+    <TH class=tab><FONT color=#000099>Ensino Médio</FONT></TH></TR>
+  <TR>
+    <TH class=tab width="50%" colSpan=2><FONT color=red>Matrizes</FONT></TH></TR>
+  <TR>
+    <TD vAlign=center width="50%" bgColor=white>
+      <UL type=square>
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/matrizes.htm#mat01">Elementos 
+        básicos para matrizes</A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/matrizes.htm#mat02">Definição 
+        de matriz</A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/matrizes.htm#mat03">Observações 
+        sobre matrizes</A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/matrizes.htm#mat04">Exemplos 
+        de matrizes</A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/matrizes.htm#mat05">Matrizes 
+        iguais</A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/matrizes.htm#mat06">Soma 
+        de matrizes e propriedades</A> </LI></UL></TD>
+    <TD vAlign=center width="50%" bgColor=white>
+      <UL type=square>
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/matrizes.htm#mat07">Multiplicação 
+        por escalar e propr.</A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/matrizes.htm#mat08">Multiplicação 
+        de matrizes</A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/matrizes.htm#mat09">Propr.da 
+        multiplicação de matrizes</A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/matrizes.htm#mat10">Matrizes 
+        com propr. especiais</A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/matrizes.htm#mat11">Transposta 
+        de matriz e propried.</A> 
+        <LI class=tab><A 
+        href="http://pessoal.sercomtel.com.br/matematica/medio/206/matrizes.htm#mat12">Matrizes 
+        simétricas e anti-simetricas</A> </LI></UL></TD></TR></TBODY></TABLE><BR><A 
+name=mat01></A><BR>
+<P class=tit>Elementos básicos para a construção de matrizes</P>
+<P>Aqui tomaremos o conjunto N dos números naturais, como:</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>N = { 1, 2, 3, 4, 5, 6, 7, ...} </TH></TR></TBODY></TABLE>
+<P>O produto cartesiano N×N indicará o conjunto de todos os pares ordenados da 
+forma (a,b), onde a e b são números naturais, isto é:</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>N×N = { (a,b) : a e b são números naturais } </TH></TR></TBODY></TABLE>
+<P>Uma relação importante em N×N é:</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>S<SUB>mn</SUB> = { (i,j): 1 <U>&lt;</U> i <U>&lt;</U> m, 1 <U>&lt;</U> 
+      j <U>&lt;</U> n } </TH></TR></TBODY></TABLE><BR><A name=mat02></A><BR>
+<P class=tit>Definição de matriz</P>
+<P>Uma matriz real (ou complexa) é uma função que a cada par ordenado (i,j) no 
+conjunto S<SUB>mn</SUB> associa um número real (ou complexo).</P>
+<P>Uma forma muito comum e prática para representar uma matriz definida na forma 
+acima é através de uma tabela contendo m×n números reais (ou complexos). 
+Identificaremos a matriz abaixo com a letra A.</P>
+<TABLE cellSpacing=1 cellPadding=1 width="30%" align=center bgColor=gold 
+summary=t border=1>
+  <TBODY>
+  <TR>
+    <TH>a(1,1)</TH>
+    <TH>a(1,2)</TH>
+    <TH>...</TH>
+    <TH>a(1,n)</TH></TR>
+  <TR>
+    <TH>a(2,1)</TH>
+    <TH>a(2,2)</TH>
+    <TH>...</TH>
+    <TH>a(2,n)</TH></TR>
+  <TR>
+    <TH>...</TH>
+    <TH>...</TH>
+    <TH>...</TH>
+    <TH>...</TH></TR>
+  <TR>
+    <TH>a(m,1)</TH>
+    <TH>a(m,2)</TH>
+    <TH>...</TH>
+    <TH>a(m,n)</TH></TR></TBODY></TABLE><BR><A name=mat03></A><BR>
+<P class=tit>Definições básicas sobre matrizes</P>
+<OL>
+  <LI>
+  <P><B class=b>Ordem: </B>Se a matriz A tem m linhas e n colunas, dizemos que a 
+  ordem da matriz é m×n.</P>
+  <LI>
+  <P><B class=b>Posição de um elemento:</B> Na tabela acima a posição de cada 
+  elemento a<SUB>ij</SUB>=a(i,j) é indicada pelo par ordenado (i,j).</P>
+  <LI>
+  <P><B class=b>Notação para a matriz:</B> Indicamos uma matriz A pelos seus 
+  elementos, na forma: A=[a(i,j)].</P>
+  <LI>
+  <P><B class=b>Diagonal principal:</B> A diagonal principal da matriz é 
+  indicada pelos elementos da forma a(i,j) onde i=j.</P>
+  <LI>
+  <P><B class=b>Matriz quadrada</B> é a matriz que tem o número de linhas igual 
+  ao número de colunas, i.e., m=n.</P>
+  <LI>
+  <P>A <B class=b>diagonal secundária</B> de uma matriz quadrada de ordem n é 
+  indicada pelos n elementos:</P>
+  <TABLE class=eq1 cellPadding=10 align=center summary=eq>
+    <TBODY>
+    <TR>
+      <TH>a(1,n), a(2,n-1), a(3,n-2), a(4,n-3), a(5,n-4), ..., a(n-1,2), 
+        a(n,1) </TH></TR></TBODY></TABLE>
+  <LI>
+  <P><B class=b>Matriz diagonal</B> é a que tem elementos nulos fora da diagonal 
+  principal.</P>
+  <LI>
+  <P><B class=b>Matriz real</B> é aquela que tem números reais como 
+  elementos.</P>
+  <LI>
+  <P><B class=b>Matriz complexa</B> é aquela que tem números complexos como 
+  elementos.</P>
+  <LI>
+  <P><B class=b>Matriz nula</B> é aquela que possui todos os elementos iguais a 
+  zero.</P>
+  <LI>
+  <P><B class=b>Matriz identidade</B>, denotada por Id, tem os elementos da 
+  diagonal principal iguais a 1 e zero fora da diagonal principal.</P>
+  <LI>
+  <P><B class=b>Matriz diagonal</B> é aquela que tem todos os elementos nulos 
+  fora da diagonal principal. Alguns elementos da diagonal principal podem ser 
+  nulos.</P></LI></OL><BR><A name=mat04></A><BR>
+<P class=tit>Exemplos de matrizes</P>
+<P>Matriz 4x4 de números reais:</P>
+<TABLE align=center bgColor=gold summary=t border=1>
+  <TBODY>
+  <TR>
+    <TH>12</TH>
+    <TH>-6</TH>
+    <TH>7</TH>
+    <TH>18</TH></TR>
+  <TR>
+    <TH>-23</TH>
+    <TH>-24</TH>
+    <TH>0</TH>
+    <TH>0</TH></TR>
+  <TR>
+    <TH>0</TH>
+    <TH>0</TH>
+    <TH>5</TH>
+    <TH>0</TH></TR>
+  <TR>
+    <TH>0</TH>
+    <TH>0</TH>
+    <TH>0</TH>
+    <TH>9</TH></TR></TBODY></TABLE>
+<P>Matriz 4x4 de números complexos:</P>
+<TABLE align=center bgColor=gold summary=t border=1>
+  <TBODY>
+  <TR>
+    <TH>12</TH>
+    <TH>-6+i</TH>
+    <TH>7</TH>
+    <TH>i</TH></TR>
+  <TR>
+    <TH>-i</TH>
+    <TH>-24</TH>
+    <TH>0</TH>
+    <TH>0</TH></TR>
+  <TR>
+    <TH>0</TH>
+    <TH>0</TH>
+    <TH>5+i</TH>
+    <TH>5-i</TH></TR>
+  <TR>
+    <TH>0</TH>
+    <TH>0</TH>
+    <TH>0</TH>
+    <TH>9</TH></TR></TBODY></TABLE>
+<P>Matriz nula com duas linhas e duas colunas:</P>
+<TABLE align=center bgColor=gold summary=t border=1>
+  <TBODY>
+  <TR>
+    <TH>0</TH>
+    <TH>0</TH></TR>
+  <TR>
+    <TH>0</TH>
+    <TH>0</TH></TR></TBODY></TABLE>
+<P>Matriz nula com três linhas e duas colunas:</P>
+<TABLE align=center bgColor=gold summary=t border=1>
+  <TBODY>
+  <TR>
+    <TH>0</TH>
+    <TH>0</TH></TR>
+  <TR>
+    <TH>0</TH>
+    <TH>0</TH></TR>
+  <TR>
+    <TH>0</TH>
+    <TH>0</TH></TR></TBODY></TABLE>
+<P>Matriz identidade com três linhas e três colunas:</P>
+<TABLE align=center bgColor=gold summary=t border=1>
+  <TBODY>
+  <TR>
+    <TH>1</TH>
+    <TH>0</TH>
+    <TH>0</TH></TR>
+  <TR>
+    <TH>0</TH>
+    <TH>1</TH>
+    <TH>0</TH></TR>
+  <TR>
+    <TH>0</TH>
+    <TH>0</TH>
+    <TH>1</TH></TR></TBODY></TABLE>
+<P>Matriz diagonal com quatro linhas e quatro colunas:</P>
+<TABLE align=center bgColor=gold summary=t border=1>
+  <TBODY>
+  <TR>
+    <TH>23</TH>
+    <TH>0</TH>
+    <TH>0</TH>
+    <TH>0</TH></TR>
+  <TR>
+    <TH>0</TH>
+    <TH>-56</TH>
+    <TH>0</TH>
+    <TH>0</TH></TR>
+  <TR>
+    <TH>0</TH>
+    <TH>0</TH>
+    <TH>0</TH>
+    <TH>0</TH></TR>
+  <TR>
+    <TH>0</TH>
+    <TH>0</TH>
+    <TH>0</TH>
+    <TH>100</TH></TR></TBODY></TABLE><BR><A name=mat05></A><BR>
+<P class=tit>Matrizes iguais</P>
+<P>Duas matrizes A=[a(i,j)] e B=[b(i,j)], de mesma ordem m×n, são iguais se 
+todos os seus correspondentes elementos são iguais, isto é:</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>a(i,j) = b(i,j) </TH></TR></TBODY></TABLE>
+<P>para todo par ordenado (i,j) em S<SUB>mn</SUB>.</P><BR>
+<P><B class=g>Exercício:</B> Determinar os valores de x e y para que sejam 
+iguais as matrizes abaixo, isto é:</P>
+<TABLE align=center summary=t border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>1</TH>
+          <TH>2</TH></TR>
+        <TR>
+          <TH>3</TH>
+          <TH>4</TH></TR></TBODY></TABLE></TD>
+    <TH>=</TH>
+    <TD>
+      <TABLE bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>x-1</TH>
+          <TH>y-1</TH></TR>
+        <TR>
+          <TH>x+y</TH>
+          <TH>x<SUP>2</SUP></TH></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR><A 
+name=mat06></A><BR>
+<P class=tit>Soma de matrizes e suas propriedades</P>
+<P>A soma (adição) de duas matrizes A=[a(i,j)] e B=[b(i,j)] de mesma ordem m×n, 
+é uma outra matriz C=[c(i,j)], definida por:</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>c(i,j) = a(i,j) + b(i,j) </TH></TR></TBODY></TABLE>
+<P>para todo par ordenado (i,j) em S<SUB>mn</SUB>.</P>
+<P><B class=g>Exemplo:</B> A soma das matrizes A e B é a terceira matriz 
+indicada abaixo.</P>
+<TABLE align=center summary=t border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellPadding=1 bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>-23</TH>
+          <TH>10</TH></TR>
+        <TR>
+          <TH>7</TH>
+          <TH>9</TH></TR></TBODY></TABLE></TD>
+    <TH>+</TH>
+    <TD>
+      <TABLE cellPadding=1 bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>10</TH>
+          <TH>5</TH></TR>
+        <TR>
+          <TH>8</TH>
+          <TH>9</TH></TR></TBODY></TABLE></TD>
+    <TH>=</TH>
+    <TD>
+      <TABLE cellPadding=1 bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>-13</TH>
+          <TH>15</TH></TR>
+        <TR>
+          <TH>15</TH>
+          <TH>18</TH></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR>
+<P><B class=r>Propriedades da soma de matrizes</B></P>
+<P><B class=b>A1: Associativa:</B> Para quaisquer matrizes A, B e C, de mesma 
+ordem m×n, vale a igualdade:</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>(A + B) + C = A + (B + C) </TH></TR></TBODY></TABLE>
+<P><B class=b>A2: Comutativa:</B> Para quaisquer matrizes A e B, de mesma ordem 
+m×n, vale a igualdade:</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>A + B = B + A </TH></TR></TBODY></TABLE>
+<P><B class=b>A3: Elemento neutro:</B> Existe uma matriz nula 0 que somada com 
+qualquer outra matriz A de mesma ordem, fornecerá a própria matriz A, isto 
+é:</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>0 + A = A </TH></TR></TBODY></TABLE>
+<P><B class=b>A4: Elemento oposto:</B> Para cada matriz A, existe uma matriz -A, 
+denominada a oposta de A, cuja soma entre ambas fornecerá a matriz nula de mesma 
+ordem, isto é:</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>A + (-A) = 0 </TH></TR></TBODY></TABLE><BR><A name=mat07></A><BR>
+<P class=tit>Multiplicação de escalar por matriz e suas propriedades</P>
+<P>Seja k um escalar e A=[a(i,j)] uma matriz. Definimos a multiplicação do 
+escalar k pela matriz A, como uma outra matriz C=k.A, definida por:</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>c(i,j) = k. a(i,j) </TH></TR></TBODY></TABLE>
+<P>para todo par ordenado (i,j) em S<SUB>mn</SUB>.</P>
+<P><B class=g>Exemplo:</B> A multiplicação do escalar -4 pela matriz A, definida 
+por:</P>
+<TABLE align=center summary=t border=0>
+  <TBODY>
+  <TR>
+    <TH>-4</TH>
+    <TD>
+      <TABLE bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>-2</TH>
+          <TH>10</TH></TR>
+        <TR>
+          <TH>7</TH>
+          <TH>9</TH></TR></TBODY></TABLE></TD>
+    <TH>=</TH>
+    <TD>
+      <TABLE bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>-8</TH>
+          <TH>-40</TH></TR>
+        <TR>
+          <TH>28</TH>
+          <TH>36</TH></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR>
+<P><B class=r>Propriedades da multiplicação de escalar por matriz</B></P>
+<P><B class=b>E1: Multiplicação pelo escalar 1:</B> A multiplicação do escalar 1 
+por qualquer matriz A, fornecerá a própria matriz A, isto é:</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>1.A = A </TH></TR></TBODY></TABLE>
+<P><B class=b>E2: Multiplicação pelo escalar zero:</B> A multiplicação do 
+escalar 0 por qualquer matriz A, fornecerá a matriz nula, isto é:</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>0.A = 0 </TH></TR></TBODY></TABLE>
+<P><B class=b>E3: Distributividade das matrizes: </B>Para quaisquer matrizes A e 
+B de mesma ordem e para qualquer escalar k, tem-se:</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>k (A+B) = k A + k B </TH></TR></TBODY></TABLE>
+<P><B class=b>E4: Distributividade dos escalares:</B> Para qualquer matriz A e 
+para quaisquer escalares p e q, tem-se:</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>(p + q) A = p A + q A </TH></TR></TBODY></TABLE><BR><A name=mat08></A><BR>
+<P class=tit>Multiplicação de matrizes</P>
+<P>Seja a matriz A=[a(i,j)] de ordem m×n e a matriz B=(b(k,l)) de ordem nxr. 
+Definimos o produto das matrizes A e B como uma outra matriz C=A.B, definida 
+por:</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>c(u,v) = a(u,1) b(1,v) + a(u,2) b(2,v) + ... + a(u,m) b(m,v) 
+  </TH></TR></TBODY></TABLE>
+<P>para todo par (u,v) em S<SUB>mr</SUB>.</P>
+<P>Para obter o elemento da 2a. linha e 3a. coluna da matriz produto C=A.B, isto 
+é, o elemento c(2,3), devemos:</P>
+<OL>
+  <LI>
+  <P>multiplicar os primeiros elementos da 2a. linha e 3a. coluna;</P>
+  <LI>
+  <P>multiplicar os segundos elementos da 2a. linha e 3a. coluna;</P>
+  <LI>
+  <P>multiplicar os terceiros elementos da 2a. linha e 3a. coluna;</P>
+  <LI>
+  <P>multiplicar os quartos elementos da 2a. linha e 3a. coluna;</P>
+  <LI>
+  <P>somar os quatro produtos obtidos anteriomente.</P></LI></OL>
+<P>Assim:</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>c<SUB>23</SUB> = a<SUB>21</SUB> b<SUB>13</SUB> + a<SUB>22</SUB> 
+      b<SUB>23</SUB> + a<SUB>23</SUB> b<SUB>33</SUB> + a<SUB>24</SUB> 
+      b<SUB>43</SUB> </TH></TR></TBODY></TABLE>
+<P>Podemos visualizar esta operação através das matrizes seguintes. Basta 
+observar a linha em azul na primeira matriz, a coluna em azul na segunda matriz 
+e o elemento em azul na terceira matriz.</P>
+<TABLE align=center summary=t border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>a<SUB>11</SUB></TH>
+          <TH>a<SUB>12</SUB></TH>
+          <TH>a<SUB>13</SUB></TH>
+          <TH>a<SUB>14</SUB></TH></TR>
+        <TR>
+          <TH bgColor=white>a<SUB>21</SUB></TH>
+          <TH bgColor=white>a<SUB>22</SUB></TH>
+          <TH bgColor=white>a<SUB>23</SUB></TH>
+          <TH bgColor=white>a<SUB>24</SUB></TH></TR>
+        <TR>
+          <TH>a<SUB>31</SUB></TH>
+          <TH>a<SUB>32</SUB></TH>
+          <TH>a<SUB>33</SUB></TH>
+          <TH>a<SUB>34</SUB></TH></TR>
+        <TR>
+          <TH>a<SUB>41</SUB></TH>
+          <TH>a<SUB>42</SUB></TH>
+          <TH>a<SUB>43</SUB></TH>
+          <TH>a<SUB>44</SUB></TH></TR></TBODY></TABLE></TD>
+    <TH>×</TH>
+    <TD>
+      <TABLE bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>b<SUB>11</SUB></TH>
+          <TH>b<SUB>12</SUB></TH>
+          <TH bgColor=white>b<SUB>13</SUB></TH>
+          <TH>b<SUB>14</SUB></TH></TR>
+        <TR>
+          <TH>b<SUB>21</SUB></TH>
+          <TH>b<SUB>22</SUB></TH>
+          <TH bgColor=white>b<SUB>23</SUB></TH>
+          <TH>b<SUB>24</SUB></TH></TR>
+        <TR>
+          <TH>b<SUB>31</SUB></TH>
+          <TH>b<SUB>32</SUB></TH>
+          <TH bgColor=white>b<SUB>33</SUB></TH>
+          <TH>b<SUB>34</SUB></TH></TR>
+        <TR>
+          <TH>b<SUB>41</SUB></TH>
+          <TH>b<SUB>42</SUB></TH>
+          <TH bgColor=white>b<SUB>43</SUB></TH>
+          <TH>b<SUB>44</SUB></TH></TR></TBODY></TABLE></TD>
+    <TH>=</TH>
+    <TD>
+      <TABLE bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>c<SUB>11</SUB></TH>
+          <TH>c<SUB>12</SUB></TH>
+          <TH>c<SUB>13</SUB></TH>
+          <TH>c<SUB>14</SUB></TH></TR>
+        <TR>
+          <TH>c<SUB>21</SUB></TH>
+          <TH>c<SUB>22</SUB></TH>
+          <TH bgColor=white>c<SUB>23</SUB></TH>
+          <TH>c<SUB>24</SUB></TH></TR>
+        <TR>
+          <TH>c<SUB>31</SUB></TH>
+          <TH>c<SUB>32</SUB></TH>
+          <TH>c<SUB>33</SUB></TH>
+          <TH>c<SUB>34</SUB></TH></TR>
+        <TR>
+          <TH>c<SUB>41</SUB></TH>
+          <TH>c<SUB>42</SUB></TH>
+          <TH>c<SUB>43</SUB></TH>
+          <TH>c<SUB>44</SUB></TH></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<P><B class=g>Observação:</B> Somente podemos multiplicar duas matrizes se o 
+número de colunas da primeira for igual ao número de linhas da 
+segunda.</P><BR><A name=mat09></A><BR>
+<P class=tit>Propriedades da multiplicação de matrizes</P>
+<P>Para todas as matrizes A, B e C que podem ser multiplicadas, temos algumas 
+propriedades:</P>
+<P><B class=b>M1: Nem sempre vale a comutatividade:</B> Em geral, A×B é 
+diferente de B×A, como é o caso do produto que segue, onde A está cor vermelha e 
+B em cor preta:</P>
+<TABLE align=center summary=t border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH><FONT color=red size=5>1</FONT></TH>
+          <TH><FONT color=red size=5>2</FONT></TH>
+          <TH><FONT color=red size=5>3</FONT></TH></TR>
+        <TR>
+          <TH><FONT color=red size=5>2</FONT></TH>
+          <TH><FONT color=red size=5>4</FONT></TH>
+          <TH><FONT color=red size=5>6</FONT></TH></TR>
+        <TR>
+          <TH><FONT color=red size=5>3</FONT></TH>
+          <TH><FONT color=red size=5>6</FONT></TH>
+          <TH><FONT color=red size=5>9</FONT></TH></TR></TBODY></TABLE></TD>
+    <TH>×</TH>
+    <TD>
+      <TABLE bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>1</TH>
+          <TH>2</TH></TR>
+        <TR>
+          <TH>3</TH>
+          <TH>5</TH></TR>
+        <TR>
+          <TH>7</TH>
+          <TH>9</TH></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<P><B class=b>M2: Distributividade da soma à direita</B></P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>A (B+C) = A B + A C </TH></TR></TBODY></TABLE>
+<P><B class=b>M3: Distributividade da soma à esquerda</B></P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>(A + B) C = A C + B C </TH></TR></TBODY></TABLE>
+<P><B class=b>M4: Associatividade</B></P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>A (B C) = (A B) C </TH></TR></TBODY></TABLE>
+<P><B class=b>M5: Nulidade do produto: </B>Pode acontecer que o produto de duas 
+matrizes seja a matriz nula, isto é: AB=0, embora nem A nem B sejam matrizes 
+nulas, como é o caso do produto:</P>
+<TABLE align=center summary=t border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=1 cellPadding=3 bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>0</TH>
+          <TH>1</TH></TR>
+        <TR>
+          <TH>0</TH>
+          <TH>0</TH></TR></TBODY></TABLE></TD>
+    <TH>×</TH>
+    <TD>
+      <TABLE cellSpacing=1 cellPadding=3 bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>0</TH>
+          <TH>2</TH></TR>
+        <TR>
+          <TH>0</TH>
+          <TH>0</TH></TR></TBODY></TABLE></TD>
+    <TH>=</TH>
+    <TD>
+      <TABLE cellSpacing=1 cellPadding=3 bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>0</TH>
+          <TH>0</TH></TR>
+        <TR>
+          <TH>0</TH>
+          <TH>0</TH></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<P><B class=b>M6: Nem sempre vale o cancelamento:</B> Se ocorrer a igualdade 
+AC=BC, então nem sempre será verdadeiro que A=B, pois existem exemplos de 
+matrizes como as apresentadas abaixo, tal que:</P>
+<TABLE align=center summary=t border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellPadding=3 bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>0</TH>
+          <TH>1</TH></TR>
+        <TR>
+          <TH>0</TH>
+          <TH>0</TH></TR></TBODY></TABLE></TD>
+    <TH>×</TH>
+    <TD>
+      <TABLE bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>0</TH>
+          <TH>5</TH></TR>
+        <TR>
+          <TH>0</TH>
+          <TH>0</TH></TR></TBODY></TABLE></TD>
+    <TH>=</TH>
+    <TD>
+      <TABLE bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>0</TH>
+          <TH>2</TH></TR>
+        <TR>
+          <TH>0</TH>
+          <TH>0</TH></TR></TBODY></TABLE></TD>
+    <TH>×</TH>
+    <TD>
+      <TABLE cellPadding=3 bgColor=gold summary=t border=1>
+        <TBODY>
+        <TR>
+          <TH>0</TH>
+          <TH>5</TH></TR>
+        <TR>
+          <TH>0</TH>
+          <TH>0</TH></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<P>mas as matrizes A e B são diferentes.</P><BR><A name=mat10></A><BR>
+<P class=tit>Matrizes com propriedades especiais</P>
+<OL>
+  <LI>
+  <P>Uma matriz A é <B class=b>nilpotente</B> de índice k natural, se:</P>
+  <TABLE class=eq1 cellPadding=10 align=center summary=eq>
+    <TBODY>
+    <TR>
+      <TH>A<SUP>k</SUP> = 0</TH></TR></TBODY></TABLE>
+  <LI>
+  <P>Uma matriz A é <B class=b>periódica</B> de índice k natural, se:</P>
+  <TABLE class=eq1 cellPadding=10 align=center summary=eq>
+    <TBODY>
+    <TR>
+      <TH>A<SUP>k+1</SUP>= A</TH></TR></TBODY></TABLE>
+  <LI>
+  <P>Uma matriz A é <B class=b>idempotente</B>, se:</P>
+  <TABLE class=eq1 cellPadding=10 align=center summary=eq>
+    <TBODY>
+    <TR>
+      <TH>A<SUP>2</SUP> = A</TH></TR></TBODY></TABLE>
+  <LI>
+  <P>As matrizes A e B são <B class=b>comutativas</B>, se:</P>
+  <TABLE class=eq1 cellPadding=10 align=center summary=eq>
+    <TBODY>
+    <TR>
+      <TH>A B = B A</TH></TR></TBODY></TABLE>
+  <LI>
+  <P>As matrizes A e B são <B class=b>anti-comutativas</B>, se:</P>
+  <TABLE class=eq1 cellPadding=10 align=center summary=eq>
+    <TBODY>
+    <TR>
+      <TH>A B = - B A</TH></TR></TBODY></TABLE>
+  <LI>
+  <P>A matriz <B class=b>identidade</B> I<SUB>d</SUB> multiplicada por toda 
+  matriz A, fornecerá a própria matriz A, quando o produto fizer sentido.</P>
+  <TABLE class=eq1 cellPadding=10 align=center summary=eq>
+    <TBODY>
+    <TR>
+      <TH>I<SUB>d</SUB> A = A</TH></TR></TBODY></TABLE>
+  <LI>
+  <P>A matriz A será <B class=b>a inversa da matriz</B> B, se:</P>
+  <TABLE class=eq1 cellPadding=10 align=center summary=eq>
+    <TBODY>
+    <TR>
+      <TH>A B = I<SUB>d</SUB>&nbsp;&nbsp;e&nbsp;&nbsp;B A = 
+    I<SUB>d</SUB></TH></TR></TBODY></TABLE></LI></OL><BR><A name=mat11></A><BR>
+<P class=tit>A transposta de uma matriz e suas propriedades</P>
+<P>Dada uma matriz A=[a(i,j)] de ordem m×n, definimos a transposta da matriz A 
+como a matriz</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>A<SUP>t</SUP> = [a(j,i)]</TH></TR></TBODY></TABLE>
+<P>e se observa aqui, que as linhas de A se transformam nas colunas de 
+A<SUP>t</SUP>.</P><BR>
+<P><B class=r>Propriedades das matrizes transpostas</B></P>
+<P>T1: A transposta da transposta da matriz é a própria matriz.</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>(A<SUP>t</SUP>)<SUP>t</SUP> = A</TH></TR></TBODY></TABLE>
+<P>T2: A transposta da multiplicação de um escalar por uma matriz é igual ao 
+próprio escalar multiplicado pela transposta da matriz.</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>(kA)<SUP>t</SUP> = k (A<SUP>t</SUP>)</TH></TR></TBODY></TABLE>
+<P>T3: A transposta da soma de duas matrizes é a soma das transpostas dessas 
+matrizes.</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>(A + B)<SUP>t</SUP> = A<SUP>t</SUP> + 
+B<SUP>t</SUP></TH></TR></TBODY></TABLE>
+<P>T4: A transposta do produto de duas matrizes é igual ao produto das 
+transpostas das matrizes na ordem <EM>trocada</EM>.</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>(A B)<SUP>t</SUP> = B<SUP>t</SUP> 
+A<SUP>t</SUP></TH></TR></TBODY></TABLE><BR><A name=mat12></A><BR>
+<P class=tit>Matrizes simétricas e anti-simétricas e suas propriedades</P>
+<P>Uma matriz A é <B class=b>simétrica</B> se é uma matriz quadrada tal que:</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>A<SUP>t</SUP> = A</TH></TR></TBODY></TABLE>
+<P>Uma matriz A é <B class=b>anti-simétrica</B> se é uma matriz quadrada tal 
+que:</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>A<SUP>t</SUP> = -A</TH></TR></TBODY></TABLE><BR>
+<P><B class=r>Propriedades das matrizes simétricas e anti-simétricas</B></P>
+<P>S1: Se A é uma matriz simétrica de ordem n, então para todo escalar k, a 
+matriz k.A é simétrica.</P>
+<P>S2: Se A é uma matriz quadrada de ordem n, então a matriz B = A + 
+A<SUP>t</SUP> é simétrica.</P>
+<P>S3: Se A é uma matriz quadrada de ordem n, então a matriz B = A - 
+A<SUP>t</SUP> é anti-simétrica.</P>
+<P>S4: Se A é uma matriz quadrada de ordem n, então A sempre pode ser decomposta 
+como a soma de uma matriz simétrica S com uma matriz anti-simétrica T, isto é, A 
+= S + T, e neste caso:</P>
+<TABLE class=eq1 cellPadding=10 align=center summary=eq>
+  <TBODY>
+  <TR>
+    <TH>S =(1/2)(A + A<SUP>t</SUP>)&nbsp;&nbsp;e&nbsp;&nbsp;T =(1/2)(A - 
+      A<SUP>t</SUP>) </TH></TR></TBODY></TABLE><BR>
+<HR color=red noShade SIZE=3>
+
+<P class=c>Construída por Ulysses Sodré<BR>
+<SCRIPT src="matrizes_arquivos/atualp.js" type=text/javascript></SCRIPT>
+</P>
+<HR color=red noShade SIZE=3>
+<!-- ZoneLabs Popup Blocking Insertion -->
+<SCRIPT language=javascript>postamble();</SCRIPT>
+</BASEFONT></BODY></HTML>

@@ -1,0 +1,84 @@
+BODY {
+	FONT-SIZE: 14.4pt; MARGIN-LEFT: 5pt; COLOR: #000; MARGIN-RIGHT: 5pt; FONT-FAMILY: Verdana,Arial,Helvetica; BACKGROUND-COLOR: aliceblue
+}
+A {
+	TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #00f; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #00f; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #fff; BACKGROUND-COLOR: #369; TEXT-DECORATION: none
+}
+LI.tab {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-FAMILY: Arial,Helvetica
+}
+OL LI {
+	FONT-SIZE: 14.4pt; FONT-FAMILY: Verdana,Arial,Helvetica
+}
+P {
+	FONT-SIZE: 14.4pt; MARGIN: 0.3em 0.1em 0.3em 0em; FONT-STYLE: normal; FONT-FAMILY: Verdana,Arial,Helvetica; TEXT-ALIGN: justify
+}
+P.eq {
+	BORDER-RIGHT: gray thin solid; PADDING-RIGHT: 3px; BORDER-TOP: gray thin solid; PADDING-LEFT: 3px; FONT-SIZE: 14.4pt; PADDING-BOTTOM: 3px; MARGIN: 0em 0.1em 0.3em 0em; BORDER-LEFT: gray thin solid; COLOR: black; PADDING-TOP: 3px; BORDER-BOTTOM: gray thin solid; FONT-FAMILY: Verdana,Arial,Helvetica; BACKGROUND-COLOR: white; TEXT-ALIGN: center
+}
+P.tit {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 14.4pt; PADDING-BOTTOM: 2px; MARGIN: 1em 0em; WIDTH: 100%; COLOR: #fff; PADDING-TOP: 2px; FONT-STYLE: normal; FONT-FAMILY: Verdana,Arial,Helvetica; BACKGROUND-COLOR: #f00; TEXT-ALIGN: left
+}
+PRE {
+	FONT-WEIGHT: bold; FONT-SIZE: 14.4pt; MARGIN-LEFT: 2em; FONT-FAMILY: Courier New
+}
+SUB {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; FONT-FAMILY: Verdana,Arial,Helvetica
+}
+SUP {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; FONT-FAMILY: Verdana,Arial,Helvetica
+}
+TABLE.eq1 {
+	BORDER-RIGHT: black 1px inset; BORDER-TOP: black 1px inset; BACKGROUND: white; MARGIN: 1em; BORDER-LEFT: black 1px inset; BORDER-BOTTOM: black 1px inset
+}
+TABLE.eq2 {
+	BORDER-RIGHT: blue 1px ridge; BORDER-TOP: blue 1px ridge; BACKGROUND: white; BORDER-LEFT: blue 1px ridge; BORDER-BOTTOM: blue 1px ridge
+}
+TH {
+	FONT-WEIGHT: normal; FONT-SIZE: 14.4pt; FONT-FAMILY: Arial,Helvetica
+}
+TH.tab {
+	FONT-SIZE: 14.4pt; FONT-STYLE: normal; FONT-FAMILY: Verdana,Arial,Helvetica
+}
+.b {
+	FONT-WEIGHT: normal; COLOR: #00f
+}
+.c {
+	TEXT-ALIGN: center
+}
+.com {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #333; TEXT-ALIGN: left
+}
+.eq {
+	BORDER-RIGHT: gray thin solid; PADDING-RIGHT: 3px; BORDER-TOP: gray thin solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 0.3em 0em; BORDER-LEFT: gray thin solid; COLOR: black; PADDING-TOP: 3px; BORDER-BOTTOM: gray thin solid; BACKGROUND-COLOR: white; TEXT-ALIGN: center
+}
+.exemplo {
+	FONT-SIZE: 90%
+}
+.g {
+	COLOR: #060
+}
+.l {
+	TEXT-ALIGN: left
+}
+.note {
+	COLOR: white; BACKGROUND-COLOR: red; TEXT-ALIGN: left
+}
+.r {
+	COLOR: #f00
+}
+.tit {
+	PADDING-RIGHT: 2px; MARGIN-TOP: 1em; PADDING-LEFT: 2px; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 2px; WIDTH: 100%; COLOR: white; PADDING-TOP: 2px; FONT-STYLE: normal; BACKGROUND-COLOR: red; TEXT-ALIGN: left
+}
+.indent {
+	MARGIN-LEFT: 30px
+}

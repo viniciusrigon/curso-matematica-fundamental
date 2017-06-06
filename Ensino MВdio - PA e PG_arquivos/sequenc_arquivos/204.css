@@ -1,0 +1,57 @@
+BODY {
+	FONT-SIZE: 14.4pt; MARGIN-LEFT: 10pt; COLOR: #000; MARGIN-RIGHT: 10pt; FONT-FAMILY: Arial,Helvetica; BACKGROUND-COLOR: aliceblue
+}
+A {
+	TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #00f; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #00f; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #fff; BACKGROUND-COLOR: #369; TEXT-DECORATION: none
+}
+P.tit {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 14.4pt; PADDING-BOTTOM: 2px; MARGIN: 0.5em 0em; WIDTH: 100%; COLOR: #fff; PADDING-TOP: 2px; FONT-STYLE: normal; FONT-FAMILY: Verdana,Arial,Helvetica; BACKGROUND-COLOR: #c00; TEXT-ALIGN: left
+}
+P {
+	FONT-SIZE: 14.4pt; MARGIN: 0.3em 0.1em 0.3em 0em; FONT-STYLE: normal; FONT-FAMILY: Verdana,Arial,Helvetica; TEXT-ALIGN: justify
+}
+PRE {
+	FONT-WEIGHT: bold; FONT-SIZE: 14.4pt; MARGIN-LEFT: 2em; FONT-FAMILY: Courier New
+}
+P.c {
+	MARGIN-TOP: 0em; FONT-SIZE: 14.4pt; MARGIN-LEFT: 0em; MARGIN-RIGHT: 0.1em; FONT-STYLE: normal; FONT-FAMILY: Verdana,Arial,Helvetica; TEXT-ALIGN: center
+}
+P.l {
+	MARGIN-TOP: 0em; FONT-SIZE: 14.4pt; FONT-STYLE: normal; FONT-FAMILY: Verdana,Arial,Helvetica; TEXT-ALIGN: left
+}
+P.eq {
+	BORDER-RIGHT: gray thin solid; PADDING-RIGHT: 3px; BORDER-TOP: gray thin solid; PADDING-LEFT: 3px; FONT-SIZE: 14.4pt; PADDING-BOTTOM: 3px; MARGIN: 0em 0.1em 0.3em 0em; BORDER-LEFT: gray thin solid; COLOR: black; PADDING-TOP: 3px; BORDER-BOTTOM: gray thin solid; FONT-FAMILY: Verdana,Arial,Helvetica; BACKGROUND-COLOR: white; TEXT-ALIGN: center
+}
+SUB {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; FONT-FAMILY: Verdana,Arial,Helvetica
+}
+SUP {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; FONT-FAMILY: Verdana,Arial,Helvetica
+}
+TH {
+	FONT-WEIGHT: normal; FONT-SIZE: 14.4pt; FONT-FAMILY: Arial,Helvetica
+}
+B.r {
+	FONT-WEIGHT: bold; FONT-SIZE: 14.4pt; COLOR: #f00; FONT-FAMILY: Arial,Helvetica
+}
+B.g {
+	FONT-WEIGHT: bold; FONT-SIZE: 14.4pt; COLOR: #060; FONT-FAMILY: Arial,Helvetica
+}
+B.b {
+	FONT-WEIGHT: bold; FONT-SIZE: 14.4pt; COLOR: #00f; FONT-FAMILY: Arial,Helvetica
+}
+LI.tab {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-FAMILY: Arial,Helvetica
+}
+OL LI {
+	FONT-SIZE: 14.4pt; FONT-FAMILY: Verdana,Arial,Helvetica
+}
